@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/item_margin_horizontal"
+        android:paddingTop="@dimen/item_margin_vertical"
+        android:paddingRight="@dimen/item_margin_horizontal"
+        android:paddingBottom="@dimen/item_margin_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alert Dialog 提醒对话框" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onAlertDialog"
+            android:text="Alert Dialog" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onListDialog"
+            android:text="List Dialog" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSingleChoiceDialog"
+            android:text="Single Choice Dialog" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onMultiChoiceDialog"
+            android:text="Multi Choice Dialog" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCustomContentDialog"
+            android:text="Custom Content Dialog" />
+    </LinearLayout>
+</ScrollView>

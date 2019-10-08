@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/item_margin_horizontal"
+        android:paddingTop="@dimen/item_margin_vertical"
+        android:paddingRight="@dimen/item_margin_horizontal"
+        android:paddingBottom="@dimen/item_margin_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toast" />
+
+        <RadioGroup
+            android:id="@+id/rg_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set toast duration" />
+
+            <RadioButton
+                android:id="@+id/rb_short"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="short" />
+
+            <RadioButton
+                android:id="@+id/rb_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="long" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set toast gravity" />
+
+            <RadioButton
+                android:id="@+id/rb_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="top" />
+
+            <RadioButton
+                android:id="@+id/rb_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="center" />
+
+            <RadioButton
+                android:id="@+id/rb_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="bottom" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onToast"
+            android:text="android.widget.Toast" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.amlzq.android.viewer">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@android:drawable/sym_def_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".material.LayoutDemoActivity"
+            android:theme="@style/Activity.TransparentStatusBar" />
+        <activity android:name=".guide.BottomNavigationOverviewActivity" />
+        <activity
+            android:name=".app.BottomTabHostActivity"
+            android:label="@string/title_bottom_tab_host" />
+        <activity android:name=".app.tab.HomeActivity" />
+        <activity android:name=".app.tab.MineActivity" />
+        <activity android:name=".app.tab.PlusActivity" />
+        <activity android:name=".anim.lottie.LottieActivity" />
+        <activity
+            android:name=".material.MaterialDesignActivity"
+            android:label="@string/title_material_design"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <activity
+            android:name=".material.combineduse.CollapsingToolbarRecycleViewActivity"
+            android:label="@string/title_appbar_layout"
+            android:theme="@style/Activity.FitsStatusBar" />
+        <activity
+            android:name=".material.combineduse.AppBarTabViewPagerActivity"
+            android:label="@string/title_appbar_layout_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".material.combineduse.BottomNavigationFragmentActivity"
+            android:label="BottomNavigationViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".material.WidgetDemoActivity"
+            android:label="WidgetDemoActivity"
+            android:theme="@style/Theme.MaterialComponents" />
+        <activity
+            android:name=".templates_v320.activities.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".templates_v320.activities.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".templates_v320.activities.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".material.TabLayoutActivity"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".holo.HoloThemeActivity"
+            android:label="@string/title_holo_style"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <activity android:name=".guide.SlideInMenusOverviewActivity" />
+        <activity android:name=".guide.DialogOverviewActivity" />
+        <activity android:name=".material.DialogDemoActivity" />
+        <activity android:name=".app.DialogDemoActivity" />
+        <activity
+            android:name=".guide.WidgetOverviewActivity"
+            android:label="WidgetGuideActivity" />
+        <activity android:name=".widget.WidgetDemoActivity" />
+        <activity android:name=".guide.RefreshLayoutOverviewActivity" />
+        <activity android:name=".material.SwipeRefreshDemoActivity" />
+        <activity android:name=".widget.thirdparty.SmartRefreshActivity" />
+        <activity android:name=".guide.PromptOverviewActivity" />
+        <activity android:name=".widget.ToastDemoActivity" />
+        <activity android:name=".material.SnackbarDemoActivity" />
+        <activity android:name=".qmui.QMUIGuideActivity" />
+        <activity android:name=".widget.LayoutDemoActivity" />
+        <activity android:name=".app.CurrentAPIStyleActivity" />
+        <activity android:name=".widget.ProgressBarDemoActivity" />
+        <activity android:name=".widget.PickerDemoActivity" />
+        <activity android:name=".guide.GuideIndexActivity" />
+        <activity
+            android:name=".app.BottomRadioButtonFragmentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".material.WebAppCompatActivity" />
+        <activity
+            android:name=".material.ActionAppCompatActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".templates_v320.activities.EmptyActivity" />
+        <activity
+            android:name=".templates_v320.activities.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".templates_v320.activities.BasicActivity"
+            android:label="@string/title_activity_basic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".templates_v320.TemplatesActivity" />
+        <activity
+            android:name=".templates_v320.activities.TabbedActivity"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".templates_v320.activities.BottomNavigationActivity"
+            android:label="@string/title_activity_bottom_navigation" />
+        <activity
+            android:name=".templates_v320.activities.NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".templates_v320.activities.ViewModelActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".templates_v320.activities.MapsActivity"
+            android:label="MapsActivity" />
+        <activity android:name=".app.NotificationDemoActivity" />
+        <activity android:name=".widget.thirdparty.ThirdPartyWidgetActivity" />
+        <activity android:name=".guide.TypefaceOverviewActivity" />
+        <activity android:name=".guide.CardViewOverviewActivity" />
+        <activity android:name=".guide.ViewPageOverviewActivity" />
+        <activity android:name=".droidux.DroidUXActivity" />
+        <activity android:name=".widget.PopupWindowDemoActivity" />
+        <activity android:name=".material.RecycleViewDemoActivity" />
+        <activity
+            android:name=".material.combineduse.CombinedUseActivity"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <activity android:name=".app.MenuDemoActivity" />
+        <activity android:name=".widget.thirdparty.FloatingActionButtonActivity" />
+        <activity
+            android:name=".widget.thirdparty.SideMenuByYalantisActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".WebActivity" />
+        <activity
+            android:name=".widget.thirdparty.ContextMenuByYalantisActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".material.combineduse.BottomTabFragmentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

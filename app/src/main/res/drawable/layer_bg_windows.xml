@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 窗口背景 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/windowBackground" />
+
+    <!--设置状态栏颜色-->
+    <item
+        android:height="@dimen/statusBarSize"
+        android:drawable="@drawable/shape_status_bar"
+        android:gravity="top" />
+
+</layer-list>
