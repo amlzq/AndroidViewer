@@ -27,7 +27,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
-        tools:replace="android:allowBackup">
+        tools:replace="android:allowBackup,android:name,android:label,android:roundIcon,android:theme">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
