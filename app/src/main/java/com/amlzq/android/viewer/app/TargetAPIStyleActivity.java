@@ -17,15 +17,15 @@ import com.amlzq.android.viewer.widget.ToastDemoActivity;
 import com.amlzq.android.viewer.widget.WidgetDemoActivity;
 
 /**
- * 当前设备API样式
+ * 目标API样式
  * 在不同的API Level中查看演变过程
  */
-public class CurrentAPIStyleActivity extends Activity {
+public class TargetAPIStyleActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_current_api_style);
+        setContentView(R.layout.activity_target_api_style);
 
         StringBuffer buffer = new StringBuffer();
         buffer.append("Platform Name: " + "" + "\n");

@@ -18,14 +18,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onGuideIndex"
-            android:text="Guide index"
+            android:text="Index"
             android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onCurrentAPI"
-            android:text="Current API UI"
+            android:onClick="onTargetAPI"
+            android:text="Target Platform API"
             android:textAllCaps="false" />
 
         <Button
@@ -47,28 +47,22 @@
             android:layout_height="wrap_content"
             android:onClick="onDroidUX"
             android:text="DroidUX"
-            android:textAllCaps="false" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onQMUI"
-            android:text="QMUI"
-            android:textAllCaps="false" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onIOS"
-            android:text="iOS Style"
             android:textAllCaps="false"
             android:visibility="gone" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onAmlzq"
-            android:text="amlzq Style"
+            android:onClick="onQMUI"
+            android:text="QMUI"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onIOS"
+            android:text="iOS UI Style"
             android:textAllCaps="false"
             android:visibility="gone" />
     </LinearLayout>

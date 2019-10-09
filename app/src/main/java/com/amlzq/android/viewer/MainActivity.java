@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.amlzq.android.util.ActivityUtil;
-import com.amlzq.android.viewer.app.CurrentAPIStyleActivity;
+import com.amlzq.android.viewer.app.TargetAPIStyleActivity;
 import com.amlzq.android.viewer.droidux.DroidUXActivity;
 import com.amlzq.android.viewer.guide.GuideIndexActivity;
 import com.amlzq.android.viewer.holo.HoloThemeActivity;
@@ -45,8 +45,8 @@ public class MainActivity extends MyBaseActivity {
         startActivity(new Intent(this, GuideIndexActivity.class));
     }
 
-    public void onCurrentAPI(View view) {
-        startActivity(new Intent(this, CurrentAPIStyleActivity.class));
+    public void onTargetAPI(View view) {
+        startActivity(new Intent(this, TargetAPIStyleActivity.class));
     }
 
     public void onMaterialDesign(View view) {
@@ -62,9 +62,6 @@ public class MainActivity extends MyBaseActivity {
     }
 
     public void onIOS(View view) {
-    }
-
-    public void onAmlzq(View view) {
     }
 
     public void onDroidUX(View view) {

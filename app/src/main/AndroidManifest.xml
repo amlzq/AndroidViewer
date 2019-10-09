@@ -103,7 +103,7 @@
         <activity android:name=".material.SnackbarDemoActivity" />
         <activity android:name=".qmui.QMUIGuideActivity" />
         <activity android:name=".widget.LayoutDemoActivity" />
-        <activity android:name=".app.CurrentAPIStyleActivity" />
+        <activity android:name=".app.TargetAPIStyleActivity" />
         <activity android:name=".widget.ProgressBarDemoActivity" />
         <activity android:name=".widget.PickerDemoActivity" />
         <activity android:name=".guide.GuideIndexActivity" />
