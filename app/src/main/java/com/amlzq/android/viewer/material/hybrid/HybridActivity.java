@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.combineduse;
+package com.amlzq.android.viewer.material.hybrid;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,14 +8,14 @@ import android.view.View;
 import com.amlzq.android.viewer.R;
 
 /**
- * 组合使用样例
+ * 混合使用样例
  */
-public class CombinedUseActivity extends AppCompatActivity {
+public class HybridActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_combined_use);
+        setContentView(R.layout.activity_hybrid);
     }
 
     public void onCollapsingToolbarRecycleView(View view) {

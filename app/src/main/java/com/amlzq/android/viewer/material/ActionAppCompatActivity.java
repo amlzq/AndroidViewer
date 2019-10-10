@@ -18,7 +18,7 @@ import com.amlzq.android.util.FragmentLauncher;
 import com.amlzq.android.viewer.MyBaseAppCompatActivity;
 import com.amlzq.android.viewer.R;
 import com.amlzq.android.viewer.material.tab.DetailFragment;
-import com.amlzq.android.viewer.material.userhome.AboutUserFragment;
+import com.amlzq.android.viewer.material.userhome.ProfileBoardFragment;
 import com.amlzq.android.viewer.material.userhome.MomentListFragment;
 
 /**
@@ -119,8 +119,8 @@ public class ActionAppCompatActivity extends MyBaseAppCompatActivity {
 
     @Override
     protected BaseFragment fragmentProvider(String fragmentTag, String... args) {
-        if (AboutUserFragment.TAG.equals(fragmentTag)) {
-            AboutUserFragment fragment = AboutUserFragment.newInstance("", "");
+        if (ProfileBoardFragment.TAG.equals(fragmentTag)) {
+            ProfileBoardFragment fragment = ProfileBoardFragment.newInstance("", "");
             fragment.setTransactionOpCmd(FragmentLauncher.FLAG_ADD_REMOVE_HIDE_SHOW);
             fragment.setTitle(fragmentTag);
             return fragment;

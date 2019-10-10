@@ -54,15 +54,15 @@
             android:label="@string/title_material_design"
             android:theme="@style/Theme.MaterialComponents.Light" />
         <activity
-            android:name=".material.combineduse.CollapsingToolbarRecycleViewActivity"
+            android:name=".material.hybrid.CollapsingToolbarRecycleViewActivity"
             android:label="@string/title_appbar_layout"
             android:theme="@style/Activity.FitsStatusBar" />
         <activity
-            android:name=".material.combineduse.AppBarTabViewPagerActivity"
+            android:name=".material.hybrid.AppBarTabViewPagerActivity"
             android:label="@string/title_appbar_layout_tab"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".material.combineduse.BottomNavigationFragmentActivity"
+            android:name=".material.hybrid.BottomNavigationFragmentActivity"
             android:label="BottomNavigationViewActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -161,7 +161,7 @@
         <activity android:name=".widget.PopupWindowDemoActivity" />
         <activity android:name=".material.RecycleViewDemoActivity" />
         <activity
-            android:name=".material.combineduse.CombinedUseActivity"
+            android:name=".material.hybrid.HybridActivity"
             android:theme="@style/Theme.MaterialComponents.Light" />
         <activity android:name=".app.MenuDemoActivity" />
         <activity android:name=".widget.thirdparty.FloatingActionButtonActivity" />
@@ -173,7 +173,7 @@
             android:name=".widget.thirdparty.ContextMenuByYalantisActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".material.combineduse.BottomTabFragmentActivity"
+            android:name=".material.hybrid.BottomTabFragmentActivity"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 

@@ -8,8 +8,8 @@ import com.amlzq.android.viewer.R;
 /**
  * 用户主页-关于我
  */
-public class AboutUserFragment extends MyBaseFragment {
-    public static final String TAG = "AboutUserFragment";
+public class ProfileBoardFragment extends MyBaseFragment {
+    public static final String TAG = "ProfileBoardFragment";
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -17,12 +17,12 @@ public class AboutUserFragment extends MyBaseFragment {
     private String mParam1;
     private String mParam2;
 
-    public AboutUserFragment() {
+    public ProfileBoardFragment() {
         // Required empty public constructor
     }
 
-    public static AboutUserFragment newInstance(String param1, String param2) {
-        AboutUserFragment fragment = new AboutUserFragment();
+    public static ProfileBoardFragment newInstance(String param1, String param2) {
+        ProfileBoardFragment fragment = new ProfileBoardFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -41,7 +41,7 @@ public class AboutUserFragment extends MyBaseFragment {
 
     @Override
     protected int getLayoutResId() {
-        return R.layout.fragment_about_user;
+        return R.layout.fragment_profile_board;
     }
 
     @Override

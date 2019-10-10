@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.combineduse;
+package com.amlzq.android.viewer.material.hybrid;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -29,7 +29,7 @@ public class CollapsingToolbarRecycleViewActivity extends BaseAppCompatActivity 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_collapsing_toolbar_recycle_view);
+        setContentView(R.layout.activity_collapsing_toolbar_recycleview);
 
         mSwipeRefresh = findViewById(R.id.swipe_refresh);
 

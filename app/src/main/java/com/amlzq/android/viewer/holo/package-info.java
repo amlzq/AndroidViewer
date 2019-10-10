@@ -1,6 +1,5 @@
 /**
- * HOLO设计样例
- * 基于ui-lib实现
+ * HOLO设计示例
  *
  * @author amlzq
  */

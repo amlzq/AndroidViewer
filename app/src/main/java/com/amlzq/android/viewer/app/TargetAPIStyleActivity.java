@@ -2,6 +2,7 @@ package com.amlzq.android.viewer.app;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -28,7 +29,7 @@ public class TargetAPIStyleActivity extends Activity {
         setContentView(R.layout.activity_target_api_style);
 
         StringBuffer buffer = new StringBuffer();
-        buffer.append("Platform Name: " + "" + "\n");
+        buffer.append("Platform Name: " + Build.PRODUCT + "\n");
         buffer.append("API Level: " + SystemUtil.getVersion() + "\n");
         buffer.append("Language: " + SystemUtil.getLanguage() + "\n");
         TextView message = findViewById(R.id.tv_message);

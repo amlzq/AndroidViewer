@@ -8,8 +8,8 @@ import android.view.View;
 import com.amlzq.android.viewer.R;
 import com.amlzq.android.viewer.app.BottomRadioButtonFragmentActivity;
 import com.amlzq.android.viewer.app.BottomTabHostActivity;
-import com.amlzq.android.viewer.material.combineduse.BottomNavigationFragmentActivity;
-import com.amlzq.android.viewer.material.combineduse.BottomTabFragmentActivity;
+import com.amlzq.android.viewer.material.hybrid.BottomNavigationFragmentActivity;
+import com.amlzq.android.viewer.material.hybrid.BottomTabFragmentActivity;
 
 /**
  * 底部导航栏的引导

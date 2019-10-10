@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.combineduse;
+package com.amlzq.android.viewer.material.hybrid;
 
 import android.content.Intent;
 import android.os.Bundle;

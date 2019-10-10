@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.combineduse;
+package com.amlzq.android.viewer.material.hybrid;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,15 +15,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.amlzq.android.app.BaseAppCompatActivity;
-import com.amlzq.android.app.SimpleFragmentPagerAdapter;
 import com.amlzq.android.log.Log;
 import com.amlzq.android.material.AppBarStateChangeListener;
 import com.amlzq.android.util.FragmentLauncher;
+import com.amlzq.android.viewer.MyBaseAppCompatActivity;
 import com.amlzq.android.viewer.R;
-import com.amlzq.android.viewer.material.userhome.AboutUserFragment;
 import com.amlzq.android.viewer.material.userhome.MomentListFragment;
+import com.amlzq.android.viewer.material.userhome.ProfileBoardFragment;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -32,15 +32,9 @@ import java.util.List;
  * Toolbar
  * ViewPager
  * <p>
- *
- * @reference https://stackoverflow.com/questions/37479828/how-to-put-recyclerview-below-toolbar-and-above-tablayout-and-viewpager-also-han
+ * https://stackoverflow.com/questions/37479828/how-to-put-recyclerview-below-toolbar-and-above-tablayout-and-viewpager-also-han
  */
-
-/**
- * 折叠工具栏
- * 适合做个人主页
- */
-public class AppBarTabViewPagerActivity extends BaseAppCompatActivity {
+public class AppBarTabViewPagerActivity extends MyBaseAppCompatActivity {
 
     private AppBarLayout mAppBarLayout;
     private Toolbar mToolbar;
@@ -48,18 +42,16 @@ public class AppBarTabViewPagerActivity extends BaseAppCompatActivity {
     // Tab + ViewPager
     private TabLayout mTabLayout;
     private List<String> mTabIndicators;
-
     private ViewPager mViewPager;
-    private SimpleFragmentPagerAdapter mContentAdapter;
-    //    private ContentPagerAdapter mContentAdapter;
     private List<Fragment> mTabFragments;
+    private ContentPagerAdapter mContentAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_collapsing);
+        setContentView(R.layout.activity_collapsing_tab_viewpager);
 
-        mAppBarLayout = findViewById(R.id.appbar_layout);
+        mAppBarLayout = findViewById(R.id.appbar);
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         mToolbar.setTitle("");
         setSupportActionBar(mToolbar);
@@ -70,7 +62,7 @@ public class AppBarTabViewPagerActivity extends BaseAppCompatActivity {
         mAppBarLayout.addOnOffsetChangedListener(new AppBarStateChangeListener() {
             @Override
             public void onStateChanged(AppBarLayout appBarLayout, State state) {
-                Log.d("STATE", state.name());
+                Log.d(state.name());
                 if (state == State.EXPANDED) {
                     //展开状态
 
@@ -84,21 +76,26 @@ public class AppBarTabViewPagerActivity extends BaseAppCompatActivity {
             }
         });
 
-        mTabLayout = findViewById(R.id.tab_layout);
+        mTabLayout = findViewById(R.id.tab);
+        mTabIndicators = new ArrayList<>();
         mViewPager = findViewById(R.id.view_pager);
+        mTabFragments = new ArrayList<>();
 
-        mContentAdapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
+        mContentAdapter = new ContentPagerAdapter(getSupportFragmentManager());
         // 初始化2个tab
         mTabLayout.addTab(mTabLayout.newTab());
-        MomentListFragment usersMoment = MomentListFragment.newInstance("", "");
-        usersMoment.setTransactionOpCmd(FragmentLauncher.FLAG_ATTACH_DETACH_ADD_REMOVE);
-        mContentAdapter.addTab("动态", usersMoment);
-        usersMoment.setTitle(mContentAdapter.getPageTitle(0));
+        MomentListFragment moment = MomentListFragment.newInstance("", "");
+        moment.setTransactionOpCmd(FragmentLauncher.FLAG_ATTACH_DETACH_ADD_REMOVE);
+        mTabIndicators.add("动态");
+        mTabFragments.add(moment);
+        moment.setTitle(mContentAdapter.getPageTitle(0));
 
         mTabLayout.addTab(mTabLayout.newTab());
-        AboutUserFragment aboutUserFragment = AboutUserFragment.newInstance("", "");
-        aboutUserFragment.setTransactionOpCmd(FragmentLauncher.FLAG_ATTACH_DETACH_ADD_REMOVE);
-        mContentAdapter.addTab("关于我", aboutUserFragment);
+        ProfileBoardFragment profile = ProfileBoardFragment.newInstance("", "");
+        profile.setTransactionOpCmd(FragmentLauncher.FLAG_ATTACH_DETACH_ADD_REMOVE);
+        mTabIndicators.add("关于我");
+        mTabFragments.add(profile);
+        profile.setTitle(mContentAdapter.getPageTitle(1));
 
         // ViewPager默认加载页面的左右两页，此方法设置屏幕外左右加载页数
         mViewPager.setOffscreenPageLimit(1);
@@ -126,7 +123,7 @@ public class AppBarTabViewPagerActivity extends BaseAppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 // android.R.id.home是Android内置home按钮的id
-                finishSelf();
+
                 break;
         }
         return super.onOptionsItemSelected(item);
