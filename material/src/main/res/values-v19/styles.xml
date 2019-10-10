@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="Material.Activity.TranslucentStatusBar" parent="Material.AppTheme.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

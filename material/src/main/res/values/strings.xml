@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">material</string>
+
+    <string name="intro_message_material_design">
+        <![CDATA[
+            质感设计（英语：Material Design，又译为材质设计、材料设计），研发代号：量子纸张（英语：Quantum Paper），是由Google开发的设计语言。
+        基于网格的布局、响应动画与过渡、填充、深度效果（如光线和阴影），质感设计于2014年6月25日的Google I/O大会上宣布。
+            可借助v7 appcompat库用于Android 2.1及以上版本，支持几乎所有2009年以后制造的Andr​​oid设备。
+        ]]>
+    </string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_bottom_tab_host">BottomTabHostActivity</string>
+
+    <string name="title_material_design">Material Design</string>
+    <string name="title_appbar_layout">Appbar RecyclerView</string>
+    <string name="title_appbar_layout_tab">Appbar Tab ViewPager</string>
+    <string name="title_activity_navigation_drawer">Drawer Navigation</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_design_widget">Design Widget</string>
+    <string name="title_activity_tab">TabActivity</string>
+
+</resources>

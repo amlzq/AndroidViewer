@@ -24,10 +24,11 @@ android {
 }
 
 dependencies {
+    implementation project(':common')
+
+    implementation project(':material')
+
     // google support library
-    implementation "com.android.support:support-annotations:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
     implementation "com.android.support:design:$rootProject.supportLibraryVersion"
     implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
     implementation "com.android.support:support-vector-drawable:$rootProject.supportLibraryVersion"
@@ -38,17 +39,6 @@ dependencies {
     implementation 'android.arch.lifecycle:extensions:1.1.1'
     implementation "com.google.android.gms:play-services-maps:$rootProject.gmsVersion"
     implementation "com.google.android.gms:play-services-plus:$rootProject.gmsVersion"
-
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    testImplementation "junit:junit:$rootProject.ext.junitVersion"
-    androidTestImplementation "com.android.support.test:runner:$rootProject.runnerVersion"
-    androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion"
-
-    // amlzq support library
-    implementation "com.amlzq.android:log:${rootProject.ext.logVersion}"
-    implementation "com.amlzq.android:annotations:${rootProject.ext.annotationsVersion}"
-    implementation "com.amlzq.android:utils:${rootProject.ext.utilsVersion}"
-    implementation "com.amlzq.android:ui:${rootProject.ext.utilsVersion}"
 
     // Lottie 2.8.0 and above only supports projects that have been migrated to androidx.
     implementation("com.airbnb.android:lottie:2.7.0") {

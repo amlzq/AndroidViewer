@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amlzq.android.viewer.material">
+
+    <application>
+        <activity
+            android:name=".LayoutDemoActivity"
+            android:theme="@style/Activity.TransparentStatusBar" />
+        <activity
+            android:name=".MaterialDesignActivity"
+            android:label="@string/title_material_design"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <activity
+            android:name=".hybrid.CollapsingToolbarRecycleViewActivity"
+            android:label="@string/title_appbar_layout"
+            android:theme="@style/Activity.FitsStatusBar" />
+        <activity
+            android:name=".hybrid.AppBarTabViewPagerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_appbar_layout_tab"
+            android:theme="@style/Material.Activity.TranslucentStatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".hybrid.BottomNavigationFragmentActivity"
+            android:label="BottomNavigationViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WidgetDemoActivity"
+            android:label="WidgetDemoActivity"
+            android:theme="@style/Theme.MaterialComponents" />
+        <activity
+            android:name=".TabLayoutActivity"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DialogDemoActivity" />
+        <activity android:name=".SwipeRefreshDemoActivity" />
+        <activity android:name=".SnackbarDemoActivity" />
+        <activity android:name=".WebAppCompatActivity" />
+        <activity
+            android:name=".ActionAppCompatActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RecycleViewDemoActivity" />
+        <activity
+            android:name=".hybrid.HybridActivity"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <activity
+            android:name=".hybrid.BottomTabFragmentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

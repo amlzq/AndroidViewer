@@ -38,9 +38,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".material.LayoutDemoActivity"
-            android:theme="@style/Activity.TransparentStatusBar" />
+
         <activity android:name=".guide.BottomNavigationOverviewActivity" />
         <activity
             android:name=".app.BottomTabHostActivity"
@@ -49,26 +47,8 @@
         <activity android:name=".app.tab.MineActivity" />
         <activity android:name=".app.tab.PlusActivity" />
         <activity android:name=".anim.lottie.LottieActivity" />
-        <activity
-            android:name=".material.MaterialDesignActivity"
-            android:label="@string/title_material_design"
-            android:theme="@style/Theme.MaterialComponents.Light" />
-        <activity
-            android:name=".material.hybrid.CollapsingToolbarRecycleViewActivity"
-            android:label="@string/title_appbar_layout"
-            android:theme="@style/Activity.FitsStatusBar" />
-        <activity
-            android:name=".material.hybrid.AppBarTabViewPagerActivity"
-            android:label="@string/title_appbar_layout_tab"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".material.hybrid.BottomNavigationFragmentActivity"
-            android:label="BottomNavigationViewActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".material.WidgetDemoActivity"
-            android:label="WidgetDemoActivity"
-            android:theme="@style/Theme.MaterialComponents" />
+
+
         <activity
             android:name=".templates_v320.activities.LoginActivity"
             android:label="@string/title_activity_login" />
@@ -79,28 +59,22 @@
         <activity
             android:name=".templates_v320.activities.SettingsActivity"
             android:label="@string/title_activity_settings" />
-        <activity
-            android:name=".material.TabLayoutActivity"
-            android:label="@string/title_activity_tab"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".holo.HoloThemeActivity"
             android:label="@string/title_holo_style"
             android:theme="@android:style/Theme.Holo.Light" />
         <activity android:name=".guide.SlideInMenusOverviewActivity" />
         <activity android:name=".guide.DialogOverviewActivity" />
-        <activity android:name=".material.DialogDemoActivity" />
         <activity android:name=".app.DialogDemoActivity" />
         <activity
             android:name=".guide.WidgetOverviewActivity"
             android:label="WidgetGuideActivity" />
         <activity android:name=".widget.WidgetDemoActivity" />
         <activity android:name=".guide.RefreshLayoutOverviewActivity" />
-        <activity android:name=".material.SwipeRefreshDemoActivity" />
         <activity android:name=".widget.thirdparty.SmartRefreshActivity" />
         <activity android:name=".guide.PromptOverviewActivity" />
         <activity android:name=".widget.ToastDemoActivity" />
-        <activity android:name=".material.SnackbarDemoActivity" />
         <activity android:name=".qmui.QMUIGuideActivity" />
         <activity android:name=".widget.LayoutDemoActivity" />
         <activity android:name=".app.TargetAPIStyleActivity" />
@@ -110,10 +84,7 @@
         <activity
             android:name=".app.BottomRadioButtonFragmentActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".material.WebAppCompatActivity" />
-        <activity
-            android:name=".material.ActionAppCompatActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".templates_v320.activities.EmptyActivity" />
         <activity
             android:name=".templates_v320.activities.FullscreenActivity"
@@ -159,10 +130,7 @@
         <activity android:name=".guide.ViewPageOverviewActivity" />
         <activity android:name=".droidux.DroidUXActivity" />
         <activity android:name=".widget.PopupWindowDemoActivity" />
-        <activity android:name=".material.RecycleViewDemoActivity" />
-        <activity
-            android:name=".material.hybrid.HybridActivity"
-            android:theme="@style/Theme.MaterialComponents.Light" />
+
         <activity android:name=".app.MenuDemoActivity" />
         <activity android:name=".widget.thirdparty.FloatingActionButtonActivity" />
         <activity
@@ -171,9 +139,6 @@
         <activity android:name=".WebActivity" />
         <activity
             android:name=".widget.thirdparty.ContextMenuByYalantisActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".material.hybrid.BottomTabFragmentActivity"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 

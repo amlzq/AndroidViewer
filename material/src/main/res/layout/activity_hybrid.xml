@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hybrid.HybridActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/item_margin_horizontal"
+        android:paddingTop="@dimen/item_margin_vertical"
+        android:paddingRight="@dimen/item_margin_horizontal"
+        android:paddingBottom="@dimen/item_margin_vertical">
+
+        <android.support.design.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCollapsingToolbarRecycleView"
+            android:text="CollapsingToolbar + RecycleView\n分类主页，编辑推荐列表"
+            android:textAllCaps="false" />
+
+        <android.support.design.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onAppBarTabViewPager"
+            android:text="AppBarLayout + TabLayout + ViewPager\n个人主页，商品详情页"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</ScrollView>
