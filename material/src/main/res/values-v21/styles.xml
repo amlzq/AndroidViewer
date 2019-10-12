@@ -1,9 +1,15 @@
 <resources>
 
     <style name="Material.Activity.TranslucentStatusBar" parent="Material.AppTheme.NoActionBar">
+        <!--窗口-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--状态栏-->
         <item name="android:windowTranslucentStatus">true</item>
+        <!--导航栏-->
         <item name="android:windowTranslucentNavigation">false</item>
-        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <!--状态栏覆盖在ContentView上，与android:fitsSystemWindows等价-->
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">false</item>-->
+        <!--API21开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 </resources>

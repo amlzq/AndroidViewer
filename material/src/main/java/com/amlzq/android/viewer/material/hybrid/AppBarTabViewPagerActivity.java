@@ -1,6 +1,7 @@
 package com.amlzq.android.viewer.material.hybrid;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
@@ -48,6 +49,10 @@ public class AppBarTabViewPagerActivity extends MyBaseAppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        // 装饰视图背景设置为透明
+        // getWindow().getDecorView().setBackgroundColor(Color.TRANSPARENT);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collapsing_tab_viewpager);
 

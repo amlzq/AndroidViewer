@@ -5,7 +5,7 @@ import com.amlzq.android.util.Share2;
 import com.amlzq.android.util.ShareContentType;
 
 /**
- * 定制BaseActivity
+ * {@link MyConfig#IDENTIFY}BaseActivity
  */
 
 public abstract class MyBaseActivity extends BaseActivity {
