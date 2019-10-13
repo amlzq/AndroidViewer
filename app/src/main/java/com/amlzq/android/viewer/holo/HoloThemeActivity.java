@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.amlzq.android.viewer.R;
-import com.amlzq.android.viewer.material.hybrid.BottomNavigationFragmentActivity;
+import com.amlzq.android.viewer.material.complex.BottomNavigationFragmentActivity;
 
 /**
  * Holo样式

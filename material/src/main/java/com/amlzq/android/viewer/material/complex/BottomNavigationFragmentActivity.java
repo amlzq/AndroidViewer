@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.hybrid;
+package com.amlzq.android.viewer.material.complex;
 
 import android.content.Intent;
 import android.os.Bundle;

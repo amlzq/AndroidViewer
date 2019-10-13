@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.hybrid;
+package com.amlzq.android.viewer.material.complex;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,12 +10,12 @@ import com.amlzq.android.viewer.material.R;
 /**
  * 混合使用样例
  */
-public class HybridActivity extends AppCompatActivity {
+public class ComplexActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hybrid);
+        setContentView(R.layout.activity_material_design_complex);
     }
 
     public void onCollapsingToolbarRecycleView(View view) {

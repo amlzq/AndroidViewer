@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.TextView;
 
 //import com.amlzq.android.viewer.material.R;
-import com.amlzq.android.viewer.material.hybrid.BottomNavigationFragmentActivity;
-import com.amlzq.android.viewer.material.hybrid.HybridActivity;
+import com.amlzq.android.viewer.material.complex.BottomNavigationFragmentActivity;
+import com.amlzq.android.viewer.material.complex.ComplexActivity;
 //import com.amlzq.android.viewer.templates_v320.activities.NavigationDrawerActivity;
 //import com.amlzq.android.viewer.templates_v320.activities.ScrollingActivity;
 
@@ -66,8 +66,8 @@ public class MaterialDesignActivity extends AppCompatActivity {
 
     }
 
-    public void onHybrid(View view) {
-        startActivity(new Intent(this, HybridActivity.class));
+    public void onComplex(View view) {
+        startActivity(new Intent(this, ComplexActivity.class));
     }
 
 }

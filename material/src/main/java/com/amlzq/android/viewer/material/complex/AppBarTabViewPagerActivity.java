@@ -1,7 +1,6 @@
-package com.amlzq.android.viewer.material.hybrid;
+package com.amlzq.android.viewer.material.complex;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;

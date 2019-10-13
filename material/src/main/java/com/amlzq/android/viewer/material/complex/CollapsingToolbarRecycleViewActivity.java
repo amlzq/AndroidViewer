@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.hybrid;
+package com.amlzq.android.viewer.material.complex;
 
 import android.graphics.Color;
 import android.os.Bundle;

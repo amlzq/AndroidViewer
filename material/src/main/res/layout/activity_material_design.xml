@@ -32,8 +32,8 @@
             <android.support.design.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onHybrid"
-                android:text="Hybrid use\n混合使用场景"
+                android:onClick="onComplex"
+                android:text="Complex use\n综合使用场景"
                 android:textAllCaps="false" />
 
             <android.support.design.button.MaterialButton

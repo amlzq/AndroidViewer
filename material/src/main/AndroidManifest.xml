@@ -10,17 +10,17 @@
             android:label="@string/title_material_design"
             android:theme="@style/Theme.MaterialComponents.Light" />
         <activity
-            android:name=".hybrid.CollapsingToolbarRecycleViewActivity"
+            android:name=".complex.CollapsingToolbarRecycleViewActivity"
             android:label="@string/title_appbar_layout"
             android:theme="@style/Activity.FitsStatusBar" />
         <activity
-            android:name=".hybrid.AppBarTabViewPagerActivity"
+            android:name=".complex.AppBarTabViewPagerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/title_appbar_layout_tab"
             android:theme="@style/Material.Activity.TranslucentStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".hybrid.BottomNavigationFragmentActivity"
+            android:name=".complex.BottomNavigationFragmentActivity"
             android:label="BottomNavigationViewActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -40,10 +40,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RecycleViewDemoActivity" />
         <activity
-            android:name=".hybrid.HybridActivity"
+            android:name=".complex.ComplexActivity"
             android:theme="@style/Theme.MaterialComponents.Light" />
         <activity
-            android:name=".hybrid.BottomTabFragmentActivity"
+            android:name=".complex.BottomTabFragmentActivity"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
