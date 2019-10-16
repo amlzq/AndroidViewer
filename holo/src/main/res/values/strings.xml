@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">holo</string>
+
+    <string name="title_bottom_tab_host">BottomTabHostActivity</string>
+
+    <string name="intro_message_holo_style">
+        <![CDATA[
+            API11，
+            android:Theme.Holo “Holo根主题”
+            android:Theme.Holo.Black “Holo黑主题”
+            android:Theme.Holo.Light “Holo白主题”
+        ]]>
+    </string>
+    <string name="title_holo_style">Holo Style</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

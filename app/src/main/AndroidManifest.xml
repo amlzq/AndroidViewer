@@ -38,108 +38,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".guide.BottomNavigationOverviewActivity" />
-        <activity
-            android:name=".app.BottomTabHostActivity"
-            android:label="@string/title_bottom_tab_host" />
-        <activity android:name=".app.tab.HomeActivity" />
-        <activity android:name=".app.tab.MineActivity" />
-        <activity android:name=".app.tab.PlusActivity" />
-        <activity android:name=".anim.lottie.LottieActivity" />
-
-
-        <activity
-            android:name=".templates_v320.activities.LoginActivity"
-            android:label="@string/title_activity_login" />
-        <activity
-            android:name=".templates_v320.activities.ScrollingActivity"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".templates_v320.activities.SettingsActivity"
-            android:label="@string/title_activity_settings" />
-
-        <activity
-            android:name=".holo.HoloThemeActivity"
-            android:label="@string/title_holo_style"
-            android:theme="@android:style/Theme.Holo.Light" />
         <activity android:name=".guide.SlideInMenusOverviewActivity" />
         <activity android:name=".guide.DialogOverviewActivity" />
-        <activity android:name=".app.DialogDemoActivity" />
         <activity
             android:name=".guide.WidgetOverviewActivity"
             android:label="WidgetGuideActivity" />
-        <activity android:name=".widget.WidgetDemoActivity" />
         <activity android:name=".guide.RefreshLayoutOverviewActivity" />
-        <activity android:name=".widget.thirdparty.SmartRefreshActivity" />
-        <activity android:name=".guide.PromptOverviewActivity" />
-        <activity android:name=".widget.ToastDemoActivity" />
-        <activity android:name=".qmui.QMUIGuideActivity" />
-        <activity android:name=".widget.LayoutDemoActivity" />
-        <activity android:name=".app.TargetAPIStyleActivity" />
-        <activity android:name=".widget.ProgressBarDemoActivity" />
-        <activity android:name=".widget.PickerDemoActivity" />
-        <activity android:name=".guide.GuideIndexActivity" />
-        <activity
-            android:name=".app.BottomRadioButtonFragmentActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity android:name=".templates_v320.activities.EmptyActivity" />
-        <activity
-            android:name=".templates_v320.activities.FullscreenActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_fullscreen"
-            android:theme="@style/FullscreenTheme" />
-        <activity
-            android:name=".templates_v320.activities.BasicActivity"
-            android:label="@string/title_activity_basic"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".templates_v320.TemplatesActivity" />
-        <activity
-            android:name=".templates_v320.activities.TabbedActivity"
-            android:label="@string/title_activity_tabbed"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".templates_v320.activities.BottomNavigationActivity"
-            android:label="@string/title_activity_bottom_navigation" />
-        <activity
-            android:name=".templates_v320.activities.NavigationDrawerActivity"
-            android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".templates_v320.activities.ViewModelActivity" />
-        <!--
-             The API key for Google Maps-based APIs is defined as a string resource.
-             (See the file "res/values/google_maps_api.xml").
-             Note that the API key is linked to the encryption key used to sign the APK.
-             You need a different API key for each encryption key, including the release key that is used to
-             sign the APK for publishing.
-             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
-        -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
-
-        <activity
-            android:name=".templates_v320.activities.MapsActivity"
-            android:label="MapsActivity" />
-        <activity android:name=".app.NotificationDemoActivity" />
-        <activity android:name=".widget.thirdparty.ThirdPartyWidgetActivity" />
+        <activity android:name=".guide.GuideActivity" />
         <activity android:name=".guide.TypefaceOverviewActivity" />
-        <activity android:name=".guide.CardViewOverviewActivity" />
         <activity android:name=".guide.ViewPageOverviewActivity" />
+        <activity android:name=".qmui.QMUIGuideActivity" />
         <activity android:name=".droidux.DroidUXActivity" />
-        <activity android:name=".widget.PopupWindowDemoActivity" />
-
-        <activity android:name=".app.MenuDemoActivity" />
-        <activity android:name=".widget.thirdparty.FloatingActionButtonActivity" />
-        <activity
-            android:name=".widget.thirdparty.SideMenuByYalantisActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".WebActivity" />
-        <activity
-            android:name=".widget.thirdparty.ContextMenuByYalantisActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

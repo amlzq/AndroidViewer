@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amlzq.android.viewer.expand">
+
+    <application>
+        <activity android:name=".ThirdPartyWidgetActivity" />
+        <activity android:name=".FloatingActionButtonActivity" />
+        <activity
+            android:name=".SideMenuByYalantisActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ContextMenuByYalantisActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".lottie.LottieActivity" />
+        <activity android:name=".SmartRefreshActivity" />
+    </application>
+
+</manifest>

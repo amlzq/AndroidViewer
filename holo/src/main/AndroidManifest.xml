@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amlzq.android.viewer.holo">
+
+    <application>
+        <activity
+            android:name=".BottomTabHostActivity"
+            android:label="@string/title_bottom_tab_host" />
+        <activity android:name=".tab.HomeActivity" />
+        <activity android:name=".tab.MineActivity" />
+        <activity android:name=".tab.PlusActivity" />
+        <activity
+            android:name=".TranslucentActivity"
+            android:theme="@style/Activity.Translucent" />
+        <activity
+            android:name=".HoloThemeActivity"
+            android:label="@string/title_holo_style"
+            android:theme="@android:style/Theme.Holo.Light" />
+    </application>
+</manifest>

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.amlzq.android.viewer.R;
-import com.amlzq.android.viewer.widget.WidgetDemoActivity;
+import com.amlzq.android.viewer.platform.WidgetDemoActivity;
 
 /**
  * Widget小部件样例演示的引导

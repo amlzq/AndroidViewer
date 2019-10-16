@@ -1,3 +1,6 @@
+// 共同的资源，字符串，图片，颜色
+// 共同的依赖库，测试库，
+
 apply plugin: 'com.android.library'
 
 android {

@@ -1,17 +1,17 @@
 package com.amlzq.android.viewer.guide;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.amlzq.android.app.BaseActivity;
 import com.amlzq.android.viewer.R;
-import com.amlzq.android.viewer.app.DialogDemoActivity;
+import com.amlzq.android.viewer.platform.DialogDemoActivity;
 
 /**
  * 对话框的演示样例引导
  */
-public class DialogOverviewActivity extends BaseActivity {
+public class DialogOverviewActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

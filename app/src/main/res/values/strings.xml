@@ -1,9 +1,6 @@
 <resources>
     <string name="app_name">Viewer</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <!--底部导航栏-->
     <string name="intro_message_bottom_navigation">
         <![CDATA[
@@ -21,17 +18,5 @@
 
         ]]>
     </string>
-
-    <string name="intro_message_holo_style">
-        <![CDATA[
-            API11，
-            android:Theme.Holo “Holo根主题”
-            android:Theme.Holo.Black “Holo黑主题”
-            android:Theme.Holo.Light “Holo白主题”
-        ]]>
-    </string>
-    <string name="title_holo_style">Holo Style</string>
-
-
 
 </resources>

@@ -98,6 +98,12 @@
                 android:onClick="onDayNight"
                 android:text="Day Night"
                 android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSnackBar"
+                android:text="android.support.design.widget.Snackbar" />
         </LinearLayout>
     </ScrollView>
 

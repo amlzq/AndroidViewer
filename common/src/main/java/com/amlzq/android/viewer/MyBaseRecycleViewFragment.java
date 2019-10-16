@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.amlzq.android.log.Log;
-import com.amlzq.android.resource.R;
 import com.amlzq.android.ui.BaseRecycleViewFragment;
 import com.amlzq.android.util.Share2;
 import com.amlzq.android.util.ShareContentType;

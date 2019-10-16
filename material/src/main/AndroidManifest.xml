@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.amlzq.android.viewer.material">
 
@@ -10,11 +11,11 @@
             android:label="@string/title_material_design"
             android:theme="@style/Theme.MaterialComponents.Light" />
         <activity
-            android:name=".complex.CollapsingToolbarRecycleViewActivity"
+            android:name=".complex.CollapsingRecycleViewActivity"
             android:label="@string/title_appbar_layout"
             android:theme="@style/Activity.FitsStatusBar" />
         <activity
-            android:name=".complex.AppBarTabViewPagerActivity"
+            android:name=".complex.CollapsingTabPagerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/title_appbar_layout_tab"
             android:theme="@style/Material.Activity.TranslucentStatusBar"
@@ -40,11 +41,71 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RecycleViewDemoActivity" />
         <activity
-            android:name=".complex.ComplexActivity"
+            android:name=".complex.MaterialComplexActivity"
             android:theme="@style/Theme.MaterialComponents.Light" />
         <activity
             android:name=".complex.BottomTabFragmentActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".complex.CollapsingScrollViewActivity"
+            android:label="@string/title_activity_collapsing_scroll_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".complex.TranslucentStatusBarActivity"
+            android:theme="@style/Material.Activity.TranslucentStatusBar" />
+
+        <activity
+            android:name=".BottomRadioButtonFragmentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".templates_v320.activities.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".templates_v320.activities.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".templates_v320.activities.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".templates_v320.activities.BasicActivity"
+            android:label="@string/title_activity_basic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".templates_v320.TemplatesActivity" />
+        <activity
+            android:name=".templates_v320.activities.TabbedActivity"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".templates_v320.activities.BottomNavigationActivity"
+            android:label="@string/title_activity_bottom_navigation" />
+        <activity
+            android:name=".templates_v320.activities.NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".templates_v320.activities.ViewModelActivity" />
+        <activity
+            android:name=".templates_v320.activities.MapsActivity"
+            android:label="MapsActivity" />
+        <activity android:name=".templates_v320.activities.EmptyActivity" />
+        <activity
+            android:name=".templates_v320.activities.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" />
+
+        <!--
+     The API key for Google Maps-based APIs is defined as a string resource.
+     (See the file "res/values/google_maps_api.xml").
+     Note that the API key is linked to the encryption key used to sign the APK.
+     You need a different API key for each encryption key, including the release key that is used to
+     sign the APK for publishing.
+     You can define the keys for the debug and release targets in src/debug/ and src/release/.
+-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
     </application>
 
 </manifest>

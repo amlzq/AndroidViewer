@@ -1,0 +1,65 @@
+// 第三方扩展组件库，混杂，无规律
+// 基于Android Platform API和AndroidX API的第三方定制UI
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':common')
+
+    // Lottie 2.8.0 and above only supports projects that have been migrated to androidx.
+    implementation("com.airbnb.android:lottie:2.7.0") {
+        exclude group: "com.android.support"
+    }
+
+    implementation("com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-31") {
+        exclude group: "com.android.support"
+    }
+
+    // 圆形ImageView，继续升级则是androidx
+    // https://github.com/hdodenhof/CircleImageView
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    // 适用于Android的浮动操作按钮，基于Material Design规范
+    // https://github.com/futuresimple/android-floating-action-button
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+
+    // 侧边菜单有一些类别可供选择
+    // https://github.com/Yalantis/Side-Menu.Android
+    // API 2.3+
+    implementation 'com.github.yalantis:Side-Menu.Android:1.0.1'
+    implementation 'com.github.ozodrukh:CircularReveal:2.1.0'
+
+    // 添加精彩的动画上下文菜单
+    // https://github.com/Yalantis/Context-Menu.Android
+    implementation 'com.github.Yalantis:Context-Menu.Android:1.0.8'
+
+    // 底部导航栏
+    implementation("com.github.chaychan:BottomBarLayout:1.2.0") {
+        exclude group: "com.android.support"
+    }
+
+    // 一个支持多种状态的自定义View,可以方便的切换到：加载中视图、错误视图、空数据视图、网络异常视图、内容视图。
+    implementation("com.classic.common:multiple-status-view:1.6") {
+        exclude group: "com.android.support"
+    }
+
+}

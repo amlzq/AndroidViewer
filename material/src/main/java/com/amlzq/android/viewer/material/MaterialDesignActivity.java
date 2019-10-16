@@ -9,9 +9,9 @@ import android.widget.TextView;
 
 //import com.amlzq.android.viewer.material.R;
 import com.amlzq.android.viewer.material.complex.BottomNavigationFragmentActivity;
-import com.amlzq.android.viewer.material.complex.ComplexActivity;
-//import com.amlzq.android.viewer.templates_v320.activities.NavigationDrawerActivity;
-//import com.amlzq.android.viewer.templates_v320.activities.ScrollingActivity;
+import com.amlzq.android.viewer.material.complex.MaterialComplexActivity;
+//import com.amlzq.android.viewer.material.templates_v320.activities.NavigationDrawerActivity;
+//import com.amlzq.android.viewer.material.templates_v320.activities.ScrollingActivity;
 
 /**
  * material design style guide
@@ -67,7 +67,11 @@ public class MaterialDesignActivity extends AppCompatActivity {
     }
 
     public void onComplex(View view) {
-        startActivity(new Intent(this, ComplexActivity.class));
+        startActivity(new Intent(this, MaterialComplexActivity.class));
+    }
+
+    public void onSnackBar(View view) {
+        startActivity(new Intent(this, SnackbarDemoActivity.class));
     }
 
 }

@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.amlzq.android.viewer.R;
-import com.amlzq.android.viewer.app.BottomRadioButtonFragmentActivity;
-import com.amlzq.android.viewer.app.BottomTabHostActivity;
+import com.amlzq.android.viewer.holo.BottomTabHostActivity;
+import com.amlzq.android.viewer.material.BottomRadioButtonFragmentActivity;
 import com.amlzq.android.viewer.material.complex.BottomNavigationFragmentActivity;
 import com.amlzq.android.viewer.material.complex.BottomTabFragmentActivity;
 

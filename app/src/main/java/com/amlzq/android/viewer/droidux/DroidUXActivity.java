@@ -6,6 +6,7 @@ import android.os.Bundle;
 import com.amlzq.android.viewer.R;
 
 /**
+ * DroidUX
  * https://droidux.com/
  */
 public class DroidUXActivity extends Activity {

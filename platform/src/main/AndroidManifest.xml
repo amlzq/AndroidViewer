@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amlzq.android.viewer.platform">
+
+    <application>
+        <activity android:name=".TargetAPIStyleActivity" />
+        <activity android:name=".WebActivity" />
+        <activity android:name=".NotificationDemoActivity" />
+        <activity android:name=".MenuDemoActivity" />
+        <activity android:name=".DialogDemoActivity" />
+        <activity android:name=".LayoutDemoActivity" />
+        <activity android:name=".PopupWindowDemoActivity" />
+        <activity android:name=".WidgetDemoActivity" />
+        <activity android:name=".ToastDemoActivity" />
+        <activity android:name=".ProgressBarDemoActivity" />
+        <activity android:name=".PickerDemoActivity" />
+    </application>
+</manifest>

@@ -1,1 +1,1 @@
-include ':app', ':material', ':common'
+include ':app', ':material', ':common', ':holo', ':expand', ':platform'

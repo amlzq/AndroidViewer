@@ -1,3 +1,7 @@
+// 材料设计语言
+// 基于Android Platform API和AndroidX API
+// 
+
 apply plugin: 'com.android.library'
 
 android {
@@ -10,7 +14,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         // 资源前缀
-        resourcePrefix "material_"
+        // resourcePrefix "material_"
     }
     buildTypes {
         release {
@@ -22,9 +26,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     implementation project(':common')
-
     // google support library
     implementation "com.android.support:design:$rootProject.supportLibraryVersion"
     implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
@@ -36,5 +38,4 @@ dependencies {
     implementation 'android.arch.lifecycle:extensions:1.1.1'
     implementation "com.google.android.gms:play-services-maps:$rootProject.gmsVersion"
     implementation "com.google.android.gms:play-services-plus:$rootProject.gmsVersion"
-
 }

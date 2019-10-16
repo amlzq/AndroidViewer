@@ -1,18 +1,20 @@
 package com.amlzq.android.viewer;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.amlzq.android.util.ActivityUtil;
-import com.amlzq.android.viewer.app.TargetAPIStyleActivity;
 import com.amlzq.android.viewer.droidux.DroidUXActivity;
-import com.amlzq.android.viewer.guide.GuideIndexActivity;
+import com.amlzq.android.viewer.guide.GuideActivity;
 import com.amlzq.android.viewer.holo.HoloThemeActivity;
 import com.amlzq.android.viewer.material.MaterialDesignActivity;
+import com.amlzq.android.viewer.platform.TargetAPIStyleActivity;
 import com.amlzq.android.viewer.qmui.QMUIGuideActivity;
 
-public class MainActivity extends MyBaseActivity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +29,7 @@ public class MainActivity extends MyBaseActivity {
     public void onBackPressed() {
         if ((System.currentTimeMillis() - mExitClickTime) > 2000) {
             // 弹出提示，可以有多种方式
-            showToastShort(R.string.press_again_to_exit_the_program);
+            Toast.makeText(this, getString(R.string.press_again_to_exit_the_program), Toast.LENGTH_SHORT).show();
             mExitClickTime = System.currentTimeMillis();
         } else {
             super.onBackPressed(); // finish this activity
@@ -42,7 +44,7 @@ public class MainActivity extends MyBaseActivity {
     }
 
     public void onGuideIndex(View view) {
-        startActivity(new Intent(this, GuideIndexActivity.class));
+        startActivity(new Intent(this, GuideActivity.class));
     }
 
     public void onTargetAPI(View view) {
