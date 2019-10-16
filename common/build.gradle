@@ -33,9 +33,5 @@ dependencies {
     androidTestImplementation "com.android.support.test:runner:$rootProject.runnerVersion"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion"
 
-    // amlzq support library
-    api "com.amlzq.android:log:${rootProject.ext.logVersion}"
-    api "com.amlzq.android:annotations:${rootProject.ext.annotationsVersion}"
-    api "com.amlzq.android:utils:${rootProject.ext.utilsVersion}"
-    api "com.amlzq.android:ui:${rootProject.ext.utilsVersion}"
+    api 'com.amlzq.android:ui:1.0.5'
 }
