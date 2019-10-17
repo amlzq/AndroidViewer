@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.templates_v320.activities;
+package com.amlzq.android.viewer.material.templates.activities;
 
 import android.annotation.TargetApi;
 import android.content.Context;

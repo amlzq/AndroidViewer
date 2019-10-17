@@ -22,10 +22,13 @@ android {
         abortOnError false
     }
 }
+
 dependencies {
-    implementation project(':common')
-    implementation project(':platform')
-    implementation project(':material')
-    implementation project(':holo')
-    implementation project(':expand')
+    implementation project(path: ':common')
+    if (!rootProject.ext.multiApp) {
+        implementation project(path: ':platform')
+        implementation project(path: ':material')
+        implementation project(path: ':holo')
+        implementation project(path: ':expand')
+    }
 }

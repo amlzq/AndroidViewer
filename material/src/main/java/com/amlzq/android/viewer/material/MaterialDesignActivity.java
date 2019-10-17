@@ -7,11 +7,10 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
-//import com.amlzq.android.viewer.material.R;
 import com.amlzq.android.viewer.material.complex.BottomNavigationFragmentActivity;
 import com.amlzq.android.viewer.material.complex.MaterialComplexActivity;
-//import com.amlzq.android.viewer.material.templates_v320.activities.NavigationDrawerActivity;
-//import com.amlzq.android.viewer.material.templates_v320.activities.ScrollingActivity;
+import com.amlzq.android.viewer.material.templates.activities.NavigationDrawerActivity;
+import com.amlzq.android.viewer.material.templates.activities.ScrollingActivity;
 
 /**
  * material design style guide
@@ -47,7 +46,7 @@ public class MaterialDesignActivity extends AppCompatActivity {
     }
 
     public void onScrollingActivity(View view) {
-        // startActivity(new Intent(this, ScrollingActivity.class));
+        startActivity(new Intent(this, ScrollingActivity.class));
     }
 
     public void onBottomNavigation(View view) {
@@ -55,7 +54,7 @@ public class MaterialDesignActivity extends AppCompatActivity {
     }
 
     public void onDrawerNavigation(View view) {
-        // startActivity(new Intent(this, NavigationDrawerActivity.class));
+        startActivity(new Intent(this, NavigationDrawerActivity.class));
     }
 
     public void onTabLayout(View view) {

@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.templates_v320.activities;
+package com.amlzq.android.viewer.material.templates.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,15 +9,18 @@ import android.view.View;
 
 import com.amlzq.android.viewer.material.R;
 
-public class BasicActivity extends AppCompatActivity {
+public class ScrollingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_basic);
+        setContentView(R.layout.activity_scrolling);
+
+        // 设置工具栏
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        // 悬浮活动按钮
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,5 +30,4 @@ public class BasicActivity extends AppCompatActivity {
             }
         });
     }
-
 }

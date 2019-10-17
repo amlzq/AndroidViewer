@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.templates_v320;
+package com.amlzq.android.viewer.material.templates;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,17 +6,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.amlzq.android.viewer.material.R;
-import com.amlzq.android.viewer.material.templates_v320.activities.BasicActivity;
-import com.amlzq.android.viewer.material.templates_v320.activities.BottomNavigationActivity;
-import com.amlzq.android.viewer.material.templates_v320.activities.EmptyActivity;
-import com.amlzq.android.viewer.material.templates_v320.activities.FullscreenActivity;
-import com.amlzq.android.viewer.material.templates_v320.activities.LoginActivity;
-import com.amlzq.android.viewer.material.templates_v320.activities.MapsActivity;
-import com.amlzq.android.viewer.material.templates_v320.activities.NavigationDrawerActivity;
-import com.amlzq.android.viewer.material.templates_v320.activities.ScrollingActivity;
-import com.amlzq.android.viewer.material.templates_v320.activities.SettingsActivity;
-import com.amlzq.android.viewer.material.templates_v320.activities.TabbedActivity;
-import com.amlzq.android.viewer.material.templates_v320.activities.ViewModelActivity;
+import com.amlzq.android.viewer.material.templates.activities.BasicActivity;
+import com.amlzq.android.viewer.material.templates.activities.BottomNavigationActivity;
+import com.amlzq.android.viewer.material.templates.activities.EmptyActivity;
+import com.amlzq.android.viewer.material.templates.activities.FullscreenActivity;
+import com.amlzq.android.viewer.material.templates.activities.LoginActivity;
+import com.amlzq.android.viewer.material.templates.activities.MapsActivity;
+import com.amlzq.android.viewer.material.templates.activities.NavigationDrawerActivity;
+import com.amlzq.android.viewer.material.templates.activities.ScrollingActivity;
+import com.amlzq.android.viewer.material.templates.activities.SettingsActivity;
+import com.amlzq.android.viewer.material.templates.activities.TabbedActivity;
+import com.amlzq.android.viewer.material.templates.activities.ViewModelActivity;
 
 public class TemplatesActivity extends AppCompatActivity {
 

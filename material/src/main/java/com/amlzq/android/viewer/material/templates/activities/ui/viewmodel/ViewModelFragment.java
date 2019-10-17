@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.templates_v320.activities.ui.viewmodel;
+package com.amlzq.android.viewer.material.templates.activities.ui.viewmodel;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.templates_v320.activities;
+package com.amlzq.android.viewer.material.templates.activities;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

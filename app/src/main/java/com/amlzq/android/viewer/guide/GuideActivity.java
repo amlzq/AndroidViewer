@@ -7,7 +7,7 @@ import android.view.View;
 
 import com.amlzq.android.viewer.R;
 import com.amlzq.android.viewer.expand.ThirdPartyWidgetActivity;
-import com.amlzq.android.viewer.material.templates_v320.TemplatesActivity;
+import com.amlzq.android.viewer.material.templates.TemplatesActivity;
 
 /**
  * 指南
