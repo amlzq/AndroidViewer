@@ -6,9 +6,9 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.RadioGroup;
 
-import com.amlzq.android.viewer.material.complex.DashboardFragment;
-import com.amlzq.android.viewer.material.complex.HomeFragment;
-import com.amlzq.android.viewer.material.complex.NotificationsFragment;
+import com.amlzq.android.viewer.material.tabpage.DashboardFragment;
+import com.amlzq.android.viewer.material.tabpage.HomeFragment;
+import com.amlzq.android.viewer.material.tabpage.NotificationsFragment;
 
 /**
  * RadioButton+Fragment

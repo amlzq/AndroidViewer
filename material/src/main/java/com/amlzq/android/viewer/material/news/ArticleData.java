@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.complex;
+package com.amlzq.android.viewer.material.news;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -14,7 +14,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.amlzq.android.viewer.material.sports.BallFragment;
 import com.amlzq.android.viewer.material.R;
+import com.amlzq.android.viewer.material.sports.RunFragment;
+import com.amlzq.android.viewer.material.sports.SwimFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,7 +67,6 @@ public class TabPagerActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
     }
 
     @Override
@@ -100,21 +102,22 @@ public class TabPagerActivity extends AppCompatActivity {
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
             mFragments = new ArrayList<>();
-            mFragments.add(ArticleFragment.newInstance(2));
-            mFragments.add(MomentListFragment.newInstance("", ""));
+            mFragments.add(SwimFragment.newInstance("", ""));
+            mFragments.add(RunFragment.newInstance("", ""));
+            mFragments.add(BallFragment.newInstance("", ""));
         }
 
         @Override
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return mFragments.get(position + 1);
+            return mFragments.get(position);
         }
 
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return mFragments.size();
         }
     }
 

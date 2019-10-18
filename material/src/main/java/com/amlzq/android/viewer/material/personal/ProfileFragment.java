@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.complex;
+package com.amlzq.android.viewer.material.personal;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,8 +13,8 @@ import com.amlzq.android.viewer.material.R;
 /**
  * 用户主页-关于我
  */
-public class ProfileBoardFragment extends Fragment {
-    public static final String TAG = "ProfileBoardFragment";
+public class ProfileFragment extends Fragment {
+    public static final String TAG = "ProfileFragment";
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -22,12 +22,12 @@ public class ProfileBoardFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ProfileBoardFragment() {
+    public ProfileFragment() {
         // Required empty public constructor
     }
 
-    public static ProfileBoardFragment newInstance(String param1, String param2) {
-        ProfileBoardFragment fragment = new ProfileBoardFragment();
+    public static ProfileFragment newInstance(String param1, String param2) {
+        ProfileFragment fragment = new ProfileFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -47,7 +47,7 @@ public class ProfileBoardFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_profile_board, container, false);
+        return inflater.inflate(R.layout.fragment_profile, container, false);
     }
 
     @Override

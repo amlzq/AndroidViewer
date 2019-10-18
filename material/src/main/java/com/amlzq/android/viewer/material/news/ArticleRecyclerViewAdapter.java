@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.complex;
+package com.amlzq.android.viewer.material.news;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,24 +7,16 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.amlzq.android.viewer.material.R;
-import com.amlzq.android.viewer.material.complex.ArticleData.ArticleItem;
-import com.amlzq.android.viewer.material.complex.ArticleFragment.OnListFragmentInteractionListener;
+import com.amlzq.android.viewer.material.news.ArticleData.ArticleItem;
 
 import java.util.List;
 
-/**
- * {@link RecyclerView.Adapter} that can display a {@link ArticleItem} and makes a call to the
- * specified {@link OnListFragmentInteractionListener}.
- * TODO: Replace the implementation with code for your data type.
- */
 public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecyclerViewAdapter.ViewHolder> {
 
     private final List<ArticleItem> mValues;
-    private final OnListFragmentInteractionListener mListener;
 
-    public ArticleRecyclerViewAdapter(List<ArticleItem> items, OnListFragmentInteractionListener listener) {
+    public ArticleRecyclerViewAdapter(List<ArticleItem> items) {
         mValues = items;
-        mListener = listener;
     }
 
     @Override
@@ -43,11 +35,6 @@ public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecy
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (null != mListener) {
-                    // Notify the active callbacks interface (the activity, if the
-                    // fragment is attached to one) that an item has been selected.
-                    mListener.onListFragmentInteraction(holder.mItem);
-                }
             }
         });
     }
@@ -75,4 +62,5 @@ public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecy
             return super.toString() + " '" + mContentView.getText() + "'";
         }
     }
+
 }

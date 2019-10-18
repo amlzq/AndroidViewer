@@ -8,6 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.amlzq.android.viewer.material.R;
+import com.amlzq.android.viewer.material.tabpage.DashboardFragment;
+import com.amlzq.android.viewer.material.tabpage.HomeFragment;
+import com.amlzq.android.viewer.material.tabpage.NotificationsFragment;
 
 import java.io.PrintWriter;
 

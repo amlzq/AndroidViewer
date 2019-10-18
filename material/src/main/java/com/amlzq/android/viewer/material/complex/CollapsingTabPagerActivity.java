@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.amlzq.android.viewer.material.R;
+import com.amlzq.android.viewer.material.personal.ProfileFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -72,7 +73,7 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
         mTabFragments.add(moment);
 
         mTabLayout.addTab(mTabLayout.newTab());
-        ProfileBoardFragment profile = ProfileBoardFragment.newInstance("", "");
+        ProfileFragment profile = ProfileFragment.newInstance("", "");
         mTabIndicators.add("关于我");
         mTabFragments.add(profile);
 

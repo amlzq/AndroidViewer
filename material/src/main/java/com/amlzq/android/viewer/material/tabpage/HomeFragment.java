@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.complex;
+package com.amlzq.android.viewer.material.tabpage;
 
 
 import android.os.Bundle;
@@ -14,14 +14,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.amlzq.android.viewer.material.R;
+import com.amlzq.android.viewer.material.complex.MomentListFragment;
 
 import java.util.List;
 
 /**
- * 仪表板
+ * 首页
  */
-public class DashboardFragment extends Fragment {
-    public static final String TAG = "DashboardFragment";
+public class HomeFragment extends Fragment {
+    public static final String TAG = "HomeFragment";
 
     // Tab + ViewPager
     private TabLayout mTabLayout;
@@ -30,18 +31,18 @@ public class DashboardFragment extends Fragment {
     private List<Fragment> mTabFragments;
     private ContentPagerAdapter mContentAdapter;
 
-    public DashboardFragment() {
+    public HomeFragment() {
         // Required empty public constructor
     }
 
-    public static DashboardFragment newInstance() {
-        return new DashboardFragment();
+    public static HomeFragment newInstance() {
+        return new HomeFragment();
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_dashboard, container, false);
+        return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
     @Override
@@ -52,16 +53,31 @@ public class DashboardFragment extends Fragment {
         mViewPager = getView().findViewById(R.id.view_pager);
 
         mContentAdapter = new ContentPagerAdapter(getChildFragmentManager());
-        // 初始化2个tab
+        // 初始化tab
         mTabLayout.addTab(mTabLayout.newTab());
-        SportsFragment sports = SportsFragment.newInstance("", "");
-        mTabIndicators.add("运动");
-        mTabFragments.add(sports);
+        MomentListFragment followed = MomentListFragment.newInstance("", "");
+        mTabIndicators.add("动态");
+        mTabFragments.add(followed);
 
         mTabLayout.addTab(mTabLayout.newTab());
-        DetailFragment detail = DetailFragment.newInstance("", "");
-        mTabIndicators.add("详情");
-        mTabFragments.add(detail);
+        MomentListFragment followed1 = MomentListFragment.newInstance("", "");
+        mTabIndicators.add("动态");
+        mTabFragments.add(followed1);
+
+        mTabLayout.addTab(mTabLayout.newTab());
+        MomentListFragment followed2 = MomentListFragment.newInstance("", "");
+        mTabIndicators.add("动态");
+        mTabFragments.add(followed2);
+
+        mTabLayout.addTab(mTabLayout.newTab());
+        MomentListFragment recommend = MomentListFragment.newInstance("", "");
+        mTabIndicators.add("推荐");
+        mTabFragments.add(recommend);
+
+        mTabLayout.addTab(mTabLayout.newTab());
+        MomentListFragment recommend1 = MomentListFragment.newInstance("", "");
+        mTabIndicators.add("推荐");
+        mTabFragments.add(recommend1);
 
         // ViewPager默认加载页面的左右两页，此方法设置屏幕外左右加载页数
         mViewPager.setOffscreenPageLimit(1);

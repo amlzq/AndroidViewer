@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.amlzq.android.viewer.material.R;
+import com.amlzq.android.viewer.material.personal.ProfileFragment;
 
 /**
  * 详细活动页
@@ -82,8 +83,8 @@ public class ActionAppCompatActivity extends AppCompatActivity {
     }
 
     private Fragment fragmentProvider(String fragmentTag) {
-        if (ProfileBoardFragment.TAG.equals(fragmentTag)) {
-            ProfileBoardFragment fragment = ProfileBoardFragment.newInstance("", "");
+        if (ProfileFragment.TAG.equals(fragmentTag)) {
+            ProfileFragment fragment = ProfileFragment.newInstance("", "");
             return fragment;
 
         } else if (DetailFragment.TAG.equals(fragmentTag)) {

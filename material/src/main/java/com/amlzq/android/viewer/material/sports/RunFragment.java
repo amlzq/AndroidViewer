@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.complex;
+package com.amlzq.android.viewer.material.sports;
 
 
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.amlzq.android.viewer.material.R;
+import com.amlzq.android.viewer.material.complex.ActionAppCompatActivity;
+import com.amlzq.android.viewer.material.complex.DetailFragment;
 
 /**
  * 跑步
