@@ -1,25 +1,18 @@
 package com.amlzq.android.viewer.material;
 
 import android.os.Bundle;
-
-import com.amlzq.android.viewer.MyBaseAppCompatActivity;
-import com.amlzq.android.viewer.material.R;
+import android.support.v7.app.AppCompatActivity;
 
 /**
  * 网页
  */
-public class WebAppCompatActivity extends MyBaseAppCompatActivity {
+public class WebAppCompatActivity extends AppCompatActivity {
     public static final String TAG = "WebAppCompatActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_app_compat);
-    }
-
-    @Override
-    public void onFragmentInteraction(Bundle bundle) {
-
     }
 
 }

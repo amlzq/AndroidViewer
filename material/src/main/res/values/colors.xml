@@ -3,4 +3,29 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="colorProgress">#4B9500</color>
+    <color name="colorDisable">@android:color/darker_gray</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="textColorPrimary">@color/white</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="textColor">#333</color>
+
+    <!--背景色-->
+    <!--状态栏背景色-->
+    <color name="statusBar">@color/colorPrimary</color>
+    <!--虚拟按键栏的背景色-->
+    <color name="navigationBar">@color/colorProgress</color>
+    <!--应用导航栏的背景色-->
+    <color name="appNavigationBar">#B15709</color>
+    <color name="windowBackground">#F5F5F5</color>
+    <color name="contentBackground">#FAFAFA</color>
+    <color name="dialogBackground">#FAFAFA</color>
+    <color name="appBarBackground">@color/colorPrimary</color>
+    <color name="tabLayoutBackground">@color/colorPrimary</color>
+    <color name="itemBackground">#ffffffff</color>
+    <color name="itemBackgroundDark">@android:color/darker_gray</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

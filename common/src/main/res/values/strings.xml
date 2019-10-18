@@ -1,4 +1,11 @@
 <resources>
+
+    <string name="ok">@android:string/ok</string>
+    <string name="cancel">@android:string/cancel</string>
+    <string name="jump_over">跳过</string>
+    <string name="prompt">提示</string>
+    <string name="loading">加载中</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>

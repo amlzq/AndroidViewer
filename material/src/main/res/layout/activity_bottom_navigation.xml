@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".material.templates_v320.activities.BottomNavigationActivity">
+    tools:context=".templates.activities.BottomNavigationActivity">
 
     <TextView
         android:id="@+id/message"

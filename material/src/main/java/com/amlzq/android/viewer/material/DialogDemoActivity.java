@@ -2,18 +2,17 @@ package com.amlzq.android.viewer.material;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import com.amlzq.android.app.BaseAppCompatActivity;
-import com.amlzq.android.viewer.material.R;
+import android.widget.Toast;
 
 /**
  * 对话框演示样例
  * 材料设计
  */
-public class DialogDemoActivity extends BaseAppCompatActivity {
+public class DialogDemoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +20,8 @@ public class DialogDemoActivity extends BaseAppCompatActivity {
         setContentView(R.layout.activity_dialog_demo_material);
     }
 
-    @Override
-    public void onFragmentInteraction(Bundle bundle) {
-
+    void showToastShort(String msg) {
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
     /**

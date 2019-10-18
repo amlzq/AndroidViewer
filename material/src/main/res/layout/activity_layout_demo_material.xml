@@ -37,9 +37,11 @@
                     android:onClick="onButtonEvent" />
 
                 <LinearLayout
-                    style="@style/View.RippleEffect"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:orientation="horizontal">
 
                     <TextView

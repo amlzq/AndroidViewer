@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.amlzq.android.util.SystemUtil;
-
 /**
  * 目标API样式
  * 在不同的API Level中查看演变过程
@@ -22,8 +20,8 @@ public class TargetAPIStyleActivity extends Activity {
 
         StringBuffer buffer = new StringBuffer();
         buffer.append("Platform Name: " + Build.PRODUCT + "\n");
-        buffer.append("API Level: " + SystemUtil.getVersion() + "\n");
-        buffer.append("Language: " + SystemUtil.getLanguage() + "\n");
+        buffer.append("API Level: " + Build.VERSION.BASE_OS + "\n");
+        buffer.append("Language: " + Build.VERSION.RELEASE + "\n");
         TextView message = findViewById(R.id.tv_message);
         message.setText(buffer.toString());
     }

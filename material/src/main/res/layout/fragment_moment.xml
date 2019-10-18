@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/item_margin_horizontal"
+        android:paddingTop="@dimen/item_margin_vertical"
+        android:paddingRight="@dimen/item_margin_horizontal"
+        android:paddingBottom="@dimen/item_margin_vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/loading"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_placeholder"
+            tools:srcCompat="@drawable/avatar_1_raster" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/avatar"
+            android:text="昵称"
+            android:textColor="#333"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/avatar"
+            android:text="描述"
+            android:textColor="#666"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/avatar"
+            android:contentDescription="@string/loading"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/img_placeholder"
+            tools:srcCompat="@drawable/ippawards_1st_panorama_vincent_chen" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            tools:text="评论" />
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/comment"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/comment"
+            android:background="@null"
+            android:src="@drawable/avatar_1_raster"
+            tools:text="点赞" />
+    </RelativeLayout>
+
+</android.support.design.card.MaterialCardView>

@@ -4,13 +4,12 @@
     package="com.amlzq.android.viewer.material">
 
     <application
-        android:allowBackup="false"
         android:icon="@android:drawable/sym_def_app_icon"
         android:label="@string/app_name"
         android:roundIcon="@android:drawable/sym_def_app_icon"
         android:supportsRtl="true"
         android:theme="@style/Material.AppTheme"
-        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".MaterialDesignActivity"
             android:label="@string/title_material_design"
@@ -25,11 +24,11 @@
         </activity>
         <activity
             android:name=".LayoutDemoActivity"
-            android:theme="@style/Activity.TransparentStatusBar" />
+            android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity
             android:name=".complex.CollapsingRecycleViewActivity"
             android:label="@string/title_appbar_layout"
-            android:theme="@style/Activity.FitsStatusBar" />
+            android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity
             android:name=".complex.CollapsingTabPagerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -39,65 +38,65 @@
         <activity
             android:name=".complex.BottomNavigationFragmentActivity"
             android:label="BottomNavigationViewActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".WidgetDemoActivity"
             android:label="WidgetDemoActivity"
             android:theme="@style/Theme.MaterialComponents" />
         <activity
-            android:name=".TabLayoutActivity"
+            android:name=".complex.TabPagerActivity"
             android:label="@string/title_activity_tab"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity android:name=".DialogDemoActivity" />
         <activity android:name=".SwipeRefreshDemoActivity" />
         <activity android:name=".SnackbarDemoActivity" />
         <activity android:name=".WebAppCompatActivity" />
         <activity
-            android:name=".ActionAppCompatActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".complex.ActionAppCompatActivity"
+            android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity android:name=".RecycleViewDemoActivity" />
         <activity
             android:name=".complex.MaterialComplexActivity"
             android:theme="@style/Theme.MaterialComponents.Light" />
         <activity
             android:name=".complex.BottomTabFragmentActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".complex.CollapsingScrollViewActivity"
             android:label="@string/title_activity_collapsing_scroll_view"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".complex.TranslucentStatusBarActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity
             android:name=".BottomRadioButtonFragmentActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".templates.activities.LoginActivity"
             android:label="@string/title_activity_login" />
         <activity
             android:name=".templates.activities.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".templates.activities.SettingsActivity"
             android:label="@string/title_activity_settings" />
         <activity
             android:name=".templates.activities.BasicActivity"
             android:label="@string/title_activity_basic"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity android:name=".templates.TemplatesActivity" />
         <activity
             android:name=".templates.activities.TabbedActivity"
             android:label="@string/title_activity_tabbed"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".templates.activities.BottomNavigationActivity"
             android:label="@string/title_activity_bottom_navigation" />
         <activity
             android:name=".templates.activities.NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity android:name=".templates.activities.ViewModelActivity" />
         <activity
             android:name=".templates.activities.MapsActivity"

@@ -20,7 +20,6 @@
             app:tabIndicatorColor="@color/colorAccent"
             app:tabMode="scrollable"
             app:tabSelectedTextColor="@color/colorAccent"
-            app:tabTextAppearance="@style/TabLayout.TextAppearance"
             app:tabTextColor="@color/black" />
     </android.support.design.widget.AppBarLayout>
 

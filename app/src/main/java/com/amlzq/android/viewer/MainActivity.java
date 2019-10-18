@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.amlzq.android.util.ActivityUtil;
 import com.amlzq.android.viewer.droidux.DroidUXActivity;
+import com.amlzq.android.viewer.expand.ThirdPartyWidgetActivity;
 import com.amlzq.android.viewer.guide.GuideActivity;
 import com.amlzq.android.viewer.holo.HoloThemeActivity;
 import com.amlzq.android.viewer.material.MaterialDesignActivity;
@@ -29,11 +29,10 @@ public class MainActivity extends Activity {
     public void onBackPressed() {
         if ((System.currentTimeMillis() - mExitClickTime) > 2000) {
             // 弹出提示，可以有多种方式
-            Toast.makeText(this, getString(R.string.press_again_to_exit_the_program), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "再次点击退出应用", Toast.LENGTH_SHORT).show();
             mExitClickTime = System.currentTimeMillis();
         } else {
             super.onBackPressed(); // finish this activity
-            ActivityUtil.removeAll(); // finish all activity
             // No need to kill the application process
         }
     }
@@ -68,6 +67,10 @@ public class MainActivity extends Activity {
 
     public void onDroidUX(View view) {
         startActivity(new Intent(this, DroidUXActivity.class));
+    }
+
+    public void onThirdPartyWidget(View view) {
+        startActivity(new Intent(this, ThirdPartyWidgetActivity.class));
     }
 
 }

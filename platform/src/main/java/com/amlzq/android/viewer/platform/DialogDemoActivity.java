@@ -1,5 +1,6 @@
 package com.amlzq.android.viewer.platform;
 
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
@@ -12,19 +13,21 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-import com.amlzq.android.app.BaseActivity;
-
 import java.util.Calendar;
 
 /**
  * 对话框演示样例
  */
-public class DialogDemoActivity extends BaseActivity {
+public class DialogDemoActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dialog_demo);
+    }
+
+    void showToastShort(String msg) {
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
     /**
@@ -40,20 +43,20 @@ public class DialogDemoActivity extends BaseActivity {
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(mContext, "Positive Button", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), "Positive Button", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
             }
         }).setNeutralButton(R.string.jump_over, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // 中性
-                Toast.makeText(mContext, "Neutral Button", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), "Neutral Button", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
             }
         }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(mContext, "Negative Button", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), "Negative Button", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
             }
         });

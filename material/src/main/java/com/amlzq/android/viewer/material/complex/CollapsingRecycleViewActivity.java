@@ -3,10 +3,9 @@ package com.amlzq.android.viewer.material.complex;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 
-import com.amlzq.android.app.BaseAppCompatActivity;
 import com.amlzq.android.viewer.material.ContentAdapter;
 import com.amlzq.android.viewer.material.R;
 
@@ -18,7 +17,7 @@ import com.amlzq.android.viewer.material.R;
  * FloatingActionButton
  */
 
-public class CollapsingRecycleViewActivity extends BaseAppCompatActivity {
+public class CollapsingRecycleViewActivity extends AppCompatActivity {
 
     protected SwipeRefreshLayout mSwipeRefresh;
     protected int mNextRequestPage = 1;
@@ -45,17 +44,6 @@ public class CollapsingRecycleViewActivity extends BaseAppCompatActivity {
         mSwipeRefresh.setProgressBackgroundColorSchemeColor(Color.WHITE);
         // 设置圆圈的大小
         mSwipeRefresh.setSize(SwipeRefreshLayout.LARGE);
-
-    }
-
-    @Override
-    public void onFragmentInteraction(Bundle bundle) {
-
-    }
-
-    @Override
-    public void onClick(View v) {
-
     }
 
 }

@@ -1,43 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorProgress">#4B9500</color>
-    <color name="colorDisable">@android:color/darker_gray</color>
-    <color name="colorIcons">#FFFFFF</color>
-    <color name="colorDivider">#BDBDBD</color>
-    <color name="textColorPrimary">@color/white</color>
-    <color name="textColorSecondary">#757575</color>
-    <color name="textColor">#333</color>
+    <!--Primary color 原色-->
+    <color name="red">#FF0000</color>
+    <!--Green	纯绿	#008000	0,128,0-->
+    <color name="green">#008000</color>
+    <!--Blue	纯蓝	#0000FF	0,0,255-->
+    <color name="blue">#0000FF</color>
+    <!--Solid color 纯色-->
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="black">@android:color/black</color>
+    <color name="white">@android:color/white</color>
+    <color name="whiteDark">#F9F9F9</color>
+    <color name="gray">@android:color/darker_gray</color>
+    <color name="transparent">@android:color/transparent</color>
 
     <!--实现-->
     <color name="titleColor">#333</color>
-    <color name="subTitleColor">#666</color>
+    <color name="subtitleColor">#666</color>
     <color name="descColor">#999</color>
-
-    <!--背景色-->
-    <!--状态栏背景色-->
-    <color name="statusBar">@color/colorPrimary</color>
-    <!--虚拟按键栏的背景色-->
-    <color name="navigationBar">@color/colorProgress</color>
-    <!--应用导航栏的背景色-->
-    <color name="appNavigationBar">#B15709</color>
-    <color name="windowBackground">#F5F5F5</color>
-    <color name="contentBackground">#FAFAFA</color>
-    <color name="dialogBackground">#FAFAFA</color>
-    <color name="appBarBackground">@color/colorPrimary</color>
-    <color name="tabLayoutBackground">@color/colorPrimary</color>
-    <color name="itemBackground">#ffffffff</color>
-    <color name="itemBackgroundDark">@android:color/darker_gray</color>
-
-    <color name="black_overlay">#66000000</color>
-
-    <color name="black_semi_transparent">#B2000000</color>
-    <color name="background">#e5e5e5</color>
-    <color name="half_black">#808080</color>
-    <color name="white">#fafafa</color>
-    <color name="white_pressed">#f1f1f1</color>
-    <color name="pink">#e91e63</color>
-    <color name="pink_pressed">#ec407a</color>
-    <color name="blue_semi_transparent">#805677fc</color>
-    <color name="blue_semi_transparent_pressed">#80738ffe</color>
-
 </resources>

@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".material.templates_v320.activities.EmptyActivity">
+    tools:context=".templates.activities.EmptyActivity">
 
 </android.support.constraint.ConstraintLayout>

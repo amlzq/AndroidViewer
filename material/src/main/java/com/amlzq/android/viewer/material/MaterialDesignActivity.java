@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import com.amlzq.android.viewer.material.complex.BottomNavigationFragmentActivity;
 import com.amlzq.android.viewer.material.complex.MaterialComplexActivity;
+import com.amlzq.android.viewer.material.complex.TabPagerActivity;
+import com.amlzq.android.viewer.material.templates.TemplatesActivity;
 import com.amlzq.android.viewer.material.templates.activities.NavigationDrawerActivity;
 import com.amlzq.android.viewer.material.templates.activities.ScrollingActivity;
 
@@ -58,7 +60,7 @@ public class MaterialDesignActivity extends AppCompatActivity {
     }
 
     public void onTabLayout(View view) {
-        startActivity(new Intent(this, TabLayoutActivity.class));
+        startActivity(new Intent(this, TabPagerActivity.class));
     }
 
     public void onDayNight(View view) {
@@ -69,8 +71,8 @@ public class MaterialDesignActivity extends AppCompatActivity {
         startActivity(new Intent(this, MaterialComplexActivity.class));
     }
 
-    public void onSnackBar(View view) {
-        startActivity(new Intent(this, SnackbarDemoActivity.class));
+    public void onTemplates(View view) {
+        startActivity(new Intent(this, TemplatesActivity.class));
     }
 
 }

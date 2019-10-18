@@ -3,4 +3,4 @@
  *
  * @author amlzq
  */
-package com.amlzq.android.material;
+package com.amlzq.android.viewer.material;

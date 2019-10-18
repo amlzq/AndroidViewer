@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".material.templates_v320.activities.ScrollingActivity">
+    tools:context=".templates.activities.ScrollingActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar_layout"
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context=".material.templates_v320.activities.ScrollingActivity"
+        tools:context=".templates.activities.ScrollingActivity"
         tools:showIn="@layout/activity_scrolling">
 
         <TextView

@@ -5,7 +5,7 @@
     android:id="@+id/viewmodel"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".material.templates_v320.activities.ui.viewmodel.ViewModelFragment">
+    tools:context=".templates.activities.ui.viewmodel.ViewModelFragment">
 
     <TextView
         android:id="@+id/message"

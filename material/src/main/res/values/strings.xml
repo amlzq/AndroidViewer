@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Material</string>
+    <string name="app_name">Material Design</string>
 
     <string name="title_material_design">Material Design</string>
     <string name="intro_message_material_design">
@@ -13,6 +13,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
     <string name="title_appbar_layout">Appbar RecyclerView</string>
     <string name="title_appbar_layout_tab">Appbar Tab ViewPager</string>
     <string name="title_activity_navigation_drawer">Drawer Navigation</string>

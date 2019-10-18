@@ -4,7 +4,7 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".material.templates_v320.activities.TabbedActivity$PlaceholderFragment">
+    tools:context=".templates.activities.TabbedActivity$PlaceholderFragment">
 
     <TextView
         android:id="@+id/section_label"

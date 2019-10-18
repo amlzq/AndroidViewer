@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginTop="@dimen/item_margin_vertical"
         android:text="TabActivity\nAdded in API level 1\nDeprecated in API level 13" />
 
     <Button
@@ -29,7 +29,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginTop="@dimen/item_margin_vertical"
         android:text="BottomNavigationView\nadded in version 26.1.0\nbelongs to Maven artifact com.android.support:design:27.1.0" />
 
     <Button
@@ -41,7 +41,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginTop="@dimen/item_margin_vertical"
         android:text="RadioGroup+Fragment" />
 
     <Button
@@ -53,7 +53,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginTop="@dimen/item_margin_vertical"
         android:text="TabLayout+Fragment" />
 
     <Button

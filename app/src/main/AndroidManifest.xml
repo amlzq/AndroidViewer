@@ -27,7 +27,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
-        tools:node="replace">
+        tools:replace="android:allowBackup,android:name,android:label,android:roundIcon,android:theme">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -54,7 +54,7 @@
         <!--Component-->
         <!--合并多个清单文件https://developer.android.com/studio/build/manifest-merge?hl=zh-cn#node_markers-->
         <activity
-            android:name="com.amlzq.android.viewer.material.MaterialDesignActivity"
+            android:name=".material.MaterialDesignActivity"
             android:label="@string/title_material_design"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"

@@ -2,17 +2,14 @@ package com.amlzq.android.viewer.material;
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
-
-import com.amlzq.android.app.BaseAppCompatActivity;
-import com.amlzq.android.viewer.material.R;
 
 /**
  * 材料库的小部件
  */
-
-public class WidgetDemoActivity extends BaseAppCompatActivity {
+public class WidgetDemoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,18 +23,12 @@ public class WidgetDemoActivity extends BaseAppCompatActivity {
                         .setAction("Cancel", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                Toast.makeText(mContext, "Snackbar is Click", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(WidgetDemoActivity.this, "Snackbar is Click", Toast.LENGTH_SHORT).show();
                             }
                         })
                         .show();
             }
         });
-
-    }
-
-    @Override
-    public void onFragmentInteraction(Bundle bundle) {
-
     }
 
 }

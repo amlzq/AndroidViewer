@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.amlzq.android.viewer.R;
-import com.amlzq.android.viewer.expand.ThirdPartyWidgetActivity;
-import com.amlzq.android.viewer.material.templates.TemplatesActivity;
 
 /**
  * 指南
@@ -20,10 +18,6 @@ public class GuideActivity extends Activity {
         setContentView(R.layout.activity_guide);
     }
 
-    public void onThirdPartyWidget(View view) {
-        startActivity(new Intent(this, ThirdPartyWidgetActivity.class));
-    }
-
     public void onBottomNavigation(View view) {
         startActivity(new Intent(this, BottomNavigationOverviewActivity.class));
     }
@@ -34,10 +28,6 @@ public class GuideActivity extends Activity {
 
     public void onDialog(View view) {
         startActivity(new Intent(this, DialogOverviewActivity.class));
-    }
-
-    public void onTemplates_v320(View view) {
-        startActivity(new Intent(this, TemplatesActivity.class));
     }
 
 }

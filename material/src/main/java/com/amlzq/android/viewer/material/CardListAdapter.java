@@ -8,10 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.amlzq.android.view.OnItemChildClickListener;
-import com.amlzq.android.view.OnItemClickListener;
-import com.amlzq.android.viewer.entity.EntityInfo;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,8 +18,6 @@ public class CardListAdapter extends RecyclerView.Adapter<CardListAdapter.ViewHo
 
     private Context mContext;
     private List<EntityInfo> mDatas = new ArrayList<>();
-    private OnItemClickListener mItemClickListener;
-    private OnItemChildClickListener mItemChildClickListener;
 
     public CardListAdapter(Context context, List<EntityInfo> datas) {
         mContext = context;

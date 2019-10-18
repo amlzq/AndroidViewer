@@ -3,7 +3,7 @@
     <item name="Material" type="style" />
 
     <!-- Base application theme. -->
-    <style name="Material.AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Material.AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -24,13 +24,6 @@
     <style name="Material.Activity.TranslucentStatusBar" parent="Material.AppTheme.NoActionBar">
         <!--窗口-->
         <!--<item name="android:windowIsTranslucent">true</item>-->
-    </style>
-
-    <style name="AppTheme" parent="Theme.AppCompat.Light" />
-
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

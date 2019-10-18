@@ -22,20 +22,6 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onTemplates_v320"
-            android:text="android-studio 3.2.0 android templates"
-            android:textAllCaps="false" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onThirdPartyWidget"
-            android:text="Third party widget"
-            android:textAllCaps="false" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:onClick="onBottomNavigation"
             android:text="Bottom navigation guide"
             android:textAllCaps="false" />

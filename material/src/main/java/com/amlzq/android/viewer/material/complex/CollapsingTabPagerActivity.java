@@ -9,19 +9,14 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.amlzq.android.log.Log;
-import com.amlzq.android.material.AppBarStateChangeListener;
-import com.amlzq.android.util.FragmentLauncher;
-import com.amlzq.android.viewer.MyBaseAppCompatActivity;
 import com.amlzq.android.viewer.material.R;
-import com.amlzq.android.viewer.material.userhome.MomentListFragment;
-import com.amlzq.android.viewer.material.userhome.ProfileBoardFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +29,7 @@ import java.util.List;
  * <p>
  * https://stackoverflow.com/questions/37479828/how-to-put-recyclerview-below-toolbar-and-above-tablayout-and-viewpager-also-han
  */
-public class CollapsingTabPagerActivity extends MyBaseAppCompatActivity {
+public class CollapsingTabPagerActivity extends AppCompatActivity {
 
     private AppBarLayout mAppBarLayout;
     private Toolbar mToolbar;
@@ -63,22 +58,6 @@ public class CollapsingTabPagerActivity extends MyBaseAppCompatActivity {
             getSupportActionBar().setHomeButtonEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
-        mAppBarLayout.addOnOffsetChangedListener(new AppBarStateChangeListener() {
-            @Override
-            public void onStateChanged(AppBarLayout appBarLayout, State state) {
-                Log.d(state.name());
-                if (state == State.EXPANDED) {
-                    //展开状态
-
-                } else if (state == State.COLLAPSED) {
-                    //折叠状态
-
-                } else {
-                    //中间状态
-
-                }
-            }
-        });
 
         mTabLayout = findViewById(R.id.tab);
         mTabIndicators = new ArrayList<>();
@@ -89,17 +68,13 @@ public class CollapsingTabPagerActivity extends MyBaseAppCompatActivity {
         // 初始化2个tab
         mTabLayout.addTab(mTabLayout.newTab());
         MomentListFragment moment = MomentListFragment.newInstance("", "");
-        moment.setTransactionOpCmd(FragmentLauncher.FLAG_ATTACH_DETACH_ADD_REMOVE);
         mTabIndicators.add("动态");
         mTabFragments.add(moment);
-        moment.setTitle(mContentAdapter.getPageTitle(0));
 
         mTabLayout.addTab(mTabLayout.newTab());
         ProfileBoardFragment profile = ProfileBoardFragment.newInstance("", "");
-        profile.setTransactionOpCmd(FragmentLauncher.FLAG_ATTACH_DETACH_ADD_REMOVE);
         mTabIndicators.add("关于我");
         mTabFragments.add(profile);
-        profile.setTitle(mContentAdapter.getPageTitle(1));
 
         // ViewPager默认加载页面的左右两页，此方法设置屏幕外左右加载页数
         mViewPager.setOffscreenPageLimit(1);
@@ -135,18 +110,7 @@ public class CollapsingTabPagerActivity extends MyBaseAppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        Log.d(requestCode + "," + resultCode);
         super.onActivityResult(requestCode, resultCode, data);
-    }
-
-    @Override
-    public void onFragmentInteraction(Bundle bundle) {
-
-    }
-
-    @Override
-    public void onClick(View v) {
-
     }
 
     /**
