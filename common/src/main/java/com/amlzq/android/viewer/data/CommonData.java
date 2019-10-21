@@ -4,10 +4,12 @@ import com.amlzq.android.viewer.R;
 
 public class CommonData {
 
-    public static final int IPPAWARDS_COUNT = 20;
+    public static final int IPPAWARDS_COUNT = 24;
 
     public static final int[] IPPAWARDS = new int[]{
             R.drawable.ippawards_1st_panorama_vincent_chen,
+            R.drawable.ippawards_01_poty_1st_diogo_lage,
+            R.drawable.ippawards_03_poty_3rd_peng_hao_e1563735114949,
             R.drawable.ippawards_04_1st_abstract_jiangying_guo,
             R.drawable.ippawards_08_2nd_animals_yoichi_sato,
             R.drawable.ippawards_10_1st_architecture_zhang_kuanglong,
@@ -22,9 +24,11 @@ public class CommonData {
             R.drawable.ippawards_31_1st_other_sari_sutton,
             R.drawable.ippawards_35_2nd_panorama_garrine_tsang,
             R.drawable.ippawards_36_3rd_panorama_jessica_macagnano,
+            R.drawable.ippawards_47_2nd_still_life_daniel_kafalas,
             R.drawable.ippawards_49_1st_sunset_sreekumar_krishnan,
             R.drawable.ippawards_50_2nd_sunset_shirley_xu,
             R.drawable.ippawards_52_1st_travel_liu_bo,
+            R.drawable.ippawards_53_2nd_travel_james_cowlin,
             R.drawable.ippawards_54_3rd_travel_alfonso_ordosgoitia,
             R.drawable.ippawards_57_3rd_trees_zhang_xiaojun
     };
