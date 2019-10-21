@@ -9,6 +9,8 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.amlzq.android.viewer.data.EntityInfo;
+
 import java.util.ArrayList;
 import java.util.List;
 

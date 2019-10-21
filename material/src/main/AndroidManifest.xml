@@ -27,12 +27,10 @@
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity
             android:name=".complex.CollapsingRecycleViewActivity"
-            android:label="@string/title_appbar_layout"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity
             android:name=".complex.CollapsingTabPagerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="@string/title_appbar_layout_tab"
             android:theme="@style/Material.Activity.TranslucentStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
@@ -63,8 +61,7 @@
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".complex.CollapsingScrollViewActivity"
-            android:label="@string/title_activity_collapsing_scroll_view"
-            android:theme="@style/Material.AppTheme.NoActionBar" />
+            android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity
             android:name=".complex.TranslucentStatusBarActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />

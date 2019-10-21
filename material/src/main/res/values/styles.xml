@@ -21,6 +21,7 @@
         <item name="android:actionBarSize">@dimen/actionBarSize</item>
     </style>
 
+    <!--半透明状态栏-->
     <style name="Material.Activity.TranslucentStatusBar" parent="Material.AppTheme.NoActionBar">
         <!--窗口-->
         <!--<item name="android:windowIsTranslucent">true</item>-->

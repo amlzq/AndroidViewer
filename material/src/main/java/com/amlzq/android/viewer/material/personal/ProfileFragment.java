@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import com.amlzq.android.viewer.material.R;
 
 /**
- * 用户主页-关于我
+ * 用户主页-资料
  */
 public class ProfileFragment extends Fragment {
     public static final String TAG = "ProfileFragment";
@@ -53,7 +53,6 @@ public class ProfileFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("关于我");
     }
 
 }

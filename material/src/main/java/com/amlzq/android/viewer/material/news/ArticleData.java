@@ -1,5 +1,7 @@
 package com.amlzq.android.viewer.material.news;
 
+import com.amlzq.android.viewer.data.CommonData;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -14,12 +16,12 @@ import java.util.Map;
 public class ArticleData {
 
     /**
-     * An array of sample (dummy) items.
+     * An array of sample items.
      */
     public static final List<ArticleItem> ITEMS = new ArrayList<ArticleItem>();
 
     /**
-     * A map of sample (dummy) items, by ID.
+     * A map of sample items, by ID.
      */
     public static final Map<String, ArticleItem> ITEM_MAP = new HashMap<String, ArticleItem>();
 
@@ -38,15 +40,23 @@ public class ArticleData {
     }
 
     private static ArticleItem createItem(int position) {
-        return new ArticleItem(String.valueOf(position), "Item " + position, makeDetails(position));
+        ArticleItem item = new ArticleItem();
+        item.id = "" + position;
+        item.title = "Item " + position;
+        item.summary = makeDetails(position);
+        item.time = System.currentTimeMillis();
+        if (position >= CommonData.IPPAWARDS_COUNT) {
+            item.cover = CommonData.IPPAWARDS[position - CommonData.IPPAWARDS_COUNT];
+        } else {
+            item.cover = CommonData.IPPAWARDS[position];
+        }
+        return item;
     }
 
     private static String makeDetails(int position) {
         StringBuilder builder = new StringBuilder();
         builder.append("Details about Item: ").append(position);
-        for (int i = 0; i < position; i++) {
-            builder.append("\nMore details information here.");
-        }
+        builder.append("\nMore details information here.");
         return builder.toString();
     }
 
@@ -54,20 +64,11 @@ public class ArticleData {
      * A dummy item representing a piece of content.
      */
     public static class ArticleItem {
-        public final String id;
-        public final String content;
-        public final String details;
-
-        public ArticleItem(String id, String content, String details) {
-            this.id = id;
-            this.content = content;
-            this.details = details;
-        }
-
-        @Override
-        public String toString() {
-            return content;
-        }
+        public String id;
+        public String title;
+        public String summary;
+        public long time;
+        public int cover;
     }
 
 }

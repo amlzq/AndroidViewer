@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.amlzq.android.viewer.material.R;
+import com.amlzq.android.viewer.material.personal.MomentListFragment;
 import com.amlzq.android.viewer.material.personal.ProfileFragment;
 
 /**

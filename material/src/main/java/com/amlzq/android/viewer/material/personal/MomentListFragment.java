@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.complex;
+package com.amlzq.android.viewer.material.personal;
 
 
 import android.os.Bundle;
@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.amlzq.android.viewer.data.MomentData;
 import com.amlzq.android.viewer.material.R;
 
 /**
@@ -33,7 +34,7 @@ public class MomentListFragment extends Fragment implements SwipeRefreshLayout.O
 
     private SwipeRefreshLayout mSwipeRefresh;
     private RecyclerView mRecyclerView;
-    MomentListAdapter mAdapter;
+    MomentRecyclerViewAdapter mAdapter;
 
     public MomentListFragment() {
         // Required empty public constructor
@@ -86,13 +87,15 @@ public class MomentListFragment extends Fragment implements SwipeRefreshLayout.O
         mRecyclerView.setLayoutManager(manager);
         mRecyclerView.setHasFixedSize(true);
 //            mRecyclerView.setNestedScrollingEnabled(false); // 是否允许滚动联动 appbar_scrolling_view_behavior
-        mAdapter = new MomentListAdapter();
+        mAdapter = new MomentRecyclerViewAdapter();
         mRecyclerView.setAdapter(mAdapter);
 
         // 解决CollapsingToolbarLayout和RecyclerView嵌套滚动问题
         mRecyclerView.setNestedScrollingEnabled(true);
 
-        // mAdapter.notifyDataSetChanged();
+        // 添加数据
+        mAdapter.setNewData(MomentData.ITEMS);
+        mAdapter.notifyDataSetChanged();
     }
 
     @Override

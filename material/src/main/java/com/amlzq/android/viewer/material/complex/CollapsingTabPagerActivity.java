@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.amlzq.android.viewer.material.R;
+import com.amlzq.android.viewer.material.personal.MomentListFragment;
 import com.amlzq.android.viewer.material.personal.ProfileFragment;
 
 import java.util.ArrayList;
@@ -32,14 +33,14 @@ import java.util.List;
  */
 public class CollapsingTabPagerActivity extends AppCompatActivity {
 
-    private AppBarLayout mAppBarLayout;
+    private AppBarLayout mAppBar;
     private Toolbar mToolbar;
 
     // Tab + ViewPager
-    private TabLayout mTabLayout;
-    private List<String> mTabIndicators;
+    private TabLayout mTabs;
+    private List<String> mTabIndicators = new ArrayList<>();
     private ViewPager mViewPager;
-    private List<Fragment> mTabFragments;
+    private List<Fragment> mTabFragments = new ArrayList<>();
     private ContentPagerAdapter mContentAdapter;
 
     @Override
@@ -51,7 +52,7 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collapsing_tab_pager);
 
-        mAppBarLayout = findViewById(R.id.appbar);
+        mAppBar = findViewById(R.id.appbar);
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         mToolbar.setTitle("");
         setSupportActionBar(mToolbar);
@@ -60,27 +61,25 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        mTabLayout = findViewById(R.id.tab);
-        mTabIndicators = new ArrayList<>();
+        mTabs = findViewById(R.id.tab);
         mViewPager = findViewById(R.id.view_pager);
-        mTabFragments = new ArrayList<>();
 
         mContentAdapter = new ContentPagerAdapter(getSupportFragmentManager());
         // 初始化2个tab
-        mTabLayout.addTab(mTabLayout.newTab());
+        mTabs.addTab(mTabs.newTab());
         MomentListFragment moment = MomentListFragment.newInstance("", "");
-        mTabIndicators.add("动态");
+        mTabIndicators.add("Moment");
         mTabFragments.add(moment);
 
-        mTabLayout.addTab(mTabLayout.newTab());
+        mTabs.addTab(mTabs.newTab());
         ProfileFragment profile = ProfileFragment.newInstance("", "");
-        mTabIndicators.add("关于我");
+        mTabIndicators.add("Profile");
         mTabFragments.add(profile);
 
         // ViewPager默认加载页面的左右两页，此方法设置屏幕外左右加载页数
         mViewPager.setOffscreenPageLimit(1);
         mViewPager.setAdapter(mContentAdapter);
-        mTabLayout.setupWithViewPager(mViewPager);
+        mTabs.setupWithViewPager(mViewPager);
     }
 
     @Override

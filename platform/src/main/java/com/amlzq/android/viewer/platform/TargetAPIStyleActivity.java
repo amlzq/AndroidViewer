@@ -58,4 +58,12 @@ public class TargetAPIStyleActivity extends Activity {
         startActivity(new Intent(this, MenuDemoActivity.class));
     }
 
+    public void onDimen(View view) {
+        startActivity(new Intent(this, DimenDemoActivity.class));
+    }
+
+    public void onScreen(View view) {
+        startActivity(new Intent(this, ScreenDemoActivity.class));
+    }
+
 }

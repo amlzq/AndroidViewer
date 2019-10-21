@@ -15,7 +15,7 @@ import com.amlzq.android.viewer.material.R;
 /**
  * 文章
  */
-public class ArticleFragment extends Fragment {
+public class ArticleListFragment extends Fragment {
 
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
@@ -26,13 +26,13 @@ public class ArticleFragment extends Fragment {
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public ArticleFragment() {
+    public ArticleListFragment() {
     }
 
     // TODO: Customize parameter initialization
     @SuppressWarnings("unused")
-    public static ArticleFragment newInstance(int columnCount) {
-        ArticleFragment fragment = new ArticleFragment();
+    public static ArticleListFragment newInstance(int columnCount) {
+        ArticleListFragment fragment = new ArticleListFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_COLUMN_COUNT, columnCount);
         fragment.setArguments(args);
@@ -57,6 +57,7 @@ public class ArticleFragment extends Fragment {
         if (view instanceof RecyclerView) {
             Context context = view.getContext();
             RecyclerView recyclerView = (RecyclerView) view;
+            recyclerView.setHasFixedSize(true);
             if (mColumnCount <= 1) {
                 recyclerView.setLayoutManager(new LinearLayoutManager(context));
             } else {

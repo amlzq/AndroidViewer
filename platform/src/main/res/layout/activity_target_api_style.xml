@@ -8,7 +8,7 @@
     android:paddingTop="@dimen/item_margin_vertical"
     android:paddingRight="@dimen/item_margin_horizontal"
     android:paddingBottom="@dimen/item_margin_vertical"
-    tools:context=".holo.TargetAPIStyleActivity">
+    tools:context=".TargetAPIStyleActivity">
 
     <TextView
         android:id="@+id/tv_message"
@@ -47,19 +47,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onDialogDemo"
-                android:text="Dialog demo" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onPromptDemo"
-                android:text="Prompt demo" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onBottomNavigation"
-                android:text="Bottom navigation" />
+                android:text="Dialog demo"
+                android:textAllCaps="false" />
 
             <Button
                 android:layout_width="match_parent"
@@ -71,25 +60,43 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onToast"
-                android:text="Toast" />
+                android:text="Toast"
+                android:textAllCaps="false" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onPicker"
-                android:text="Picker" />
+                android:text="Picker"
+                android:textAllCaps="false" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onPopupWindow"
-                android:text="PopupWindow" />
+                android:text="PopupWindow"
+                android:textAllCaps="false" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onMenu"
-                android:text="Menu" />
+                android:text="Menu"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onDimen"
+                android:text="dimen demo"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onScreen"
+                android:text="screen demo"
+                android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>
 

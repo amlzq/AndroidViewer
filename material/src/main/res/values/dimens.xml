@@ -17,10 +17,7 @@
     <dimen name="tabLayoutSize">24dp</dimen>
 
     <dimen name="statusBarAndActionBarSize">68dp</dimen>
-
     <dimen name="grid_expected_size">120dp</dimen>
-    <dimen name="item_margin_horizontal">16dp</dimen>
-    <dimen name="item_margin_vertical">8dp</dimen>
 
     <!--头像换取字体大小-->
     <dimen name="acatar_change_text_size30">30dp</dimen>

@@ -20,8 +20,8 @@
             android:layout_height="match_parent"
             android:layout_margin="@dimen/margin_medium">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/civ_avatar"
+            <ImageView
+                android:id="@+id/avatar"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:src="@android:drawable/sym_def_app_icon" />
@@ -31,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_small"
-                android:layout_toRightOf="@id/civ_avatar"
+                android:layout_toRightOf="@id/avatar"
                 android:text="@string/loading"
                 android:textColor="@color/titleColor"
                 android:textSize="@dimen/font_medium" />

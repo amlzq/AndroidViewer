@@ -15,7 +15,7 @@
     <color name="gray">@android:color/darker_gray</color>
     <color name="transparent">@android:color/transparent</color>
 
-    <!--实现-->
+    <!--实现预定义颜色-->
     <color name="titleColor">#333</color>
     <color name="subtitleColor">#666</color>
     <color name="descColor">#999</color>

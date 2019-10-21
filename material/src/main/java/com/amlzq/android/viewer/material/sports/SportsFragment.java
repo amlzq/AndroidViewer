@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 
 import com.amlzq.android.viewer.material.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -31,9 +32,9 @@ public class SportsFragment extends Fragment {
 
     // Tab + ViewPager
     private TabLayout mTabLayout;
-    private List<String> mTabIndicators;
+    private List<String> mTabIndicators = new ArrayList<>();
     private ViewPager mViewPager;
-    private List<Fragment> mTabFragments;
+    private List<Fragment> mTabFragments = new ArrayList<>();
     private ContentPagerAdapter mContentAdapter;
 
     public SportsFragment() {

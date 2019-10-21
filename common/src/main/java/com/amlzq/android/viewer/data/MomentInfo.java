@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.material.complex;
+package com.amlzq.android.viewer.data;
 
 /**
  * 动态，时刻，瞬间

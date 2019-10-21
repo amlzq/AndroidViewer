@@ -14,10 +14,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.amlzq.android.viewer.material.sports.BallFragment;
 import com.amlzq.android.viewer.material.R;
-import com.amlzq.android.viewer.material.sports.RunFragment;
-import com.amlzq.android.viewer.material.sports.SwimFragment;
+import com.amlzq.android.viewer.material.news.ArticleListFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,12 +44,13 @@ public class TabPagerActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.container);
+        mViewPager = (ViewPager) findViewById(R.id.viewpager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
@@ -97,14 +96,14 @@ public class TabPagerActivity extends AppCompatActivity {
      */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
-        List<Fragment> mFragments;
+        private final List<Fragment> mFragments = new ArrayList<>();
+        private final List<String> mTitles = new ArrayList<>();
 
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
-            mFragments = new ArrayList<>();
-            mFragments.add(SwimFragment.newInstance("", ""));
-            mFragments.add(RunFragment.newInstance("", ""));
-            mFragments.add(BallFragment.newInstance("", ""));
+            mFragments.add(ArticleListFragment.newInstance(1));
+            mFragments.add(ArticleListFragment.newInstance(2));
+            mFragments.add(ArticleListFragment.newInstance(3));
         }
 
         @Override
