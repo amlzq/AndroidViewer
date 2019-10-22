@@ -1,11 +1,15 @@
 package com.amlzq.android.viewer.material.news;
 
 import android.content.Intent;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.amlzq.android.viewer.material.R;
@@ -22,9 +26,14 @@ public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecy
     private final List<ArticleItem> mValues;
     private final SimpleDateFormat mFormat =
             new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+    private RecyclerView mRecyclerView;
 
     public ArticleRecyclerViewAdapter(List<ArticleItem> items) {
         mValues = items;
+    }
+
+    public void onAttachedToRecyclerView(RecyclerView view) {
+        mRecyclerView = view;
     }
 
     @Override
@@ -47,13 +56,26 @@ public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecy
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = CollapsingScrollViewActivity.newIntent(holder.mView.getContext(),
+                Intent intent = CollapsingScrollViewActivity.newIntent(
+                        holder.mView.getContext(),
                         holder.mItem.title,
                         holder.mItem.cover,
                         holder.mItem.summary);
                 holder.mView.getContext().startActivity(intent);
             }
         });
+
+        RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) holder.mCoverView.getLayoutParams();
+        if (mRecyclerView.getLayoutManager() instanceof GridLayoutManager) {
+            int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 200,
+                    holder.mCoverView.getContext().getResources().getDisplayMetrics());
+            params.height = height;
+        } else if (mRecyclerView.getLayoutManager() instanceof StaggeredGridLayoutManager) {
+            int height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 200,
+                    holder.mCoverView.getContext().getResources().getDisplayMetrics());
+            height = (int) (height + (position % 3) * 0.0f * 30);
+            params.height = height;
+        }
     }
 
     @Override

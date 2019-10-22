@@ -20,6 +20,9 @@ import com.amlzq.android.viewer.material.news.ArticleListFragment;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 综合使用
+ */
 public class TabPagerActivity extends AppCompatActivity {
 
     /**

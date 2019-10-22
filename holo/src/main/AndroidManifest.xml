@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.amlzq.android.viewer.holo">
 
@@ -15,5 +16,7 @@
             android:name=".HoloThemeActivity"
             android:label="@string/title_holo_style"
             android:theme="@android:style/Theme.Holo.Light" />
+        <activity android:name=".ActionBarDemoActivity" />
     </application>
+
 </manifest>

@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,10 +18,8 @@ import com.amlzq.android.viewer.material.R;
  */
 public class ArticleListFragment extends Fragment {
 
-    // TODO: Customize parameter argument names
-    private static final String ARG_COLUMN_COUNT = "column-count";
-    // TODO: Customize parameters
-    private int mColumnCount = 1;
+    private static final String ARG_LAYOUT_STYLE = "layout-style";
+    private int mLayoutStyle = 1; // [1:LinearLayoutManager, 2:GridLayoutManager, 3:StaggeredGridLayoutManager]
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -29,12 +28,10 @@ public class ArticleListFragment extends Fragment {
     public ArticleListFragment() {
     }
 
-    // TODO: Customize parameter initialization
-    @SuppressWarnings("unused")
-    public static ArticleListFragment newInstance(int columnCount) {
+    public static ArticleListFragment newInstance(int layoutStyle) {
         ArticleListFragment fragment = new ArticleListFragment();
         Bundle args = new Bundle();
-        args.putInt(ARG_COLUMN_COUNT, columnCount);
+        args.putInt(ARG_LAYOUT_STYLE, layoutStyle);
         fragment.setArguments(args);
         return fragment;
     }
@@ -44,7 +41,7 @@ public class ArticleListFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         if (getArguments() != null) {
-            mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
+            mLayoutStyle = getArguments().getInt(ARG_LAYOUT_STYLE);
         }
     }
 
@@ -58,12 +55,16 @@ public class ArticleListFragment extends Fragment {
             Context context = view.getContext();
             RecyclerView recyclerView = (RecyclerView) view;
             recyclerView.setHasFixedSize(true);
-            if (mColumnCount <= 1) {
+            if (mLayoutStyle == 1) {
                 recyclerView.setLayoutManager(new LinearLayoutManager(context));
+            } else if (mLayoutStyle == 2) {
+                recyclerView.setLayoutManager(new GridLayoutManager(context, 2));
             } else {
-                recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
+                recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
             }
-            recyclerView.setAdapter(new ArticleRecyclerViewAdapter(ArticleData.ITEMS));
+            ArticleRecyclerViewAdapter adapter = new ArticleRecyclerViewAdapter(ArticleData.ITEMS);
+            adapter.onAttachedToRecyclerView(recyclerView);
+            recyclerView.setAdapter(adapter);
         }
         return view;
     }

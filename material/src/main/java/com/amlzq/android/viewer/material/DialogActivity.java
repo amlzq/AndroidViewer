@@ -12,12 +12,12 @@ import android.widget.Toast;
  * 对话框演示样例
  * 材料设计
  */
-public class DialogDemoActivity extends AppCompatActivity {
+public class DialogActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dialog_demo_material);
+        setContentView(R.layout.activity_dialog_material);
     }
 
     void showToastShort(String msg) {

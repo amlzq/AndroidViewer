@@ -44,6 +44,8 @@ public class CollapsingRecycleViewActivity extends AppCompatActivity {
         mSwipeRefresh.setProgressBackgroundColorSchemeColor(Color.WHITE);
         // 设置圆圈的大小
         mSwipeRefresh.setSize(SwipeRefreshLayout.LARGE);
+
     }
+
 
 }

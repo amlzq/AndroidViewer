@@ -15,16 +15,127 @@
             android:label="@string/title_material_design"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.MaterialComponents.Light">
+            android:theme="@style/Material.AppTheme.MaterialComponents">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--templates-->
         <activity
-            android:name=".LayoutDemoActivity"
+            android:name=".templates.TemplatesActivity"
+            android:theme="@style/Material.AppTheme" />
+        <activity
+            android:name=".templates.activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Material.AppTheme" />
+        <activity
+            android:name=".templates.activities.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Material.AppTheme.NoActionBar" />
+        <activity
+            android:name=".templates.activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Material.AppTheme" />
+        <activity
+            android:name=".templates.activities.BasicActivity"
+            android:label="@string/title_activity_basic"
+            android:theme="@style/Material.AppTheme.NoActionBar" />
+        <activity
+            android:name=".templates.activities.TabbedActivity"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/Material.AppTheme.NoActionBar" />
+        <activity
+            android:name=".templates.activities.BottomNavigationActivity"
+            android:label="@string/title_activity_bottom_navigation"
+            android:theme="@style/Material.AppTheme" />
+        <activity
+            android:name=".templates.activities.NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/Material.AppTheme.NoActionBar" />
+        <activity
+            android:name=".templates.activities.ViewModelActivity"
+            android:theme="@style/Material.AppTheme" />
+        <activity
+            android:name=".templates.activities.EmptyActivity"
+            android:theme="@style/Material.AppTheme" />
+        <activity
+            android:name=".templates.activities.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" />
+        <!--
+    The API key for Google Maps-based APIs is defined as a string resource.
+    (See the file "res/values/google_maps_api.xml").
+    Note that the API key is linked to the encryption key used to sign the APK.
+    You need a different API key for each encryption key, including the release key that is used to
+    sign the APK for publishing.
+    You can define the keys for the debug and release targets in src/debug/ and src/release/.
+-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".templates.activities.MapsActivity"
+            android:label="MapsActivity"
+            android:theme="@style/Material.AppTheme" />
+
+        <activity
+            android:name=".LayoutActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
+        <activity
+            android:name=".WidgetActivity"
+            android:label="WidgetActivity"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".DialogActivity"
+            android:label="DialogActivity"
+            android:theme="@style/Material.AppTheme.NoActionBar" />
+        <activity
+            android:name=".SwipeRefreshActivity"
+            android:label="SwipeRefreshActivity"
+            android:theme="@style/Material.AppTheme" />
+        <activity
+            android:name=".SnackbarActivity"
+            android:theme="@style/Material.AppTheme" />
+        <activity
+            android:name=".WebAppCompatActivity"
+            android:theme="@style/Material.AppTheme" />
+        <activity
+            android:name=".RecycleViewActivity"
+            android:theme="@style/Material.AppTheme" />
+
+        <activity
+            android:name=".TranslucentStatusBarActivity"
+            android:theme="@style/Material.Activity.TranslucentStatusBar" />
+        <activity
+            android:name=".BottomRadioButtonFragmentActivity"
+            android:theme="@style/Material.AppTheme.NoActionBar" />
+        <activity
+            android:name=".ToolbarActivity"
+            android:theme="@style/Material.AppTheme.NoActionBar" />
+        <activity
+            android:name=".MaterialButtonActivity"
+            android:theme="@style/Material.AppTheme.NoActionBar" />
+        <activity
+            android:name=".TabLayoutActivity"
+            android:theme="@style/Material.AppTheme.NoActionBar" />
+        <activity
+            android:name=".StatusBarActivity"
+            android:theme="@style/Material.AppTheme.NoActionBar" />
+        <activity
+            android:name=".BottomNavigationViewDemoActivity"
+            android:theme="@style/Material.AppTheme.NoActionBar" />
+        <activity
+            android:name=".PaletteActivity"
+            android:label="PaletteActivity"
+            android:theme="@style/Material.AppTheme" />
+
+        <activity
+            android:name=".complex.MaterialComplexActivity"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
         <activity
             android:name=".complex.CollapsingRecycleViewActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
@@ -38,84 +149,18 @@
             android:label="BottomNavigationViewActivity"
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
-            android:name=".WidgetDemoActivity"
-            android:label="WidgetDemoActivity"
-            android:theme="@style/Theme.MaterialComponents" />
-        <activity
             android:name=".complex.TabPagerActivity"
             android:label="@string/title_activity_tab"
             android:theme="@style/Material.AppTheme.NoActionBar" />
-        <activity android:name=".DialogDemoActivity" />
-        <activity android:name=".SwipeRefreshDemoActivity" />
-        <activity android:name=".SnackbarDemoActivity" />
-        <activity android:name=".WebAppCompatActivity" />
         <activity
             android:name=".complex.ActionAppCompatActivity"
             android:theme="@style/Material.AppTheme.NoActionBar" />
-        <activity android:name=".RecycleViewDemoActivity" />
-        <activity
-            android:name=".complex.MaterialComplexActivity"
-            android:theme="@style/Theme.MaterialComponents.Light" />
         <activity
             android:name=".complex.BottomTabFragmentActivity"
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".complex.CollapsingScrollViewActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
-        <activity
-            android:name=".complex.TranslucentStatusBarActivity"
-            android:theme="@style/Material.Activity.TranslucentStatusBar" />
-        <activity
-            android:name=".BottomRadioButtonFragmentActivity"
-            android:theme="@style/Material.AppTheme.NoActionBar" />
-        <activity
-            android:name=".templates.activities.LoginActivity"
-            android:label="@string/title_activity_login" />
-        <activity
-            android:name=".templates.activities.ScrollingActivity"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/Material.AppTheme.NoActionBar" />
-        <activity
-            android:name=".templates.activities.SettingsActivity"
-            android:label="@string/title_activity_settings" />
-        <activity
-            android:name=".templates.activities.BasicActivity"
-            android:label="@string/title_activity_basic"
-            android:theme="@style/Material.AppTheme.NoActionBar" />
-        <activity android:name=".templates.TemplatesActivity" />
-        <activity
-            android:name=".templates.activities.TabbedActivity"
-            android:label="@string/title_activity_tabbed"
-            android:theme="@style/Material.AppTheme.NoActionBar" />
-        <activity
-            android:name=".templates.activities.BottomNavigationActivity"
-            android:label="@string/title_activity_bottom_navigation" />
-        <activity
-            android:name=".templates.activities.NavigationDrawerActivity"
-            android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/Material.AppTheme.NoActionBar" />
-        <activity android:name=".templates.activities.ViewModelActivity" />
-        <activity
-            android:name=".templates.activities.MapsActivity"
-            android:label="MapsActivity" />
-        <activity android:name=".templates.activities.EmptyActivity" />
-        <activity
-            android:name=".templates.activities.FullscreenActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_fullscreen"
-            android:theme="@style/FullscreenTheme" />
-
-        <!--
-     The API key for Google Maps-based APIs is defined as a string resource.
-     (See the file "res/values/google_maps_api.xml").
-     Note that the API key is linked to the encryption key used to sign the APK.
-     You need a different API key for each encryption key, including the release key that is used to
-     sign the APK for publishing.
-     You can define the keys for the debug and release targets in src/debug/ and src/release/.
--->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
     </application>
 
 </manifest>

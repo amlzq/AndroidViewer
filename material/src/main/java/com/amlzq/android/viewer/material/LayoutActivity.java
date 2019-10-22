@@ -11,7 +11,7 @@ import android.widget.Toast;
 /**
  * 材料设计的布局演示样例
  */
-public class LayoutDemoActivity extends AppCompatActivity {
+public class LayoutActivity extends AppCompatActivity {
 
     TextView mTVInfo;
 
@@ -21,7 +21,7 @@ public class LayoutDemoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         // android:fitsSystemWindows="true"
-        setContentView(R.layout.activity_layout_demo_material);
+        setContentView(R.layout.activity_layout_material);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {

@@ -18,8 +18,20 @@ public class MaterialComplexActivity extends AppCompatActivity {
         setContentView(R.layout.activity_material_design_complex);
     }
 
+    public void onBottomNavigation(View view) {
+        startActivity(new Intent(this, BottomNavigationFragmentActivity.class));
+    }
+
+    public void onTabPager(View view) {
+        startActivity(new Intent(this, TabPagerActivity.class));
+    }
+
     public void onCollapsingScrollView(View view) {
-        startActivity(new Intent(this, CollapsingScrollViewActivity.class));
+        Intent intent = CollapsingScrollViewActivity.newIntent(this,
+                "CollapsingScrollViewActivity",
+                R.drawable.ippawards_1st_panorama_vincent_chen,
+                "");
+        startActivity(intent);
     }
 
     public void onCollapsingRecycleView(View view) {
@@ -28,10 +40,6 @@ public class MaterialComplexActivity extends AppCompatActivity {
 
     public void onCollapsingTabPager(View view) {
         startActivity(new Intent(this, CollapsingTabPagerActivity.class));
-    }
-
-    public void onTranslucentStatusBar(View view) {
-        startActivity(new Intent(this, TranslucentStatusBarActivity.class));
     }
 
 }

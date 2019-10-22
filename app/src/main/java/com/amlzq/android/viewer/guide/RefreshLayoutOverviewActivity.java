@@ -7,7 +7,7 @@ import android.view.View;
 
 import com.amlzq.android.viewer.R;
 import com.amlzq.android.viewer.expand.SmartRefreshActivity;
-import com.amlzq.android.viewer.material.SwipeRefreshDemoActivity;
+import com.amlzq.android.viewer.material.SwipeRefreshActivity;
 
 /**
  * 下拉刷新的演示样例引导
@@ -21,7 +21,7 @@ public class RefreshLayoutOverviewActivity extends Activity {
     }
 
     public void onSwipeRefreshLayout(View view) {
-        startActivity(new Intent(this, SwipeRefreshDemoActivity.class));
+        startActivity(new Intent(this, SwipeRefreshActivity.class));
     }
 
     public void onSmartRefreshLayout(View view) {

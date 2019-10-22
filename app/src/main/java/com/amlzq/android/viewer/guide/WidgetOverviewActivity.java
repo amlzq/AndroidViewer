@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.amlzq.android.viewer.R;
-import com.amlzq.android.viewer.platform.WidgetDemoActivity;
+import com.amlzq.android.viewer.material.WidgetActivity;
 
 /**
  * Widget小部件样例演示的引导
@@ -20,7 +20,7 @@ public class WidgetOverviewActivity extends Activity {
     }
 
     public void onWidget(View view) {
-        startActivity(new Intent(this, WidgetDemoActivity.class));
+        startActivity(new Intent(this, com.amlzq.android.viewer.platform.WidgetDemoActivity.class));
     }
 
     public void onV4Widget(View view) {
@@ -32,7 +32,7 @@ public class WidgetOverviewActivity extends Activity {
     }
 
     public void onMaterialWidget(View view) {
-        startActivity(new Intent(this, com.amlzq.android.viewer.material.WidgetDemoActivity.class));
+        startActivity(new Intent(this, WidgetActivity.class));
     }
 
 }

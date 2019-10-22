@@ -39,57 +39,22 @@
             <android.support.design.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onLayoutDemo"
+                android:onClick="onLayout"
                 android:text="Layout demo\n新布局"
                 android:textAllCaps="false" />
 
             <android.support.design.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onDesignWidget"
-                android:text="Design widget\n材料设计库里的小部件"
+                android:onClick="onWidget"
+                android:text="Material widget\n材料设计库的小部件"
                 android:textAllCaps="false" />
 
             <android.support.design.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onSnackbar"
-                android:text="Snackbar\n~示例"
-                android:textAllCaps="false" />
-
-            <android.support.design.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onRecycleView"
-                android:text="RecycleView demo\n复用视图示例"
-                android:textAllCaps="false" />
-
-            <android.support.design.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onScrollingActivity"
-                android:text="ScrollView activity"
-                android:textAllCaps="false" />
-
-            <android.support.design.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onTabLayout"
-                android:text="TabLayout activity"
-                android:textAllCaps="false" />
-
-            <android.support.design.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onBottomNavigation"
-                android:text="BottomNavigationView+Fragment"
-                android:textAllCaps="false" />
-
-            <android.support.design.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onDrawerNavigation"
-                android:text="Drawer Navigation"
+                android:onClick="onPalette"
+                android:text="Palette demo"
                 android:textAllCaps="false" />
 
             <android.support.design.button.MaterialButton

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToolbarActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:subtitle="subtitle"
+        app:title="title"
+        app:titleTextColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_margin_vertical"
+        android:text="Toolbar 工具栏，API 取代Actionbar"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="以下Toolbar的样式变化"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="@dimen/item_margin_vertical"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:subtitle="subtitle"
+        app:title="title"
+        app:titleTextColor="@color/colorAccent">
+
+        
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_margin_vertical"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/toolbar2"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:subtitle="subtitle"
+        app:title="title"
+        app:titleTextColor="@color/colorAccent" />
+
+</android.support.constraint.ConstraintLayout>

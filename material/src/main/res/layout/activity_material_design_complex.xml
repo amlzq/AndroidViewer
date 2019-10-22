@@ -17,6 +17,20 @@
         <android.support.design.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onBottomNavigation"
+            android:text="BottomNavigationView+Fragment"
+            android:textAllCaps="false" />
+
+        <android.support.design.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onTabPager"
+            android:text="AppBarLayout + Toolbar + TabLayout + ViewPager + FloatingActionButton"
+            android:textAllCaps="false" />
+
+        <android.support.design.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="onCollapsingScrollView"
             android:text="CollapsingToolbarLayout + ScrollView\n场景:文章详情页"
             android:textAllCaps="false" />
@@ -34,15 +48,6 @@
             android:onClick="onCollapsingTabPager"
             android:text="CollapsingToolbarLayout + TabLayout + ViewPager\n场景:个人主页，商品详情页"
             android:textAllCaps="false" />
-
-        <android.support.design.button.MaterialButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onTranslucentStatusBar"
-            android:text="半透明状态栏"
-            android:textAllCaps="false" />
-
-
     </LinearLayout>
 
 </ScrollView>

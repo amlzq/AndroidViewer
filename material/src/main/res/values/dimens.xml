@@ -11,7 +11,7 @@
     <!--系统尺寸 24dp-->
     <dimen name="statusBarSize">24dp</dimen>
     <!--系统尺寸 ?attr/actionBarSize -->
-    <dimen name="actionBarSize">44dp</dimen>
+    <dimen name="actionBarSize">52dp</dimen>
     <!--系统尺寸 56dp-->
     <dimen name="bottomNavigationBarSize">50dp</dimen>
     <dimen name="tabLayoutSize">24dp</dimen>

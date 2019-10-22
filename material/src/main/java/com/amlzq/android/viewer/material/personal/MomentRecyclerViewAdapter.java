@@ -1,6 +1,7 @@
 package com.amlzq.android.viewer.material.personal;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
@@ -16,6 +17,7 @@ import android.view.ViewGroup;
 
 import com.amlzq.android.viewer.data.MomentInfo;
 import com.amlzq.android.viewer.material.R;
+import com.amlzq.android.viewer.material.complex.CollapsingScrollViewActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,6 +68,18 @@ public class MomentRecyclerViewAdapter extends RecyclerView.Adapter<MomentRecycl
         } else {
             holder.mLike.setPressed(false);
         }
+
+        holder.mView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = CollapsingScrollViewActivity.newIntent(
+                        holder.mView.getContext(),
+                        holder.mItem.name,
+                        holder.mItem.image,
+                        holder.mItem.text);
+                holder.mView.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override

@@ -6,19 +6,17 @@ import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 
-import com.amlzq.android.viewer.material.R;
-
 /**
  * SwipeRefreshLayout demo
  */
-public class SwipeRefreshDemoActivity extends AppCompatActivity {
+public class SwipeRefreshActivity extends AppCompatActivity {
 
     SwipeRefreshLayout mSwipeRefreshLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_swipe_refresh_demo);
+        setContentView(R.layout.activity_swipe_refresh);
 
         mSwipeRefreshLayout = findViewById(R.id.swipe_refresh);
         mSwipeRefreshLayout.setColorSchemeColors(Color.RED, Color.BLUE, Color.BLACK, Color.GREEN);

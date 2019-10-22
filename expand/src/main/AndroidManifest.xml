@@ -6,12 +6,16 @@
         <activity android:name=".FloatingActionButtonActivity" />
         <activity
             android:name=".SideMenuByYalantisActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ContextMenuByYalantisActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".lottie.LottieActivity" />
-        <activity android:name=".SmartRefreshActivity" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".lottie.LottieActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".SmartRefreshActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
     </application>
 
 </manifest>
