@@ -1,6 +1,7 @@
 package com.amlzq.android.viewer.material.personal;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
@@ -15,10 +16,13 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
 
 import com.amlzq.android.viewer.data.MomentData;
+import com.amlzq.android.viewer.data.MomentInfo;
 import com.amlzq.android.viewer.material.R;
+import com.amlzq.android.viewer.material.complex.CollapsingScrollViewActivity;
 
 /**
  * 用户主页-动态
@@ -88,6 +92,17 @@ public class MomentListFragment extends Fragment implements SwipeRefreshLayout.O
         mRecyclerView.setHasFixedSize(true);
 //            mRecyclerView.setNestedScrollingEnabled(false); // 是否允许滚动联动 appbar_scrolling_view_behavior
         mAdapter = new MomentRecyclerViewAdapter();
+        mAdapter.onAttachedToRecyclerView(mRecyclerView);
+        mAdapter.setItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                MomentInfo item = mAdapter.getItem(position);
+                Intent intent = CollapsingScrollViewActivity.newIntent(
+                        view.getContext(), item.name, item.image, item.text);
+                view.getContext().startActivity(intent);
+            }
+        });
         mRecyclerView.setAdapter(mAdapter);
 
         // 解决CollapsingToolbarLayout和RecyclerView嵌套滚动问题

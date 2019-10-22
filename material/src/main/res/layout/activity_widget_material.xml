@@ -17,29 +17,36 @@
         <android.support.design.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onTextView"
+            android:text="TextView"
+            android:textAllCaps="false" />
+
+        <android.support.design.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="onRecycleView"
-            android:text="RecycleView demo\n复用视图示例"
+            android:text="RecycleView"
             android:textAllCaps="false" />
 
         <android.support.design.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onSnackbar"
-            android:text="Snackbar\n~示例"
+            android:text="Snackbar"
             android:textAllCaps="false" />
 
         <android.support.design.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onToolbar"
-            android:text="Toolbar demo"
+            android:text="Toolbar"
             android:textAllCaps="false" />
 
         <android.support.design.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onTabLayout"
-            android:text="TabLayout demo"
+            android:text="TabLayout"
             android:textAllCaps="false" />
 
         <android.support.v7.widget.AppCompatTextView

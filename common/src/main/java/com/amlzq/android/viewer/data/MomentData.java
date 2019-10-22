@@ -1,6 +1,6 @@
 package com.amlzq.android.viewer.data;
 
-import com.amlzq.android.viewer.R;
+import com.amlzq.android.viewer.common.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

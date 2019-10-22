@@ -37,17 +37,13 @@
         <item name="android:actionBarSize">@dimen/actionBarSize</item>
     </style>
 
+    <!--材料设计组件主题，比如MaterialButton-->
     <style name="Material.AppTheme.MaterialComponents" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:textAllCaps">false</item>
-        <!--<item name="android:textColorPrimary">@color/colorAccent</item>-->
-        <!--<item name="android:actionBarSize">@dimen/actionBarSize</item>-->
-        <!--<item name="android:windowTitleSize">54dp</item>-->
-        <!--<item name="android:windowTitleStyle">@style/windowTitleStyle</item>-->
-        <!--<item name="android:windowTitleBackgroundStyle">@style/windowTitleBackgroundStyle</item>-->
     </style>
 
     <!--半透明状态栏-->
@@ -72,10 +68,15 @@
         <item name="android:background">@color/black_overlay</item>
     </style>
 
-    <style name="TabLayout.TextAppearance" parent="TextAppearance.Design.Tab">
+    <style name="TabLayout.TextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
         <item name="android:textSize">14sp</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TabLayout.TextAppearance2" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 
 </resources>

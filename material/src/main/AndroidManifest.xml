@@ -22,7 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--templates-->
+        <!-- templates -->
         <activity
             android:name=".templates.TemplatesActivity"
             android:theme="@style/Material.AppTheme" />
@@ -72,7 +72,7 @@
     You need a different API key for each encryption key, including the release key that is used to
     sign the APK for publishing.
     You can define the keys for the debug and release targets in src/debug/ and src/release/.
--->
+        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
@@ -81,10 +81,9 @@
             android:name=".templates.activities.MapsActivity"
             android:label="MapsActivity"
             android:theme="@style/Material.AppTheme" />
-
         <activity
             android:name=".LayoutActivity"
-            android:theme="@style/Material.Activity.TranslucentStatusBar" />
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
         <activity
             android:name=".WidgetActivity"
             android:label="WidgetActivity"
@@ -106,7 +105,6 @@
         <activity
             android:name=".RecycleViewActivity"
             android:theme="@style/Material.AppTheme" />
-
         <activity
             android:name=".TranslucentStatusBarActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
@@ -121,7 +119,7 @@
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".TabLayoutActivity"
-            android:theme="@style/Material.AppTheme.NoActionBar" />
+            android:theme="@style/Material.AppTheme" />
         <activity
             android:name=".StatusBarActivity"
             android:theme="@style/Material.AppTheme.NoActionBar" />
@@ -132,7 +130,6 @@
             android:name=".PaletteActivity"
             android:label="PaletteActivity"
             android:theme="@style/Material.AppTheme" />
-
         <activity
             android:name=".complex.MaterialComplexActivity"
             android:theme="@style/Material.AppTheme.MaterialComponents" />
@@ -161,6 +158,16 @@
         <activity
             android:name=".complex.CollapsingScrollViewActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
+        <activity
+            android:name=".AppBarActivity"
+            android:theme="@style/Material.Activity.TranslucentStatusBar" />
+        <activity
+            android:name=".CollapsingToolbarActivity"
+            android:theme="@style/Material.Activity.TranslucentStatusBar" />
+        <activity
+            android:name=".TextViewActivity"
+            android:label="TextViewActivity"
+            android:theme="@style/Material.AppTheme" />
     </application>
 
 </manifest>

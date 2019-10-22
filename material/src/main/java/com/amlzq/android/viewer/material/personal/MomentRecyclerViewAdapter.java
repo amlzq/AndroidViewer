@@ -1,7 +1,6 @@
 package com.amlzq.android.viewer.material.personal;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
@@ -14,10 +13,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 
 import com.amlzq.android.viewer.data.MomentInfo;
 import com.amlzq.android.viewer.material.R;
-import com.amlzq.android.viewer.material.complex.CollapsingScrollViewActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,8 +27,18 @@ import java.util.List;
 public class MomentRecyclerViewAdapter extends RecyclerView.Adapter<MomentRecyclerViewAdapter.ViewHolder> {
 
     private List<MomentInfo> mValues = new ArrayList<>();
+    private RecyclerView mRecyclerView;
+    private AdapterView.OnItemClickListener mItemClickListener;
 
     public MomentRecyclerViewAdapter() {
+    }
+
+    public void onAttachedToRecyclerView(RecyclerView view) {
+        mRecyclerView = view;
+    }
+
+    public void setItemClickListener(AdapterView.OnItemClickListener itemClickListener) {
+        this.mItemClickListener = itemClickListener;
     }
 
     public void addData(List<MomentInfo> items) {
@@ -39,6 +48,10 @@ public class MomentRecyclerViewAdapter extends RecyclerView.Adapter<MomentRecycl
     public void setNewData(List<MomentInfo> items) {
         mValues.clear();
         mValues.addAll(items);
+    }
+
+    public MomentInfo getItem(int position) {
+        return mValues.get(position);
     }
 
     @Override
@@ -69,15 +82,16 @@ public class MomentRecyclerViewAdapter extends RecyclerView.Adapter<MomentRecycl
             holder.mLike.setPressed(false);
         }
 
+        holder.mView.setOnClickListener(v -> {
+            mItemClickListener.onItemClick(null,
+                    v,
+                    holder.getAdapterPosition(),
+                    holder.getItemId());
+        });
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = CollapsingScrollViewActivity.newIntent(
-                        holder.mView.getContext(),
-                        holder.mItem.name,
-                        holder.mItem.image,
-                        holder.mItem.text);
-                holder.mView.getContext().startActivity(intent);
+
             }
         });
     }

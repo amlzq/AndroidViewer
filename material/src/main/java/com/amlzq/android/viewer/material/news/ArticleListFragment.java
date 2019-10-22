@@ -2,6 +2,8 @@ package com.amlzq.android.viewer.material.news;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -10,6 +12,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 
 import com.amlzq.android.viewer.material.R;
 
@@ -64,9 +67,20 @@ public class ArticleListFragment extends Fragment {
             }
             ArticleRecyclerViewAdapter adapter = new ArticleRecyclerViewAdapter(ArticleData.ITEMS);
             adapter.onAttachedToRecyclerView(recyclerView);
+            adapter.setItemClickListener(new AdapterView.OnItemClickListener() {
+
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                }
+            });
             recyclerView.setAdapter(adapter);
         }
         return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
     }
 
 }

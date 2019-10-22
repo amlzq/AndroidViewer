@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onLayout"
-                android:text="Layout demo\n新布局"
+                android:text="Layout\n新布局"
                 android:textAllCaps="false" />
 
             <android.support.design.button.MaterialButton
@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onPalette"
-                android:text="Palette demo"
+                android:text="Palette"
                 android:textAllCaps="false" />
 
             <android.support.design.button.MaterialButton

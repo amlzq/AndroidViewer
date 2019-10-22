@@ -14,6 +14,11 @@
         android:scaleType="centerCrop"
         android:src="@drawable/flickr_rdrcollection_6259499387_b127b03a39_o" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/shape_status_bar" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

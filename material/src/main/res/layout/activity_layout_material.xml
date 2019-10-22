@@ -1,80 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     tools:context=".LayoutActivity">
 
     <LinearLayout
-        android:id="@+id/rl_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/item_margin_horizontal"
+        android:paddingTop="@dimen/item_margin_horizontal"
+        android:paddingRight="@dimen/item_margin_horizontal"
+        android:paddingBottom="@dimen/item_margin_horizontal">
 
-        <View
+        <android.support.design.button.MaterialButton
             android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:background="@drawable/shape_status_bar" />
+            android:layout_height="wrap_content"
+            android:onClick="onAppBarLayout"
+            android:text="AppBarLayout"
+            android:textAllCaps="false" />
 
-        <ScrollView
+        <android.support.design.button.MaterialButton
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:scrollbars="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:onClick="onButtonEvent" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="文本文本文本文本文本文本文本文本文本" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tv_info"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:scrollbars="vertical" />
-
-                <android.support.design.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:elevation="2dp">
-
-                    <android.support.v7.widget.AppCompatImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@android:drawable/sym_def_app_icon" />
-                </android.support.design.card.MaterialCardView>
-
-            </LinearLayout>
-        </ScrollView>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:background="@color/colorAccent" />
+            android:layout_height="wrap_content"
+            android:onClick="onCollapsingToolbarLayout"
+            android:text="CollapsingToolbarLayout"
+            android:textAllCaps="false" />
     </LinearLayout>
 
-</FrameLayout>
+</ScrollView>

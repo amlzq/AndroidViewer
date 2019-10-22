@@ -28,7 +28,7 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabTextAppearance="@style/TabLayout.TextAppearance">
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget">
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tabItem"

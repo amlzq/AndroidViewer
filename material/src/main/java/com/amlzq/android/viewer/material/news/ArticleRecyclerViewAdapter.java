@@ -8,6 +8,7 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -27,6 +28,7 @@ public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecy
     private final SimpleDateFormat mFormat =
             new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
     private RecyclerView mRecyclerView;
+    private AdapterView.OnItemClickListener mItemClickListener;
 
     public ArticleRecyclerViewAdapter(List<ArticleItem> items) {
         mValues = items;
@@ -34,6 +36,10 @@ public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecy
 
     public void onAttachedToRecyclerView(RecyclerView view) {
         mRecyclerView = view;
+    }
+
+    public void setItemClickListener(AdapterView.OnItemClickListener itemClickListener) {
+        this.mItemClickListener = itemClickListener;
     }
 
     @Override
@@ -76,6 +82,7 @@ public class ArticleRecyclerViewAdapter extends RecyclerView.Adapter<ArticleRecy
             height = (int) (height + (position % 3) * 0.0f * 30);
             params.height = height;
         }
+
     }
 
     @Override

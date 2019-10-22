@@ -1,6 +1,6 @@
 package com.amlzq.android.viewer.data;
 
-import com.amlzq.android.viewer.R;
+import com.amlzq.android.viewer.common.R;
 
 public class CommonData {
 

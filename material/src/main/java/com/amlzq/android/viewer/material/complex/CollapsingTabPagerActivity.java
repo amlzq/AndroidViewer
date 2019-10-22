@@ -61,7 +61,7 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        mTabs = findViewById(R.id.tab);
+        mTabs = findViewById(R.id.tabs);
         mViewPager = findViewById(R.id.view_pager);
 
         mContentAdapter = new ContentPagerAdapter(getSupportFragmentManager());

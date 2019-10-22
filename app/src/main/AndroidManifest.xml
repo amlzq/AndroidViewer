@@ -58,7 +58,7 @@
             android:label="@string/title_material_design"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.MaterialComponents.Light"
+            android:theme="@style/Material.AppTheme.MaterialComponents"
             tools:node="replace" />
 
     </application>

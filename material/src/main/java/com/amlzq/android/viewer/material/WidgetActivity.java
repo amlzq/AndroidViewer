@@ -48,4 +48,8 @@ public class WidgetActivity extends AppCompatActivity {
         startActivity(new Intent(this, TabLayoutActivity.class));
     }
 
+    public void onTextView(View view) {
+        startActivity(new Intent(this, TextViewActivity.class));
+    }
+
 }
