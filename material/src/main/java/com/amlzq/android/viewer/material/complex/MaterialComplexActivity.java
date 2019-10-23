@@ -2,8 +2,9 @@ package com.amlzq.android.viewer.material.complex;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.amlzq.android.viewer.material.R;
 

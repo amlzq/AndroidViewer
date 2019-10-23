@@ -9,16 +9,17 @@ import android.graphics.Color;
 import android.graphics.PixelFormat;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import androidx.annotation.DrawableRes;
-import androidx.core.content.ContextCompat;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.palette.graphics.Palette;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.DrawableRes;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.palette.graphics.Palette;
 
 import java.util.List;
 
@@ -39,6 +40,19 @@ public class PaletteActivity extends AppCompatActivity {
     private TextView mLightMutedColorTv;
 
     private TextView mDominantColorTv;
+
+    // 鲜艳色
+    private int mVibrantColor;
+    private int mDarkVibrantColor;
+    private int mLightVibrantColor;
+
+    // 柔和色
+    private int mMutedColor;
+    private int mDarkMutedColor;
+    private int mLightMutedColor;
+
+    // 主色，首要的，占支配地位的，显著的颜色
+    private int mDominantColor;
 
     public static Intent newIntent(Context context, @DrawableRes int imageResId) {
         Intent intent = new Intent(context, PaletteActivity.class);
@@ -78,24 +92,24 @@ public class PaletteActivity extends AppCompatActivity {
                 int defaultColor = ContextCompat.getColor(PaletteActivity.this, R.color.white);
 
                 // 鲜艳色
-                int mVibrantColor = palette.getVibrantColor(defaultColor);
-                int mDarkVibrantColor = palette.getDarkVibrantColor(defaultColor);
-                int mLightVibrantColor = palette.getLightVibrantColor(defaultColor);
-                setPaletteColor(mVibrantColorTv, mVibrantColor);
-                setPaletteColor(mDarkVibrantColorTv, mDarkVibrantColor);
-                setPaletteColor(mLightVibrantColorTv, mLightVibrantColor);
+                int vibrantColor = palette.getVibrantColor(defaultColor);
+                int darkVibrantColor = palette.getDarkVibrantColor(defaultColor);
+                int lightVibrantColor = palette.getLightVibrantColor(defaultColor);
+                setPaletteColor(mVibrantColorTv, vibrantColor);
+                setPaletteColor(mDarkVibrantColorTv, darkVibrantColor);
+                setPaletteColor(mLightVibrantColorTv, lightVibrantColor);
 
                 // 柔和色
-                int mMutedColor = palette.getMutedColor(defaultColor);
-                int mDarkMutedColor = palette.getDarkMutedColor(defaultColor);
-                int mLightMutedColor = palette.getLightMutedColor(defaultColor);
-                setPaletteColor(mMutedColorTv, mMutedColor);
-                setPaletteColor(mDarkMutedColorTv, mDarkMutedColor);
-                setPaletteColor(mLightMutedColorTv, mLightMutedColor);
+                int mutedColor = palette.getMutedColor(defaultColor);
+                int darkMutedColor = palette.getDarkMutedColor(defaultColor);
+                int lightMutedColor = palette.getLightMutedColor(defaultColor);
+                setPaletteColor(mMutedColorTv, mutedColor);
+                setPaletteColor(mDarkMutedColorTv, darkMutedColor);
+                setPaletteColor(mLightMutedColorTv, lightMutedColor);
 
                 // 主色，首要的，占支配地位的，显著的颜色
-                int mDominantColor = palette.getDominantColor(defaultColor);
-                setPaletteColor(mDominantColorTv, mDominantColor);
+                int dominantColor = palette.getDominantColor(defaultColor);
+                setPaletteColor(mDominantColorTv, dominantColor);
 
                 // Swatch - 色块 // 15种
                 List<Palette.Swatch> mSwatchList = palette.getSwatches();

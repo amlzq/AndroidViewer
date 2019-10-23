@@ -24,8 +24,8 @@
             app:expandedTitleMarginEnd="@dimen/text_margin"
             app:expandedTitleMarginStart="@dimen/text_margin"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:title="CollapsingToolbarLayout"
-            app:toolbarId="@+id/toolbar">
+            app:toolbarId="@+id/toolbar"
+            tools:title="CollapsingToolbarLayout">
 
             <ImageView
                 android:id="@+id/cover"
@@ -42,7 +42,7 @@
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/AppTheme.PopupOverlay"
-                app:title="Toolbar" />
+                tools:title="Toolbar" />
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 

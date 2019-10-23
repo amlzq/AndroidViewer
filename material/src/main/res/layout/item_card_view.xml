@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:stateListAnimator="@drawable/selector_elevation"
+    app:cardBackgroundColor="@color/gray"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/loading"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_avatar_black_24dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_toRightOf="@id/avatar"
+            android:text="@string/loading"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/font_medium" />
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/loading"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_alignLeft="@id/title"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:ellipsize="end"
+            android:text="@string/loading"
+            android:textSize="@dimen/font_small" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:text="@string/loading"
+            android:textColor="@color/descColor"
+            android:textSize="@dimen/font_small" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

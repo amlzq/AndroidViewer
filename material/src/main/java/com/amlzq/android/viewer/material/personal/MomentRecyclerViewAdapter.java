@@ -2,18 +2,21 @@ package com.amlzq.android.viewer.material.personal;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
 import android.os.Build;
-import androidx.annotation.NonNull;
-import androidx.appcompat.widget.AppCompatImageButton;
-import androidx.appcompat.widget.AppCompatImageView;
-import androidx.appcompat.widget.AppCompatTextView;
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.AppCompatImageButton;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.amlzq.android.viewer.data.MomentInfo;
 import com.amlzq.android.viewer.material.R;
@@ -77,9 +80,15 @@ public class MomentRecyclerViewAdapter extends RecyclerView.Adapter<MomentRecycl
                     R.color.gray));
         }
         if (holder.mItem.liked) {
-            holder.mLike.setPressed(true);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                holder.mLike.setImageTintList(ColorStateList.valueOf(ContextCompat.getColor(mRecyclerView.getContext(), R.color.colorAccent)));
+            }
+            // holder.mLike.setPressed(true);
         } else {
-            holder.mLike.setPressed(false);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                holder.mLike.setImageTintList(ColorStateList.valueOf(Color.BLACK));
+            }
+            // holder.mLike.setPressed(false);
         }
 
         holder.mView.setOnClickListener(v -> {
@@ -87,12 +96,6 @@ public class MomentRecyclerViewAdapter extends RecyclerView.Adapter<MomentRecycl
                     v,
                     holder.getAdapterPosition(),
                     holder.getItemId());
-        });
-        holder.mView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
         });
     }
 

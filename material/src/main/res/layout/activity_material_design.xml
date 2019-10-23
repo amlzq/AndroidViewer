@@ -39,8 +39,15 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onAlertDialogs"
-                android:text="Alert Dialogs"
+                android:onClick="onAlertDialog"
+                android:text="Alert Dialog"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onChip"
+                android:text="Chip"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton
@@ -76,13 +83,6 @@
                 android:layout_height="wrap_content"
                 android:onClick="onTemplates"
                 android:text="android-studio templates"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onChip"
-                android:text="Chip"
                 android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>

@@ -2,23 +2,25 @@ package com.amlzq.android.viewer.material.complex;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.annotation.Nullable;
-import com.google.android.material.appbar.AppBarLayout;
-import com.google.android.material.tabs.TabLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.ViewPager;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import com.amlzq.android.viewer.material.R;
 import com.amlzq.android.viewer.material.personal.MomentListFragment;
 import com.amlzq.android.viewer.material.personal.ProfileFragment;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +37,7 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
 
     private AppBarLayout mAppBar;
     private Toolbar mToolbar;
+    private CollapsingToolbarLayout mCollapsingToolbar;
 
     // Tab + ViewPager
     private TabLayout mTabs;
@@ -54,12 +57,13 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
 
         mAppBar = findViewById(R.id.appbar);
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        mToolbar.setTitle("");
         setSupportActionBar(mToolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setHomeButtonEnabled(true);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+
+        mCollapsingToolbar = findViewById(R.id.collapsing_toolbar);
 
         mTabs = findViewById(R.id.tabs);
         mViewPager = findViewById(R.id.view_pager);
@@ -85,6 +89,7 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
     @Override
     protected void onTitleChanged(CharSequence title, int color) {
         super.onTitleChanged(title, color);
+        mCollapsingToolbar.setTitle(title);
     }
 
     @Override
@@ -102,7 +107,7 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 // android.R.id.home是Android内置home按钮的id
-
+                finish();
                 break;
         }
         return super.onOptionsItemSelected(item);

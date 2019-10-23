@@ -2,13 +2,14 @@ package com.amlzq.android.viewer.data;
 
 import com.amlzq.android.viewer.common.R;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 /**
- * 动态，瞬间数据工厂
+ * Moment数据
  */
 public class MomentData {
 
@@ -40,10 +41,10 @@ public class MomentData {
         MomentInfo info = new MomentInfo();
         info.id = "" + position;
         info.avatar = R.drawable.ic_avatar;
-        info.name = "Item: " + position;
+        info.name = "Item " + new DecimalFormat("00").format(position);
         info.text = makeDetails(position);
-        if (position >= CommonData.IPPAWARDS_COUNT) {
-            info.image = CommonData.IPPAWARDS[position - CommonData.IPPAWARDS_COUNT];
+        if (position >= CommonData.getIppawardsCount()) {
+            info.image = CommonData.IPPAWARDS[position - CommonData.getIppawardsCount()];
         } else {
             info.image = CommonData.IPPAWARDS[position];
         }

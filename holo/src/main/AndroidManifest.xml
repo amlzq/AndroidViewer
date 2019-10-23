@@ -3,6 +3,7 @@
     package="com.amlzq.android.viewer.holo">
 
     <application>
+        <activity android:name=".ListViewActivity" />
         <activity
             android:name=".BottomTabHostActivity"
             android:label="@string/title_bottom_tab_host" />

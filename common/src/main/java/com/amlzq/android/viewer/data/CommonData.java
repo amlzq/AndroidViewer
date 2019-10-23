@@ -4,7 +4,9 @@ import com.amlzq.android.viewer.common.R;
 
 public class CommonData {
 
-    public static final int IPPAWARDS_COUNT = 24;
+    public static int getIppawardsCount() {
+        return IPPAWARDS.length;
+    }
 
     public static final int[] IPPAWARDS = new int[]{
             R.drawable.ippawards_1st_panorama_vincent_chen,

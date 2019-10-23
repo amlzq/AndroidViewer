@@ -104,6 +104,7 @@
             android:theme="@style/Material.AppTheme" />
         <activity
             android:name=".RecycleViewActivity"
+            android:label="RecycleView"
             android:theme="@style/Material.AppTheme" />
         <activity
             android:name=".TranslucentStatusBarActivity"
@@ -135,11 +136,12 @@
             android:theme="@style/Material.AppTheme.MaterialComponents" />
         <activity
             android:name=".complex.CollapsingRecycleViewActivity"
+            android:label="CollapsingRecycleView"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity
             android:name=".complex.CollapsingTabPagerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:label="CollapsingTabPagerActivity"
+            android:label="CollapsingTabPager"
             android:theme="@style/Material.Activity.TranslucentStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
@@ -148,7 +150,7 @@
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".complex.TabPagerActivity"
-            android:label="TabPagerActivity"
+            android:label="TabPager"
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".complex.ActionAppCompatActivity"

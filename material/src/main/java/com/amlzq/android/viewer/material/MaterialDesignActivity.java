@@ -2,20 +2,18 @@ package com.amlzq.android.viewer.material;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.amlzq.android.viewer.material.complex.MaterialComplexActivity;
 import com.amlzq.android.viewer.material.templates.TemplatesActivity;
 
 /**
- * material design style guide
- * 材料设计风格的指南
- * <p>
- * https://material.io/develop/android/components
- * https://blog.csdn.net/kong_gu_you_lan/article/details/80755159
+ * material design
+ * 材料设计
  */
 
 public class MaterialDesignActivity extends AppCompatActivity {
@@ -66,7 +64,18 @@ public class MaterialDesignActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * https://material.io/develop/android/components/chip/
+     */
     public void onChip(View view) {
         startActivity(new Intent(this, ChipActivity.class));
     }
+
+    /**
+     * https://material.io/develop/android/components/dialog/
+     */
+    public void onAlertDialog(View view) {
+
+    }
+
 }

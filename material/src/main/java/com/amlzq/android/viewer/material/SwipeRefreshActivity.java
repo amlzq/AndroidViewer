@@ -3,8 +3,9 @@ package com.amlzq.android.viewer.material;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 /**
  * SwipeRefreshLayout demo
@@ -23,12 +24,7 @@ public class SwipeRefreshActivity extends AppCompatActivity {
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        mSwipeRefreshLayout.setRefreshing(false);
-                    }
-                }, 6000);
+                new Handler().postDelayed(() -> mSwipeRefreshLayout.setRefreshing(false), 6000);
             }
         });
     }

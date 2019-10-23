@@ -1,6 +1,9 @@
 // 材料设计语言
-// 基于Android Platform API和AndroidX API
-// 
+// 基于Android Platform API和GoogleMaterial API
+
+// https://material.io/develop/android/components
+// https://github.com/material-components/material-components-android
+// https://blog.csdn.net/kong_gu_you_lan/article/details/80755159
 
 if (rootProject.ext.multiApp) {
     apply plugin: 'com.android.application'

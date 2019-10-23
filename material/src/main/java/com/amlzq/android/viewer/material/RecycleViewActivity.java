@@ -2,12 +2,6 @@ package com.amlzq.android.viewer.material;
 
 import android.content.Context;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,13 +9,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+
 import com.amlzq.android.viewer.data.EntityInfo;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * RecycleView样例
+ * RecycleView+CardView样例
  */
 public class RecycleViewActivity extends AppCompatActivity {
 
@@ -71,17 +72,17 @@ public class RecycleViewActivity extends AppCompatActivity {
     class CardListAdapter extends RecyclerView.Adapter<CardListAdapter.ViewHolder> {
 
         private Context mContext;
-        private List<EntityInfo> mDatas = new ArrayList<>();
+        private List<EntityInfo> mValues = new ArrayList<>();
 
-        public CardListAdapter(Context context, List<EntityInfo> datas) {
+        public CardListAdapter(Context context, List<EntityInfo> items) {
             mContext = context;
-            mDatas.addAll(datas);
+            mValues.addAll(items);
         }
 
         @NonNull
         @Override
         public CardListAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            return new CardListAdapter.ViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_card, parent, false));
+            return new CardListAdapter.ViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_card_view, parent, false));
         }
 
         @Override
@@ -96,11 +97,11 @@ public class RecycleViewActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
-            return mDatas.size();
+            return mValues.size();
         }
 
         public EntityInfo getItem(int position) {
-            return mDatas.get(position);
+            return mValues.get(position);
         }
 
         public class ViewHolder extends RecyclerView.ViewHolder {
@@ -113,9 +114,9 @@ public class RecycleViewActivity extends AppCompatActivity {
             public ViewHolder(View view) {
                 super(view);
                 mView = view;
-                mTitle = mView.findViewById(R.id.tv_title);
-                mContent = mView.findViewById(R.id.tv_content);
-                mTime = mView.findViewById(R.id.tv_time);
+                mTitle = mView.findViewById(R.id.title);
+                mContent = mView.findViewById(R.id.content);
+                mTime = mView.findViewById(R.id.time);
             }
 
             @Override

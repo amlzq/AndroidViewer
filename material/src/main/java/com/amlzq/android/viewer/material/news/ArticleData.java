@@ -45,8 +45,8 @@ public class ArticleData {
         item.title = "Item " + position;
         item.summary = makeDetails(position);
         item.time = System.currentTimeMillis();
-        if (position >= CommonData.IPPAWARDS_COUNT) {
-            item.cover = CommonData.IPPAWARDS[position - CommonData.IPPAWARDS_COUNT];
+        if (position >= CommonData.getIppawardsCount()) {
+            item.cover = CommonData.IPPAWARDS[position - CommonData.getIppawardsCount()];
         } else {
             item.cover = CommonData.IPPAWARDS[position];
         }
