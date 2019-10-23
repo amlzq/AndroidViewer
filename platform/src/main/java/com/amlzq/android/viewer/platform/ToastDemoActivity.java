@@ -1,13 +1,13 @@
 package com.amlzq.android.viewer.platform;
 
+import android.app.Activity;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class ToastDemoActivity extends AppCompatActivity {
+public class ToastDemoActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,12 +1,12 @@
 package com.amlzq.android.viewer.platform;
 
+import android.app.Activity;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * 布局演示样例
  */
-public class LayoutDemoActivity extends AppCompatActivity {
+public class LayoutDemoActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

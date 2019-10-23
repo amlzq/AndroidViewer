@@ -1,9 +1,9 @@
 package com.amlzq.android.viewer.platform;
 
+import android.app.Activity;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 
-public class ProgressBarDemoActivity extends AppCompatActivity {
+public class ProgressBarDemoActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
