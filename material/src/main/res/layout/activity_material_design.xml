@@ -33,21 +33,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onComplex"
-                android:text="Complex use\n综合使用场景"
+                android:text="Show Me"
+                android:textAllCaps="false" />
+
+            <android.support.design.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onAlertDialogs"
+                android:text="Alert Dialogs"
                 android:textAllCaps="false" />
 
             <android.support.design.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onLayout"
-                android:text="Layout\n新布局"
+                android:text="Layout"
                 android:textAllCaps="false" />
 
             <android.support.design.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onWidget"
-                android:text="Material widget\n材料设计库的小部件"
+                android:text="Widget"
                 android:textAllCaps="false" />
 
             <android.support.design.button.MaterialButton
@@ -69,6 +76,13 @@
                 android:layout_height="wrap_content"
                 android:onClick="onTemplates"
                 android:text="android-studio templates"
+                android:textAllCaps="false" />
+
+            <android.support.design.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onChip"
+                android:text="Chip"
                 android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>

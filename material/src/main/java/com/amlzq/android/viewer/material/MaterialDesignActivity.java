@@ -14,6 +14,7 @@ import com.amlzq.android.viewer.material.templates.TemplatesActivity;
  * material design style guide
  * 材料设计风格的指南
  * <p>
+ * https://material.io/develop/android/components
  * https://blog.csdn.net/kong_gu_you_lan/article/details/80755159
  */
 
@@ -65,4 +66,7 @@ public class MaterialDesignActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onChip(View view) {
+        startActivity(new Intent(this, ChipActivity.class));
+    }
 }

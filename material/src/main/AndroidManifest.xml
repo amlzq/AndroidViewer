@@ -168,6 +168,9 @@
             android:name=".TextViewActivity"
             android:label="TextViewActivity"
             android:theme="@style/Material.AppTheme" />
+        <activity
+            android:name=".ChipActivity"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
     </application>
 
 </manifest>

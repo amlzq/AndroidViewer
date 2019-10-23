@@ -55,4 +55,5 @@ dependencies {
     implementation 'android.arch.lifecycle:extensions:1.1.1'
     implementation "com.google.android.gms:play-services-maps:${rootProject.ext.gmsVersion}"
     implementation "com.google.android.gms:play-services-plus:${rootProject.ext.gmsVersion}"
+    // implementation 'com.google.android:flexbox:1.0.0'
 }
