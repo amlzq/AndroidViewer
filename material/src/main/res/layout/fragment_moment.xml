@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/item_margin_horizontal"
     android:paddingBottom="@dimen/item_margin_vertical">
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/avatar"
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/img_placeholder"
         tools:srcCompat="@drawable/ic_avatar_black_24dp" />
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
         android:textColor="@color/titleColor"
         android:textSize="20sp" />
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
         android:textColor="@color/subtitleColor"
         android:textSize="16sp" />
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
         app:srcCompat="@drawable/img_placeholder"
         tools:srcCompat="@drawable/ippawards_1st_panorama_vincent_chen" />
 
-    <android.support.v7.widget.AppCompatImageButton
+    <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/comment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
         tools:text="评论"
         tools:tint="@color/colorAccent" />
 
-    <android.support.v7.widget.AppCompatImageButton
+    <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/like"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

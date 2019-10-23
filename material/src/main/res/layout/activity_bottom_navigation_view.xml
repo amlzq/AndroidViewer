@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:text="介绍BottomNavigationView" />
 
-    <android.support.design.widget.BottomNavigationView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
 
         app:menu="@menu/navigation" />
 
-    <android.support.design.widget.BottomNavigationView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

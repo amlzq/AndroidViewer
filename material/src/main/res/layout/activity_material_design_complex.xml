@@ -14,35 +14,35 @@
         android:paddingRight="@dimen/item_margin_horizontal"
         android:paddingBottom="@dimen/item_margin_vertical">
 
-        <android.support.design.button.MaterialButton
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onBottomNavigation"
             android:text="BottomNavigationView+Fragment"
             android:textAllCaps="false" />
 
-        <android.support.design.button.MaterialButton
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onTabPager"
             android:text="AppBarLayout + Toolbar + TabLayout + ViewPager + FloatingActionButton"
             android:textAllCaps="false" />
 
-        <android.support.design.button.MaterialButton
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onCollapsingScrollView"
             android:text="CollapsingToolbarLayout + ScrollView\n场景:文章详情页"
             android:textAllCaps="false" />
 
-        <android.support.design.button.MaterialButton
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onCollapsingRecycleView"
             android:text="CollapsingToolbarLayout + RecycleView\n场景:分类主页，编辑推荐列表"
             android:textAllCaps="false" />
 
-        <android.support.design.button.MaterialButton
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onCollapsingTabPager"

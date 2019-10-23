@@ -2,7 +2,7 @@ package com.amlzq.android.viewer.material;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -30,7 +30,7 @@ public class DialogActivity extends AppCompatActivity {
      * @param view
      */
     public void onAlertDialog(View view) {
-        android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(this);
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
         builder.setTitle(R.string.prompt);
         builder.setIcon(android.R.drawable.sym_def_app_icon);
         builder.setMessage("this is android.support.v7.app.AlertDialog");
@@ -60,7 +60,7 @@ public class DialogActivity extends AppCompatActivity {
         final String items[] = new String[]{"item1", "item2", "item3",
                 "item4", "item5", "item6"};
 
-        android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(this);
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
         builder.setTitle(R.string.prompt);
         builder.setIcon(android.R.drawable.sym_def_app_icon);
         builder.setItems(items, new DialogInterface.OnClickListener() {
@@ -95,7 +95,7 @@ public class DialogActivity extends AppCompatActivity {
         final String items[] = new String[]{"radioButton1", "radioButton2", "radioButton3",
                 "radioButton4", "radioButton5", "radioButton6"};
 
-        android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(this);
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
         builder.setTitle(R.string.prompt);
         builder.setIcon(android.R.drawable.sym_def_app_icon);
         builder.setSingleChoiceItems(items, 0, new DialogInterface.OnClickListener() {
@@ -131,7 +131,7 @@ public class DialogActivity extends AppCompatActivity {
                 "radioButton4", "radioButton5", "radioButton6"};
         final boolean isChecks[] = new boolean[]{false, true, true, false, false, false};
 
-        android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(this);
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
         builder.setTitle(R.string.prompt);
         builder.setIcon(android.R.drawable.sym_def_app_icon);
         builder.setMultiChoiceItems(items, isChecks, new DialogInterface.OnMultiChoiceClickListener() {
@@ -166,7 +166,7 @@ public class DialogActivity extends AppCompatActivity {
         final EditText content = new EditText(this);
         final TextView title = new TextView(this);
         title.setText("this is custom title");
-        android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(this);
+        androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
         builder.setCustomTitle(title);
         builder.setIcon(android.R.drawable.sym_def_app_icon);
         builder.setView(content);

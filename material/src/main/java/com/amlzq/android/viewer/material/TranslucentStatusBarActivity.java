@@ -1,9 +1,7 @@
 package com.amlzq.android.viewer.material;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-
-import com.amlzq.android.viewer.material.R;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * 半透明状态栏

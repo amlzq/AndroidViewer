@@ -11,7 +11,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -23,13 +23,13 @@ android {
 
 dependencies {
     // google support library
-    api "com.android.support:support-annotations:${rootProject.ext.supportLibVersion}"
-    api "com.android.support:support-v4:${rootProject.ext.supportLibVersion}"
-    api "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
-    api 'com.android.support.constraint:constraint-layout:1.1.3'
+    api 'androidx.annotation:annotation:1.0.0'
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    api 'androidx.appcompat:appcompat:1.0.0'
+    api 'androidx.constraintlayout:constraintlayout:1.1.3'
 
     api fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation "junit:junit:$rootProject.ext.junitVersion"
-    androidTestImplementation "com.android.support.test:runner:$rootProject.runnerVersion"
-    androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion"
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
 }

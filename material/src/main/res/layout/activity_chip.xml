@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Chips are compact elements that represent an input, attribute, or action." />
 
-    <android.support.design.chip.Chip
+    <com.google.android.material.chip.Chip
         android:id="@+id/chip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,36 +27,36 @@
         android:layout_marginTop="@dimen/item_margin_vertical"
         android:text="A ChipGroup contains a set of Chips and manages their layout and multiple-exclusion scope, similarly to a RadioGroup." />
 
-    <android.support.design.chip.ChipGroup
+    <com.google.android.material.chip.ChipGroup
         android:id="@+id/chips"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/item_margin_vertical">
 
-        <android.support.design.chip.Chip
+        <com.google.android.material.chip.Chip
             style="@style/Widget.MaterialComponents.Chip.Action"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Action"
             app:closeIconTint="@color/colorAccent" />
 
-        <android.support.design.chip.Chip
+        <com.google.android.material.chip.Chip
             style="@style/Widget.MaterialComponents.Chip.Choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Choice" />
 
-        <android.support.design.chip.Chip
+        <com.google.android.material.chip.Chip
             style="@style/Widget.MaterialComponents.Chip.Filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Filter" />
 
-        <android.support.design.chip.Chip
+        <com.google.android.material.chip.Chip
             style="@style/Widget.MaterialComponents.Chip.Entry"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Entry" />
-    </android.support.design.chip.ChipGroup>
+    </com.google.android.material.chip.ChipGroup>
 
 </LinearLayout>

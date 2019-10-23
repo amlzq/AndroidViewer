@@ -10,7 +10,7 @@
     android:paddingBottom="@dimen/item_margin_vertical"
     tools:context=".HoloThemeActivity">
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

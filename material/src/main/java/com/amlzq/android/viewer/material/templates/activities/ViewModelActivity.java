@@ -1,7 +1,7 @@
 package com.amlzq.android.viewer.material.templates.activities;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.amlzq.android.viewer.material.R;
 import com.amlzq.android.viewer.material.templates.activities.ui.viewmodel.ViewModelFragment;

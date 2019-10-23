@@ -1,7 +1,7 @@
 package com.amlzq.android.viewer.expand.lottie;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.amlzq.android.viewer.expand.R;

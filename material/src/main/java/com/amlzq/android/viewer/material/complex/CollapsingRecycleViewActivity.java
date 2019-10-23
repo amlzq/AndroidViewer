@@ -2,9 +2,9 @@ package com.amlzq.android.viewer.material.complex;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.amlzq.android.viewer.material.ContentAdapter;
 import com.amlzq.android.viewer.material.R;

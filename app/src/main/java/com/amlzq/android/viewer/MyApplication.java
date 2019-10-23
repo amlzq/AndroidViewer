@@ -1,8 +1,8 @@
 package com.amlzq.android.viewer;
 
 import android.app.Application;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatDelegate;
+import androidx.fragment.app.FragmentManager;
+import androidx.appcompat.app.AppCompatDelegate;
 
 public class MyApplication extends Application {
 

@@ -2,8 +2,8 @@ package com.amlzq.android.viewer.material;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.support.design.chip.Chip;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.chip.Chip;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.Toast;

@@ -1,7 +1,7 @@
 package com.amlzq.android.viewer.material.templates.activities;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import com.amlzq.android.viewer.material.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
