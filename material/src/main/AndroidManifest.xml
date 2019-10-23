@@ -124,7 +124,7 @@
             android:name=".StatusBarActivity"
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
-            android:name=".BottomNavigationViewDemoActivity"
+            android:name=".BottomNavigationViewActivity"
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".PaletteActivity"
@@ -139,30 +139,35 @@
         <activity
             android:name=".complex.CollapsingTabPagerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="CollapsingTabPagerActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".complex.BottomNavigationFragmentActivity"
-            android:label="BottomNavigationViewActivity"
+            android:label="BottomNavigationFragmentActivity"
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".complex.TabPagerActivity"
-            android:label="@string/title_activity_tab"
+            android:label="TabPagerActivity"
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".complex.ActionAppCompatActivity"
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".complex.BottomTabFragmentActivity"
+            android:label="BottomTabFragmentActivity"
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".complex.CollapsingScrollViewActivity"
+            android:label="CollapsingScrollViewActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity
             android:name=".AppBarActivity"
+            android:label="AppBarActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity
             android:name=".CollapsingToolbarActivity"
+            android:label="CollapsingToolbarActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity
             android:name=".TextViewActivity"
@@ -170,6 +175,7 @@
             android:theme="@style/Material.AppTheme" />
         <activity
             android:name=".ChipActivity"
+            android:label="ChipActivity"
             android:theme="@style/Material.AppTheme.MaterialComponents" />
     </application>
 

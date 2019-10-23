@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ChipActivity">
 
     <TextView
@@ -17,23 +18,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/item_margin_vertical"
-        android:text="Chip"
-        app:layout_constraintTop_toBottomOf="@id/overview_chip" />
+        android:text="Chip" />
 
     <TextView
         android:id="@+id/overview_chip_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/item_margin_vertical"
-        android:text="A ChipGroup contains a set of Chips and manages their layout and multiple-exclusion scope, similarly to a RadioGroup."
-        app:layout_constraintTop_toBottomOf="@id/chip" />
+        android:text="A ChipGroup contains a set of Chips and manages their layout and multiple-exclusion scope, similarly to a RadioGroup." />
 
     <android.support.design.chip.ChipGroup
         android:id="@+id/chips"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/item_margin_vertical"
-        app:layout_constraintTop_toBottomOf="@id/overview_chip_group">
+        android:layout_marginTop="@dimen/item_margin_vertical">
 
         <android.support.design.chip.Chip
             style="@style/Widget.MaterialComponents.Chip.Action"
@@ -61,4 +59,4 @@
             android:text="Entry" />
     </android.support.design.chip.ChipGroup>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
