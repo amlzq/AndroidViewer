@@ -22,7 +22,8 @@
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:statusBarScrim="?attr/colorPrimaryDark"
-            app:title="CollapsingToolbarLayout">
+            app:title="CollapsingToolbarLayout"
+            app:toolbarId="@id/toolbar">
 
             <ImageView
                 android:id="@+id/cover"

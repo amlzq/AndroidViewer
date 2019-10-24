@@ -10,7 +10,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="240dp"
+        android:layout_height="360dp"
         android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay">
 
@@ -24,17 +24,17 @@
             app:expandedTitleMarginEnd="@dimen/text_margin"
             app:expandedTitleMarginStart="@dimen/text_margin"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:toolbarId="@+id/toolbar"
+            app:toolbarId="@id/toolbar"
             tools:title="CollapsingToolbarLayout">
 
             <ImageView
                 android:id="@+id/cover"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/ippawards_16_1st_floral_dan_liu"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
-                app:layout_collapseMode="parallax" />
+                app:layout_collapseMode="parallax"
+                tools:src="@drawable/ippawards_16_1st_floral_dan_liu" />
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"

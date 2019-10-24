@@ -2,11 +2,12 @@ package com.amlzq.android.viewer.material;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * 对话框演示样例

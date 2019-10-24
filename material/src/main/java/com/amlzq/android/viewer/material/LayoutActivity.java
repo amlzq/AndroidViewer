@@ -2,8 +2,9 @@ package com.amlzq.android.viewer.material;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * 布局样例
@@ -20,8 +21,6 @@ public class LayoutActivity extends AppCompatActivity {
         startActivity(new Intent(this, AppBarActivity.class));
     }
 
-    public void onCollapsingToolbarLayout(View view) {
-        startActivity(new Intent(this, CollapsingToolbarActivity.class));
-    }
+
 
 }

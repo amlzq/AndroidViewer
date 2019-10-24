@@ -11,6 +11,10 @@
         android:theme="@style/Material.AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".BottomAppBarActivity"
+            android:label="BottomAppBar"
+            android:theme="@style/Material.AppTheme.MaterialComponents.NoActionBar" />
+        <activity
             android:name=".MaterialDesignActivity"
             android:label="@string/title_material_design"
             android:launchMode="singleTop"
@@ -21,8 +25,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- templates -->
+        </activity> <!-- templates -->
         <activity
             android:name=".templates.TemplatesActivity"
             android:theme="@style/Material.AppTheme" />
@@ -129,7 +132,7 @@
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".PaletteActivity"
-            android:label="PaletteActivity"
+            android:label="Palette"
             android:theme="@style/Material.AppTheme" />
         <activity
             android:name=".complex.MaterialComplexActivity"
@@ -146,7 +149,7 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".complex.BottomNavigationFragmentActivity"
-            android:label="BottomNavigationFragmentActivity"
+            android:label="BottomNavigationFragment"
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".complex.TabPagerActivity"
@@ -169,7 +172,7 @@
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity
             android:name=".CollapsingToolbarActivity"
-            android:label="CollapsingToolbarActivity"
+            android:label="CollapsingToolbar"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity
             android:name=".TextViewActivity"
@@ -177,7 +180,11 @@
             android:theme="@style/Material.AppTheme" />
         <activity
             android:name=".ChipActivity"
-            android:label="ChipActivity"
+            android:label="Chip"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".BadgeActivity"
+            android:label="Badge"
             android:theme="@style/Material.AppTheme.MaterialComponents" />
     </application>
 

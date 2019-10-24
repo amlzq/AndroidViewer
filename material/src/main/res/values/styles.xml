@@ -46,6 +46,14 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
+    <style name="Material.AppTheme.MaterialComponents.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
     <!--半透明状态栏-->
     <style name="Material.Activity.TranslucentStatusBar" parent="Material.AppTheme.NoActionBar">
         <!--窗口-->

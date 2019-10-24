@@ -46,8 +46,29 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="onBadge"
+                android:text="Badge"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:onClick="onChip"
                 android:text="Chip"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCollapsingToolbar"
+                android:text="Collapsing Toolbar"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onBottomAppBar"
+                android:text="Bottom App Bar"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton

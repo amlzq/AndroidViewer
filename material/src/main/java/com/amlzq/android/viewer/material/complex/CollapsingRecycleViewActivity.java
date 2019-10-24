@@ -20,6 +20,7 @@ import android.widget.Toast;
 import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.content.res.AppCompatResources;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
@@ -51,6 +52,8 @@ public class CollapsingRecycleViewActivity extends AppCompatActivity
         AdapterView.OnItemClickListener,
         AdapterView.OnItemLongClickListener {
 
+    Toolbar mToolbar;
+    CollapsingToolbarLayout mCollapsingToolbar;
     protected SwipeRefreshLayout mSwipeRefresh;
     protected RecyclerView mRecyclerView;
     ContentAdapter mAdapter;
@@ -59,11 +62,13 @@ public class CollapsingRecycleViewActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collapsing_recycleview);
-        mSwipeRefresh = findViewById(R.id.swipe_refresh);
 
-        // 解决CollapsingToolbarLayout和RecyclerView嵌套滚动问题
-//        mRecyclerView.setNestedScrollingEnabled(true);
-//        mAdapter.notifyDataSetChanged();
+        mToolbar = findViewById(R.id.toolbar);
+        mCollapsingToolbar = findViewById(R.id.collapsing_toolbar);
+        mSwipeRefresh = findViewById(R.id.swipe_refresh);
+        mRecyclerView = findViewById(R.id.recycler_view);
+
+        setSupportActionBar(mToolbar);
 
         // 设置进度条的颜色主题，最多能设置四种，加载颜色是循环播放的，只要没有完成刷新就会一直循环，holo_blue_bright>holo_green_light>holo_orange_light>holo_red_light
         mSwipeRefresh.setColorSchemeColors(Color.BLUE, Color.GREEN, Color.YELLOW, Color.RED);
@@ -75,7 +80,8 @@ public class CollapsingRecycleViewActivity extends AppCompatActivity
         mSwipeRefresh.setSize(SwipeRefreshLayout.LARGE);
         mSwipeRefresh.setOnRefreshListener(this);
 
-        mRecyclerView = findViewById(R.id.recycler_view);
+        // CollapsingToolbarLayout和RecyclerView联动
+        mRecyclerView.setNestedScrollingEnabled(true);
         mRecyclerView.setAdapter(mAdapter = new ContentAdapter(this));
         mAdapter.setItemClickListener(this);
         mAdapter.setItemLongClickListener(this);
@@ -84,8 +90,7 @@ public class CollapsingRecycleViewActivity extends AppCompatActivity
     @Override
     protected void onTitleChanged(CharSequence title, int color) {
         super.onTitleChanged(title, color);
-        CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsing_toolbar);
-        collapsingToolbarLayout.setTitle(title);
+        mCollapsingToolbar.setTitle(title);
     }
 
     @Override
@@ -101,7 +106,7 @@ public class CollapsingRecycleViewActivity extends AppCompatActivity
     @Override
     public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
         MomentInfo item = mAdapter.getItem(position);
-        Toast.makeText(this, "Long click " + item.name, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "long click " + item.name, Toast.LENGTH_SHORT).show();
         return false;
     }
 

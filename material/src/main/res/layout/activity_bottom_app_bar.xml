@@ -1,0 +1,86 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomAppBarActivity">
+
+    <!-- Other components and views -->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/large_text" />
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bar"
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabAlignmentMode="center"
+        app:fabCradleMargin="6dp"
+        app:hideOnScroll="true"
+        app:navigationIcon="@drawable/ic_add_circle_black_24dp"
+        tools:menu="@menu/navigation" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/white"
+        app:backgroundTint="@color/colorAccent"
+        app:elevation="2dp"
+        app:layout_anchor="@id/bar"
+        app:layout_anchorGravity="top"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bar2"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:backgroundTint="@color/colorAccent"
+        app:fabAlignmentMode="end"
+        app:navigationIcon="@drawable/ic_remove_circle_black_24dp"
+        app:title="@string/loading" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_anchor="@id/bar2"
+        app:srcCompat="@drawable/ic_favorite_black_24dp" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bar3"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="56dp"
+        app:backgroundTint="@color/colorAccent"
+        app:fabAlignmentMode="center"
+        app:fabCradleMargin="10dp"
+        app:navigationIcon="@drawable/ic_remove_circle_black_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_anchor="@id/bar3"
+        app:srcCompat="@drawable/ic_comment_black_24dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

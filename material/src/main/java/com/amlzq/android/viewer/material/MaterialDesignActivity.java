@@ -75,7 +75,19 @@ public class MaterialDesignActivity extends AppCompatActivity {
      * https://material.io/develop/android/components/dialog/
      */
     public void onAlertDialog(View view) {
+        startActivity(new Intent(this, DialogActivity.class));
+    }
 
+    public void onCollapsingToolbar(View view) {
+        startActivity(new Intent(this, CollapsingToolbarActivity.class));
+    }
+
+    public void onBadge(View view) {
+        startActivity(new Intent(this, BadgeActivity.class));
+    }
+
+    public void onBottomAppBar(View view) {
+        startActivity(new Intent(this, BottomAppBarActivity.class));
     }
 
 }

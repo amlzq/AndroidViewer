@@ -22,6 +22,7 @@
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:statusBarScrim="?attr/colorPrimaryDark"
+            app:toolbarId="@id/toolbar"
             tools:title="CollapsingToolbarLayout">
 
             <ImageView
