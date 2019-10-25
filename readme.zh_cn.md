@@ -12,8 +12,8 @@
 
 ## 感谢
 - [Android开发人员指南-界面](https://developer.android.com/guide/topics/ui)
-- [Build a Material Design App with the Android Design Support Library
-](https://codelabs.developers.google.com/codelabs/material-design-style/#0)
+- [MDC for Android](https://material.io/develop/android/)
+- [Build a Material Design App with the Android Design Support Library](https://codelabs.developers.google.com/codelabs/material-design-style/#0)
 - [topeka](https://github.com/android/topeka)
 - [MDStudySamples](https://github.com/Mike-bel/MDStudySamples)
 - [图标来源](https://www.iconfont.cn)

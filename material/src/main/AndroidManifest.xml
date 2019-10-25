@@ -11,9 +11,9 @@
         android:theme="@style/Material.AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".BottomAppBarActivity"
-            android:label="BottomAppBar"
-            android:theme="@style/Material.AppTheme.MaterialComponents.NoActionBar" />
+            android:name=".CardViewActivity"
+            android:label="CardView"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
         <activity
             android:name=".MaterialDesignActivity"
             android:label="@string/title_material_design"
@@ -92,10 +92,6 @@
             android:label="WidgetActivity"
             android:theme="@style/Material.AppTheme.MaterialComponents" />
         <activity
-            android:name=".DialogActivity"
-            android:label="DialogActivity"
-            android:theme="@style/Material.AppTheme.NoActionBar" />
-        <activity
             android:name=".SwipeRefreshActivity"
             android:label="SwipeRefreshActivity"
             android:theme="@style/Material.AppTheme" />
@@ -119,9 +115,6 @@
             android:name=".ToolbarActivity"
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
-            android:name=".MaterialButtonActivity"
-            android:theme="@style/Material.AppTheme.NoActionBar" />
-        <activity
             android:name=".TabLayoutActivity"
             android:theme="@style/Material.AppTheme" />
         <activity
@@ -129,7 +122,8 @@
             android:theme="@style/Material.AppTheme.NoActionBar" />
         <activity
             android:name=".BottomNavigationViewActivity"
-            android:theme="@style/Material.AppTheme.NoActionBar" />
+            android:label="BottomNavigationView"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
         <activity
             android:name=".PaletteActivity"
             android:label="Palette"
@@ -167,6 +161,10 @@
             android:label="CollapsingScrollViewActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity
+            android:name=".DialogActivity"
+            android:label="Dialog"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
             android:name=".AppBarActivity"
             android:label="AppBarActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
@@ -185,6 +183,26 @@
         <activity
             android:name=".BadgeActivity"
             android:label="Badge"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".BottomAppBarActivity"
+            android:label="BottomAppBar"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".BottomSheetActivity"
+            android:label="BottomSheet"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".MaterialButtonActivity"
+            android:label="MaterialButton"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".FloatingActionButtonActivity"
+            android:label="FloatingActionButton"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".CheckBoxActivity"
+            android:label="CheckBox"
             android:theme="@style/Material.AppTheme.MaterialComponents" />
     </application>
 

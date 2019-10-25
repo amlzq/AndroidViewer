@@ -90,4 +90,27 @@ public class MaterialDesignActivity extends AppCompatActivity {
         startActivity(new Intent(this, BottomAppBarActivity.class));
     }
 
+    public void onBottomNavigation(View view) {
+        startActivity(new Intent(this, BottomNavigationViewActivity.class));
+    }
+
+    public void onBottomSheet(View view) {
+        startActivity(new Intent(this, BottomSheetActivity.class));
+    }
+
+    public void onCheckbox(View view) {
+        startActivity(new Intent(this, CheckBoxActivity.class));
+    }
+
+    public void onFloatingActionButton(View view) {
+        startActivity(new Intent(this, FloatingActionButtonActivity.class));
+    }
+
+    public void onMaterialButton(View view) {
+        startActivity(new Intent(this, MaterialButtonActivity.class));
+    }
+
+    public void onMaterialCard(View view) {
+        startActivity(new Intent(this, CardViewActivity.class));
+    }
 }

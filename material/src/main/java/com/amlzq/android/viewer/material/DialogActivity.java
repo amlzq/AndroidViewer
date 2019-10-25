@@ -10,8 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
- * 对话框演示样例
- * 材料设计
+ * Dialog样例
  */
 public class DialogActivity extends AppCompatActivity {
 

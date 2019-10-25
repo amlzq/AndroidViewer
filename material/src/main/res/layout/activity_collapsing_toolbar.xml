@@ -85,13 +85,13 @@
 
                 <RadioButton
                     android:id="@+id/radio"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="设置CollapsingToolbarLayout标题" />
 
                 <RadioButton
                     android:id="@+id/radio2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="设置Toolbar标题" />
             </RadioGroup>

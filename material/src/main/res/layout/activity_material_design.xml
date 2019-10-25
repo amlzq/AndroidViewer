@@ -53,6 +53,34 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="onBottomAppBar"
+                android:text="Bottom App Bar"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onBottomNavigation"
+                android:text="Bottom Navigation"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onBottomSheet"
+                android:text="Bottom Sheet"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckbox"
+                android:text="Check Box"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:onClick="onChip"
                 android:text="Chip"
                 android:textAllCaps="false" />
@@ -67,8 +95,22 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onBottomAppBar"
-                android:text="Bottom App Bar"
+                android:onClick="onFloatingActionButton"
+                android:text="Floating Action Button"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onMaterialButton"
+                android:text="Material Button"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onMaterialCard"
+                android:text="Material Card"
                 android:textAllCaps="false" />
 
             <com.google.android.material.button.MaterialButton

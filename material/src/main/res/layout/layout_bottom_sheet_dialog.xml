@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_share_black_24dp"
+        android:drawablePadding="28dp"
+        android:drawableTint="#747474"
+        android:gravity="center_vertical"
+        android:text="Share"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@android:drawable/stat_sys_upload"
+        android:drawablePadding="28dp"
+        android:drawableTint="#747474"
+        android:gravity="center_vertical"
+        android:text="Upload"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_content_copy_black_24dp"
+        android:drawablePadding="28dp"
+        android:drawableTint="#747474"
+        android:gravity="center_vertical"
+        android:text="Copy"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableLeft="@drawable/ic_print_black_24dp"
+        android:drawablePadding="28dp"
+        android:drawableTint="#747474"
+        android:gravity="center_vertical"
+        android:text="Print this page"
+        android:textSize="18sp" />
+
+</LinearLayout>
