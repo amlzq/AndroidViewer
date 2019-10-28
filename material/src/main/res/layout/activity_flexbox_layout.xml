@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:alignContent="flex_start"
+    app:alignItems="flex_start"
+    app:dividerDrawable="@drawable/divider"
+    app:flexDirection="row"
+    app:flexWrap="wrap"
+    app:showDivider="beginning|middle"
+    tools:context="com.amlzq.android.viewer.material.FlexboxLayoutActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FlexboxLayout是一个库项目，将CSS Flexible Box Layout Module的相似功能 引入了Android。"
+        app:layout_alignSelf="flex_start"
+        app:layout_flexBasisPercent="100%" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onRecyclerView"
+        android:text="RecyclerView" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/violet"
+        app:layout_alignSelf="flex_start"
+        app:layout_flexBasisPercent="50%" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/blue"
+        app:layout_alignSelf="center" />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:background="@color/pink"
+        app:layout_alignSelf="flex_end" />
+
+    <TextView
+        style="@style/FlexItem"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:text="1" />
+
+    <TextView
+        style="@style/FlexItem"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:text="2" />
+
+    <TextView
+        style="@style/FlexItem"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:text="3" />
+
+    <TextView
+        style="@style/FlexItem"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="4" />
+
+    <TextView
+        style="@style/FlexItem"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="5" />
+
+</com.google.android.flexbox.FlexboxLayout>

@@ -8,7 +8,10 @@
     <color name="blue">#0000FF</color>
     <!--Solid color 纯色-->
     <color name="pink">#FFC0CB</color>
-    <color name="orange">#FFA500</color>
+    <color name="orange">#FF7F00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="violet">#8B00FF</color>
     <color name="black">@android:color/black</color>
     <color name="white">@android:color/white</color>
     <color name="whiteDark">#F9F9F9</color>

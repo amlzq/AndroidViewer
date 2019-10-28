@@ -2,6 +2,11 @@ package com.amlzq.android.viewer.material.news;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -9,25 +14,24 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
 
 import com.amlzq.android.viewer.material.R;
+import com.amlzq.android.viewer.material.complex.OnItemChildClickListener;
+import com.google.android.flexbox.FlexDirection;
+import com.google.android.flexbox.FlexboxLayoutManager;
+import com.google.android.flexbox.JustifyContent;
 
 /**
  * 文章
  */
-public class ArticleListFragment extends Fragment {
+public class ArticleListFragment extends Fragment
+        implements AdapterView.OnItemClickListener,
+        AdapterView.OnItemLongClickListener,
+        OnItemChildClickListener {
 
     private static final String ARG_LAYOUT_STYLE = "layout-style";
-    private int mLayoutStyle = 1; // [1:LinearLayoutManager, 2:GridLayoutManager, 3:StaggeredGridLayoutManager]
+    private int mLayoutStyle = 1; // [1:LinearLayoutManager, 2:GridLayoutManager, 3:StaggeredGridLayoutManager, 4:Flexbox]
 
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
     public ArticleListFragment() {
     }
 
@@ -58,21 +62,27 @@ public class ArticleListFragment extends Fragment {
             Context context = view.getContext();
             RecyclerView recyclerView = (RecyclerView) view;
             recyclerView.setHasFixedSize(true);
-            if (mLayoutStyle == 1) {
-                recyclerView.setLayoutManager(new LinearLayoutManager(context));
-            } else if (mLayoutStyle == 2) {
-                recyclerView.setLayoutManager(new GridLayoutManager(context, 2));
-            } else {
-                recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
-            }
-            ArticleRecyclerViewAdapter adapter = new ArticleRecyclerViewAdapter(ArticleData.ITEMS);
-            adapter.onAttachedToRecyclerView(recyclerView);
-            adapter.setItemClickListener(new AdapterView.OnItemClickListener() {
+            ArticleRecyclerViewAdapter adapter = new ArticleRecyclerViewAdapter();
 
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                }
-            });
+            if (mLayoutStyle == 2) {
+                recyclerView.setLayoutManager(new GridLayoutManager(context, 2));
+                adapter.setNewData(ArticleData.generateData(12, ArticleData.VIEW_TYPE_GRID));
+            } else if (mLayoutStyle == 3) {
+                recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
+                adapter.setNewData(ArticleData.generateData(25, ArticleData.VIEW_TYPE_STAGGERED));
+            } else if (mLayoutStyle == 4) {
+                FlexboxLayoutManager manager = new FlexboxLayoutManager(recyclerView.getContext());
+                manager.setFlexDirection(FlexDirection.COLUMN);
+                manager.setJustifyContent(JustifyContent.FLEX_END);
+                recyclerView.setLayoutManager(manager);
+                adapter.setNewData(ArticleData.generateData(12, ArticleData.VIEW_TYPE_FLEXBOX));
+            } else {
+                recyclerView.setLayoutManager(new LinearLayoutManager(context));
+                adapter.setNewData(ArticleData.generateData(25, ArticleData.VIEW_TYPE_LINEAR));
+            }
+            adapter.onAttachedToRecyclerView(recyclerView);
+            adapter.setItemClickListener(this);
+            adapter.setItemLongClickListener(this);
             recyclerView.setAdapter(adapter);
         }
         return view;
@@ -81,6 +91,21 @@ public class ArticleListFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+    }
+
+    @Override
+    public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+        return false;
+    }
+
+    @Override
+    public void onItemChildClick(View view, int position) {
+
     }
 
 }

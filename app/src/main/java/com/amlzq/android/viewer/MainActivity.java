@@ -43,11 +43,11 @@ public class MainActivity extends Activity {
     }
 
     public void onGuideIndex(View view) {
-        startActivity(new Intent(this, GuideActivity.class));
+        startActivity(new Intent(view.getContext(), GuideActivity.class));
     }
 
     public void onTargetAPI(View view) {
-        startActivity(new Intent(this, TargetAPIStyleActivity.class));
+        startActivity(new Intent(view.getContext(), TargetAPIStyleActivity.class));
     }
 
     public void onMaterialDesign(View view) {

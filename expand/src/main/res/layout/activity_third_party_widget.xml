@@ -7,45 +7,58 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="@dimen/item_margin_horizontal"
-        android:paddingTop="@dimen/item_margin_vertical"
-        android:paddingRight="@dimen/item_margin_horizontal"
-        android:paddingBottom="@dimen/item_margin_vertical">
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="酷炫的第三方组件" />
+            android:text="酷炫的第三方组件"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onLottie"
+            android:text="airbnb/lottie-android"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onSmartRefreshLayout"
-            android:text="SmartRefreshLayout" />
+            android:text="SmartRefreshLayout"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onSideMenuByYalantis"
-            android:text="Side-Menu By Yalantis" />
+            android:text="Side-Menu By Yalantis"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onFloatingButton"
-            android:text="android-floating-action-button" />
+            android:text="android-floating-action-button"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onContextMenuByYalantis"
-            android:text="Yalantis/Context-Menu.Android" />
+            android:text="Yalantis/Context-Menu.Android"
+            android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onBottomBarLayoutByChaychan"
-            android:text="chaychan/BottomBarLayout" />
+            android:text="chaychan/BottomBarLayout"
+            android:textAllCaps="false" />
     </LinearLayout>
 
 </ScrollView>

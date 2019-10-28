@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.amlzq.android.viewer.R;
-import com.amlzq.android.viewer.expand.SmartRefreshActivity;
+import com.amlzq.android.viewer.expand.smartrefresh.SmartRefreshActivity;
 import com.amlzq.android.viewer.material.SwipeRefreshActivity;
 
 /**

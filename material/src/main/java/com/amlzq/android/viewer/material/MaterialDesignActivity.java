@@ -113,4 +113,12 @@ public class MaterialDesignActivity extends AppCompatActivity {
     public void onMaterialCard(View view) {
         startActivity(new Intent(this, CardViewActivity.class));
     }
+
+    public void onConstraintLayout(View view) {
+        startActivity(new Intent(this, ConstraintLayoutActivity.class));
+    }
+
+    public void onFlexBoxLayout(View view) {
+        startActivity(new Intent(this, FlexboxLayoutActivity.class));
+    }
 }

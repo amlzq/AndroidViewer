@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.expand;
+package com.amlzq.android.viewer.expand.sidemenu;
 
 import android.animation.Animator;
 import android.content.res.Configuration;
@@ -15,6 +15,9 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.LinearLayout;
+
+import com.amlzq.android.viewer.expand.R;
+import com.amlzq.android.viewer.expand.sidemenu.ContentFragment;
 
 import java.util.ArrayList;
 import java.util.List;

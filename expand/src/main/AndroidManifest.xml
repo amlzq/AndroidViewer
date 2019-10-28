@@ -1,21 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.amlzq.android.viewer.expand">
 
     <application>
-        <activity android:name=".ThirdPartyWidgetActivity" />
-        <activity android:name=".FloatingActionButtonActivity" />
         <activity
-            android:name=".SideMenuByYalantisActivity"
+            android:name=".ThirdPartyWidgetActivity"
+            android:label="Third Party Widget" />
+        <activity
+            android:name=".fab.FloatingActionButtonActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".sidemenu.SideMenuByYalantisActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".ContextMenuByYalantisActivity"
+            android:name=".sidemenu.ContextMenuByYalantisActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".lottie.LottieActivity"
-            android:theme="@style/Theme.AppCompat.Light" />
+            android:theme="@android:style/Theme.Light" />
         <activity
-            android:name=".SmartRefreshActivity"
-            android:theme="@style/Theme.AppCompat.Light" />
+            android:name=".smartrefresh.SmartRefreshActivity"
+            android:theme="@android:style/Theme.Light" />
     </application>
 
 </manifest>

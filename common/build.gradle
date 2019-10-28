@@ -23,9 +23,4 @@ android {
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
-    testImplementation "junit:junit:$rootProject.ext.junitVersion"
-    androidTestImplementation "androidx.test:runner:$rootProject.ext.rulesVersion"
-    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.espressoVersion"
-
-    api "androidx.appcompat:appcompat:$rootProject.ext.appCompatVersion"
 }

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_small"
+    android:layout_marginRight="@dimen/margin_small"
+    android:layout_marginBottom="@dimen/margin_small"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:stateListAnimator="@drawable/selector_elevation"
+    app:cardCornerRadius="@dimen/margin_tiny"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    tools:targetApi="lollipop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/loading"
+            android:scaleType="centerInside"
+            android:src="@drawable/ippawards_16_1st_floral_dan_liu" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cover"
+            android:layout_margin="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/white"
+            tools:text="@string/loading" />
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cover"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceListItem"
+            tools:text="@string/loading" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summary"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_favorite_black_24dp" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summary"
+            android:layout_alignBottom="@id/favorite"
+            android:layout_marginLeft="32dp"
+            android:layout_toRightOf="@id/favorite"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_share_black_24dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/summary"
+            android:layout_alignBottom="@id/favorite"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_toRightOf="@id/share"
+            android:gravity="right|center"
+            tools:text="@string/loading" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

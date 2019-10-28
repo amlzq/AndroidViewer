@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.expand;
+package com.amlzq.android.viewer.expand.fab;
 
 import android.app.Activity;
 import android.graphics.drawable.ShapeDrawable;
@@ -8,18 +8,20 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
 
+import com.amlzq.android.viewer.expand.R;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 
 /**
- * from https://github.com/futuresimple/android-floating-action-button
+ * 悬浮按钮
  */
 public class FloatingActionButtonActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_floating_action_button);
+        // 布局文件名有重复，所以加了getbase后缀
+        setContentView(R.layout.activity_floating_action_button_getbase);
 
         findViewById(R.id.pink_icon).setOnClickListener(new OnClickListener() {
             @Override

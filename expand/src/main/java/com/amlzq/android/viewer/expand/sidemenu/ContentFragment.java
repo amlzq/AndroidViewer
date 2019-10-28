@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.expand;
+package com.amlzq.android.viewer.expand.sidemenu;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.amlzq.android.viewer.expand.R;
 
 import yalantis.com.sidemenu.interfaces.ScreenShotable;
 

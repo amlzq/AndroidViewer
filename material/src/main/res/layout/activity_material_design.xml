@@ -127,21 +127,35 @@
                 android:text="Widget"
                 android:textAllCaps="false" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onPalette"
-                android:text="Palette"
+                android:text="androidx/Palette"
                 android:textAllCaps="false" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onDayNight"
                 android:text="Day Night"
                 android:textAllCaps="false" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onFlexBoxLayout"
+                android:text="google/flexbox-layout"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onConstraintLayout"
+                android:text="androidx/ConstraintLayout"
+                android:textAllCaps="false" />
+
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onTemplates"

@@ -11,6 +11,22 @@
         android:theme="@style/Material.AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".MotionLayoutActivity"
+            android:label="MotionLayout"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".FlexboxLayoutActivity"
+            android:label="FlexboxLayout"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".FlexboxRecycleViewActivity"
+            android:label="Flexbox RecycleView"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".ConstraintLayoutActivity"
+            android:label="ConstraintLayout"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
             android:name=".CardViewActivity"
             android:label="CardView"
             android:theme="@style/Material.AppTheme.MaterialComponents" />

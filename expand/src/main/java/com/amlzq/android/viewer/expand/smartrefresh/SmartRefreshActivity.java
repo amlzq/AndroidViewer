@@ -1,14 +1,15 @@
-package com.amlzq.android.viewer.expand;
+package com.amlzq.android.viewer.expand.smartrefresh;
 
+import android.app.Activity;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 
+import com.amlzq.android.viewer.expand.R;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 
 /**
  * SmartRefreshLayout demo
  */
-public class SmartRefreshActivity extends AppCompatActivity {
+public class SmartRefreshActivity extends Activity {
 
     SmartRefreshLayout mSmartRefreshLayout;
 

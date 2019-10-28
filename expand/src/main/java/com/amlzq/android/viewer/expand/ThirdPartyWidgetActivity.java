@@ -5,6 +5,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.amlzq.android.viewer.expand.fab.FloatingActionButtonActivity;
+import com.amlzq.android.viewer.expand.lottie.LottieActivity;
+import com.amlzq.android.viewer.expand.sidemenu.ContextMenuByYalantisActivity;
+import com.amlzq.android.viewer.expand.sidemenu.SideMenuByYalantisActivity;
+import com.amlzq.android.viewer.expand.smartrefresh.SmartRefreshActivity;
+
 /**
  * https://juejin.im/post/5b70d5f0e51d45662b074d29
  * https://github.com/wasabeef/awesome-android-ui
@@ -42,6 +48,10 @@ public class ThirdPartyWidgetActivity extends Activity {
 
     public void onBottomBarLayoutByChaychan(View view) {
 
+    }
+
+    public void onLottie(View view) {
+        startActivity(new Intent(this, LottieActivity.class));
     }
 
 }

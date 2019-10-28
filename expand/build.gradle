@@ -19,14 +19,27 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+    androidTestImplementation "androidx.test:runner:$rootProject.ext.rulesVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.espressoVersion"
+
     implementation project(':common')
 
-    // Lottie 2.8.0 and above only supports projects that have been migrated to androidx.
-    implementation("com.airbnb.android:lottie:2.7.0") {
+    implementation "androidx.appcompat:appcompat:$rootProject.ext.appCompatVersion"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.ext.recyclerViewVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.ext.constraintLayoutVersion"
+
+    // 在Android上本地渲染After Effects动画
+    // https://github.com/airbnb/lottie-android
+    implementation("com.airbnb.android:lottie:3.1.0") {
         exclude group: "com.android.support"
     }
 
@@ -66,5 +79,8 @@ dependencies {
 //    implementation("com.hyman:flowlayout-lib:1.1.2") {
 //        exclude group: "com.android.support"
 //    }
+
+    // 图表视图/图形视图库，支持折线图，雷达图，气泡图和烛台图以及缩放，拖动和动画。
+    // implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 
 }

@@ -37,6 +37,8 @@ public class RecycleViewActivity extends AppCompatActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.rv_content);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setHasFixedSize(true);
+
+
         List<EntityInfo> entities = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             EntityInfo EntityInfo = new EntityInfo();

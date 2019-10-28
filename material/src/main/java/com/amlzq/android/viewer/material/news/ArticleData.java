@@ -8,17 +8,14 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Helper class for providing sample content for user interfaces created by
- * Android template wizards.
- * <p>
- * TODO: Replace all uses of this class before publishing your app.
+ * 文章数据
  */
 public class ArticleData {
 
     /**
      * An array of sample items.
      */
-    public static final List<ArticleItem> ITEMS = new ArrayList<ArticleItem>();
+    private static final List<ArticleItem> ITEMS = new ArrayList<ArticleItem>();
 
     /**
      * A map of sample items, by ID.
@@ -27,11 +24,18 @@ public class ArticleData {
 
     private static final int COUNT = 25;
 
-    static {
+    public static List<ArticleItem> generateData() {
         // Add some sample items.
-        for (int i = 1; i <= COUNT; i++) {
-            addItem(createItem(i));
+        return generateData(COUNT, VIEW_TYPE_LINEAR);
+    }
+
+    public static List<ArticleItem> generateData(int count, String viewType) {
+        // Add some sample items.
+        ITEMS.clear();
+        for (int i = 1; i <= count; i++) {
+            addItem(createItem(i, viewType));
         }
+        return ITEMS;
     }
 
     private static void addItem(ArticleItem item) {
@@ -39,7 +43,7 @@ public class ArticleData {
         ITEM_MAP.put(item.id, item);
     }
 
-    private static ArticleItem createItem(int position) {
+    private static ArticleItem createItem(int position, String viewType) {
         ArticleItem item = new ArticleItem();
         item.id = "" + position;
         item.title = "Item " + position;
@@ -50,6 +54,7 @@ public class ArticleData {
         } else {
             item.cover = CommonData.IPPAWARDS[position];
         }
+        item.viewType = viewType;
         return item;
     }
 
@@ -69,6 +74,12 @@ public class ArticleData {
         public String summary;
         public long time;
         public int cover;
+        public String viewType; // [linear,grid,staggered,flexbox]
     }
+
+    public static final String VIEW_TYPE_LINEAR = "linear"; //
+    public static final String VIEW_TYPE_GRID = "grid"; //
+    public static final String VIEW_TYPE_STAGGERED = "staggered"; //
+    public static final String VIEW_TYPE_FLEXBOX = "flexbox"; //
 
 }

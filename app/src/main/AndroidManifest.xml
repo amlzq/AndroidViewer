@@ -38,13 +38,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".guide.BottomNavigationOverviewActivity" />
+        <activity
+            android:name=".guide.BottomNavigationOverviewActivity"
+            android:label="Bottom Navigation Overview" />
         <activity android:name=".guide.SlideInMenusOverviewActivity" />
-        <activity android:name=".guide.DialogOverviewActivity" />
+        <activity
+            android:name=".guide.DialogOverviewActivity"
+            android:label="Dialog Overview" />
         <activity
             android:name=".guide.WidgetOverviewActivity"
-            android:label="WidgetGuideActivity" />
-        <activity android:name=".guide.RefreshLayoutOverviewActivity" />
+            android:label="Widget Overview" />
+        <activity
+            android:name=".guide.RefreshLayoutOverviewActivity"
+            android:label="RefreshLayout Overview" />
         <activity android:name=".guide.GuideActivity" />
         <activity android:name=".guide.TypefaceOverviewActivity" />
         <activity android:name=".guide.ViewPageOverviewActivity" />

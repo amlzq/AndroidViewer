@@ -28,7 +28,15 @@ android {
 }
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+    androidTestImplementation "androidx.test:runner:$rootProject.ext.rulesVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.ext.espressoVersion"
+
     implementation project(path: ':common')
+
+    implementation "androidx.appcompat:appcompat:$rootProject.ext.appCompatVersion"
+
     if (!rootProject.ext.multiApp) {
         implementation project(path: ':platform')
         implementation project(path: ':material')
