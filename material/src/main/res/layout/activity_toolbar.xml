@@ -1,65 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ToolbarActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/white"
-        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
-        app:popupTheme="@style/AppTheme.PopupOverlay"
-        app:subtitle="subtitle"
-        app:title="title"
-        app:titleTextColor="@color/colorAccent" />
-
-    <TextView
-        android:id="@+id/text"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/item_margin_vertical"
-        android:text="Toolbar 工具栏，API 取代Actionbar"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-    <TextView
-        android:id="@+id/text2"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:subtitle="subtitle"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:title="title"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="以下Toolbar的样式变化"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/text" />
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="@dimen/item_margin_vertical"
-        android:background="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/text2"
-        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
-        app:subtitle="subtitle"
-        app:title="title"
-        app:titleTextColor="@color/colorAccent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
 
-        
-    </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="在应用程序内容中使用的标准工具栏。工具栏是action bars在应用程序布局中使用的概括。传统上，操作栏是Activity's框架控制的不透明窗口装饰的一部分 ，而工具栏则可以放置在视图层次结构中的任意嵌套级别。应用程序可以选择使用该setActionBar()方法将工具栏指定为活动的动作栏。" />
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/item_margin_vertical"
-        android:background="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/toolbar2"
-        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
-        app:subtitle="subtitle"
-        app:title="title"
-        app:titleTextColor="@color/colorAccent" />
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_margin_vertical"
+                android:text="以下Toolbar的样式变化" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="@dimen/item_margin_vertical"
+                android:background="@color/white"
+                app:navigationIcon="@drawable/ic_arrow_back_black_24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="center title"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_margin_vertical"
+                android:background="@color/white"
+                app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+                app:subtitle="subtitle"
+                app:title="title"
+                app:titleTextColor="@color/colorAccent" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

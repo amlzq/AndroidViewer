@@ -13,6 +13,7 @@ import com.google.android.material.chip.ChipGroup;
 
 /**
  * Chip样例
+ * https://material.io/develop/android/components/chip/
  */
 public class ChipActivity extends AppCompatActivity
         implements View.OnClickListener,

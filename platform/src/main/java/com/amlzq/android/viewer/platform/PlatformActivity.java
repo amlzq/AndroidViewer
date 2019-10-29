@@ -10,13 +10,14 @@ import android.widget.TextView;
 /**
  * 目标API样式
  * 在不同的API Level中查看演变过程
+ *
  */
-public class TargetAPIStyleActivity extends Activity {
+public class PlatformActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_target_api_style);
+        setContentView(R.layout.activity_platform);
 
         StringBuffer buffer = new StringBuffer();
         buffer.append("Platform Name: " + Build.PRODUCT + "\n");

@@ -2,8 +2,9 @@ package com.amlzq.android.viewer.material.templates;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.amlzq.android.viewer.material.R;
 import com.amlzq.android.viewer.material.templates.activities.BasicActivity;
@@ -18,6 +19,10 @@ import com.amlzq.android.viewer.material.templates.activities.SettingsActivity;
 import com.amlzq.android.viewer.material.templates.activities.TabbedActivity;
 import com.amlzq.android.viewer.material.templates.activities.ViewModelActivity;
 
+/**
+ * android-studio templates
+ * android-studio\plugins\android\lib\templates
+ */
 public class TemplatesActivity extends AppCompatActivity {
 
     @Override

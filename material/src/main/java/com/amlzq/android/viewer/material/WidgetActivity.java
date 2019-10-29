@@ -9,6 +9,16 @@ import android.widget.Toast;
 
 /**
  * 材料库的小部件
+ *     // Toolbar和Menu
+ *     // 基于CoordinatorLayout的联动
+ *     // NavigationView
+ *     // CardView
+ *     // TextInputLayout
+ *     // RecyclerView
+ *     // TabLayout
+ *     // SnackBar
+ *     // FloatingActionButton
+ *     // https://www.jianshu.com/p/776cc6329fff
  */
 public class WidgetActivity extends AppCompatActivity {
 
@@ -20,14 +30,7 @@ public class WidgetActivity extends AppCompatActivity {
         findViewById(R.id.material_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(findViewById(android.R.id.content), "This is a Snackbar", Snackbar.LENGTH_SHORT)
-                        .setAction("Cancel", new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                Toast.makeText(WidgetActivity.this, "Snackbar is Click", Toast.LENGTH_SHORT).show();
-                            }
-                        })
-                        .show();
+
             }
         });
     }
@@ -49,7 +52,7 @@ public class WidgetActivity extends AppCompatActivity {
     }
 
     public void onTextView(View view) {
-        startActivity(new Intent(this, TextViewActivity.class));
+        startActivity(new Intent(this, TextFieldActivity.class));
     }
 
 }

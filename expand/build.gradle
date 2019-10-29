@@ -75,10 +75,15 @@ dependencies {
         exclude group: "com.android.support"
     }
 
-    // 流式布局
+    // Android流式布局，支持单选、多选等，适合用于产品标签等。
+    // https://github.com/hongyangAndroid/FlowLayout
 //    implementation("com.hyman:flowlayout-lib:1.1.2") {
 //        exclude group: "com.android.support"
 //    }
+
+    // 具有自动间距功能的Android流布局。
+    // https://github.com/nex3z/FlowLayout
+    // implementation 'com.nex3z:flow-layout:1.3.0'
 
     // 图表视图/图形视图库，支持折线图，雷达图，气泡图和烛台图以及缩放，拖动和动画。
     // implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'

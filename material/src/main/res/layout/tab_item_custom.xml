@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!--TabLayout，定制TabItem-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textAllCaps="false"
+        android:textColor="@color/subtitleColor"
+        android:textSize="12sp"
+        tools:text="@string/loading"
+        tools:textColor="@color/colorAccent"
+        tools:textSize="20sp" />
+
+    <View
+        android:id="@+id/indicator"
+        android:layout_width="20dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/margin_tiny"
+        android:background="@color/colorAccent"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</LinearLayout>

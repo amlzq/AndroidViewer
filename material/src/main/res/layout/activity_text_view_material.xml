@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DialogActivity">
+    tools:context=".MaterialTextViewActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,37 +17,33 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Alert Dialog 提醒对话框" />
+            android:text="" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/item_margin_vertical"
-            android:onClick="onAlertDialog"
-            android:text="Alert Dialog" />
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="AppCompatTextView" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onListDialog"
-            android:text="List Dialog" />
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="AppCompatAutoCompleteTextView" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatMultiAutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onSingleChoiceDialog"
-            android:text="Single Choice Dialog" />
+            android:layout_marginTop="@dimen/margin_small"
+            android:checked="true"
+            android:text="AppCompatMultiAutoCompleteTextView" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatCheckedTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onMultiChoiceDialog"
-            android:text="Multi Choice Dialog" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onCustomContentDialog"
-            android:text="Custom Content Dialog" />
+            android:layout_marginTop="@dimen/margin_small"
+            android:checked="true"
+            android:text="AppCompatAutoCompleteTextView" />
     </LinearLayout>
+
 </ScrollView>

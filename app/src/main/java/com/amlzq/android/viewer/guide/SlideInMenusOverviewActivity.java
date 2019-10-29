@@ -1,10 +1,12 @@
 package com.amlzq.android.viewer.guide;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.amlzq.android.viewer.R;
+import com.amlzq.android.viewer.material.templates.activities.NavigationDrawerActivity;
 
 /**
  * 滑入式菜单布局的概述
@@ -21,7 +23,8 @@ public class SlideInMenusOverviewActivity extends Activity {
     }
 
     public void onDrawerLayout(View view) {
-
+        startActivity(new Intent(this, NavigationDrawerActivity.class));
     }
+
 
 }

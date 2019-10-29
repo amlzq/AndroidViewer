@@ -12,6 +12,6 @@ public class CheckBoxActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_check_box);
+        setContentView(R.layout.activity_check_box_material);
     }
 }

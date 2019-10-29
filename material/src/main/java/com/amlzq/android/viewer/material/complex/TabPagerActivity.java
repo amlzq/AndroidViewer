@@ -23,21 +23,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 综合使用
+ * TabLayout
+ * PagerView
  */
 public class TabPagerActivity extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
-    private Toolbar toolbar;
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab_pager);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
@@ -65,7 +66,7 @@ public class TabPagerActivity extends AppCompatActivity {
     @Override
     protected void onTitleChanged(CharSequence title, int color) {
         super.onTitleChanged(title, color);
-        toolbar.setTitle(title);
+        mToolbar.setTitle(title);
     }
 
     @Override

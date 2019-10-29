@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.amlzq.android.viewer.R;
-import com.amlzq.android.viewer.material.DialogActivity;
+import com.amlzq.android.viewer.material.AlertDialogActivity;
 import com.amlzq.android.viewer.platform.DialogDemoActivity;
 
 /**
@@ -35,7 +35,7 @@ public class DialogOverviewActivity extends Activity {
      * @param view
      */
     public void onMaterialAlertDialog(View view) {
-        startActivity(new Intent(this, DialogActivity.class));
+        startActivity(new Intent(this, AlertDialogActivity.class));
     }
 
 }

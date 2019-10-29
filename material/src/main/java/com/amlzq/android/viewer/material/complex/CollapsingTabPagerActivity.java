@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,9 +42,9 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
 
     // Tab + ViewPager
     private TabLayout mTabs;
-    private List<String> mTabIndicators = new ArrayList<>();
-    private ViewPager mViewPager;
-    private List<Fragment> mTabFragments = new ArrayList<>();
+    private List<String> mIndicators = new ArrayList<>();
+    private ViewPager mPagers;
+    private List<Fragment> mFragments = new ArrayList<>();
     private ContentPagerAdapter mContentAdapter;
 
     @Override
@@ -65,25 +66,83 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
 
         mCollapsingToolbar = findViewById(R.id.collapsing_toolbar);
 
-        mTabs = findViewById(R.id.tabs);
-        mViewPager = findViewById(R.id.view_pager);
+        mTabs = findViewById(R.id.tab_layout);
+        mTabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                if (tab.getCustomView() == null) return;
+                TextView textView = tab.getCustomView().findViewById(R.id.name);
+                if (textView == null) return;
+                textView.setTextColor(getResources().getColor(R.color.colorAccent));
+                textView.setTextSize(20.0f);
+                View view = tab.getCustomView().findViewById(R.id.indicator);
+                if (view == null) return;
+                view.setVisibility(View.VISIBLE);
+                // 同步
+                mPagers.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+                if (tab.getCustomView() == null) return;
+                TextView textView = tab.getCustomView().findViewById(R.id.name);
+                if (textView == null) return;
+                textView.setTextColor(getResources().getColor(R.color.subtitleColor));
+                textView.setTextSize(12.0f);
+                View view = tab.getCustomView().findViewById(R.id.indicator);
+                if (view == null) return;
+                view.setVisibility(View.INVISIBLE);
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+            }
+        });
+        mPagers = findViewById(R.id.view_pager);
+        mPagers.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int i, float v, int i1) {
+            }
+
+            @Override
+            public void onPageSelected(int i) {
+                // 同步
+                mTabs.getTabAt(i).select();
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int i) {
+            }
+        });
 
         mContentAdapter = new ContentPagerAdapter(getSupportFragmentManager());
-        // 初始化2个tab
-        mTabs.addTab(mTabs.newTab());
+        // 动态
+        View tabView = getLayoutInflater().inflate(R.layout.tab_item_custom, null);
+        TextView textView = tabView.findViewById(R.id.name);
+        textView.setText("Moment");
+        mTabs.addTab(mTabs.newTab().setCustomView(tabView));
+        // mTabs.addTab(mTabs.newTab());
         MomentListFragment moment = MomentListFragment.newInstance("", "");
-        mTabIndicators.add("Moment");
-        mTabFragments.add(moment);
-
-        mTabs.addTab(mTabs.newTab());
+        mIndicators.add("Moment");
+        mFragments.add(moment);
+        // 资料
+        tabView = getLayoutInflater().inflate(R.layout.tab_item_custom, null);
+        textView = tabView.findViewById(R.id.name);
+        textView.setText("Profile");
+        mTabs.addTab(mTabs.newTab().setCustomView(tabView));
+        // mTabs.addTab(mTabs.newTab());
         ProfileFragment profile = ProfileFragment.newInstance("", "");
-        mTabIndicators.add("Profile");
-        mTabFragments.add(profile);
+        mIndicators.add("Profile");
+        mFragments.add(profile);
 
         // ViewPager默认加载页面的左右两页，此方法设置屏幕外左右加载页数
-        mViewPager.setOffscreenPageLimit(1);
-        mViewPager.setAdapter(mContentAdapter);
-        mTabs.setupWithViewPager(mViewPager);
+        mPagers.setOffscreenPageLimit(1);
+        mPagers.setAdapter(mContentAdapter);
+//        mTabs.setupWithViewPager(mPagers); // 定制TabItem会被删除
+
+        // 设置默认选中
+        mPagers.setCurrentItem(0);
+        mTabs.getTabAt(0).select();
     }
 
     @Override
@@ -139,7 +198,7 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return mTabFragments.get(position);
+            return mFragments.get(position);
         }
 
         @Override
@@ -149,12 +208,12 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return mTabFragments.size();
+            return mFragments.size();
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return mTabIndicators.get(position);
+            return mIndicators.get(position);
         }
     }
 

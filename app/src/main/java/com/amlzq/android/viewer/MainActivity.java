@@ -11,7 +11,7 @@ import com.amlzq.android.viewer.expand.ThirdPartyWidgetActivity;
 import com.amlzq.android.viewer.guide.GuideActivity;
 import com.amlzq.android.viewer.holo.HoloThemeActivity;
 import com.amlzq.android.viewer.material.MaterialDesignActivity;
-import com.amlzq.android.viewer.platform.TargetAPIStyleActivity;
+import com.amlzq.android.viewer.platform.PlatformActivity;
 import com.amlzq.android.viewer.qmui.QMUIGuideActivity;
 
 public class MainActivity extends Activity {
@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
     public void onBackPressed() {
         if ((System.currentTimeMillis() - mExitClickTime) > 2000) {
             // 弹出提示，可以有多种方式
-            Toast.makeText(this, "再次点击退出应用", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "再次单击退出应用", Toast.LENGTH_SHORT).show();
             mExitClickTime = System.currentTimeMillis();
         } else {
             super.onBackPressed(); // finish this activity
@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
     }
 
     public void onTargetAPI(View view) {
-        startActivity(new Intent(view.getContext(), TargetAPIStyleActivity.class));
+        startActivity(new Intent(view.getContext(), PlatformActivity.class));
     }
 
     public void onMaterialDesign(View view) {

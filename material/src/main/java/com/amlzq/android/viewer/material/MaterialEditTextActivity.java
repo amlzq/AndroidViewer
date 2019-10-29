@@ -1,17 +1,18 @@
 package com.amlzq.android.viewer.material;
 
-import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
+
 /**
- * TextView设置材料设计的样式
+ * MaterialEditText
  */
-public class TextViewActivity extends AppCompatActivity {
+public class MaterialEditTextActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_text_view);
+        setContentView(R.layout.activity_edit_text_material);
     }
 
 }

@@ -27,23 +27,8 @@ public class MaterialDesignActivity extends AppCompatActivity {
         textView.setMovementMethod(ScrollingMovementMethod.getInstance());
     }
 
-    public void onLayout(View view) {
-        startActivity(new Intent(this, LayoutActivity.class));
-    }
-
-    // Toolbar和Menu
-    // 基于CoordinatorLayout的联动
-    // NavigationView
-    // CardView
-    // TextInputLayout
-    // RecyclerView
-    // TabLayout
-    // SnackBar
-    // FloatingActionButton
-    // https://www.jianshu.com/p/776cc6329fff
-
-    public void onWidget(View view) {
-        startActivity(new Intent(this, WidgetActivity.class));
+    public void onComponents(View view) {
+        startActivity(new Intent(this, ComponentsActivity.class));
     }
 
     public void onDayNight(View view) {
@@ -56,69 +41,5 @@ public class MaterialDesignActivity extends AppCompatActivity {
 
     public void onTemplates(View view) {
         startActivity(new Intent(this, TemplatesActivity.class));
-    }
-
-    public void onPalette(View view) {
-        Intent intent = PaletteActivity.newIntent(this,
-                R.drawable.ippawards_49_1st_sunset_sreekumar_krishnan);
-        startActivity(intent);
-    }
-
-    /**
-     * https://material.io/develop/android/components/chip/
-     */
-    public void onChip(View view) {
-        startActivity(new Intent(this, ChipActivity.class));
-    }
-
-    /**
-     * https://material.io/develop/android/components/dialog/
-     */
-    public void onAlertDialog(View view) {
-        startActivity(new Intent(this, DialogActivity.class));
-    }
-
-    public void onCollapsingToolbar(View view) {
-        startActivity(new Intent(this, CollapsingToolbarActivity.class));
-    }
-
-    public void onBadge(View view) {
-        startActivity(new Intent(this, BadgeActivity.class));
-    }
-
-    public void onBottomAppBar(View view) {
-        startActivity(new Intent(this, BottomAppBarActivity.class));
-    }
-
-    public void onBottomNavigation(View view) {
-        startActivity(new Intent(this, BottomNavigationViewActivity.class));
-    }
-
-    public void onBottomSheet(View view) {
-        startActivity(new Intent(this, BottomSheetActivity.class));
-    }
-
-    public void onCheckbox(View view) {
-        startActivity(new Intent(this, CheckBoxActivity.class));
-    }
-
-    public void onFloatingActionButton(View view) {
-        startActivity(new Intent(this, FloatingActionButtonActivity.class));
-    }
-
-    public void onMaterialButton(View view) {
-        startActivity(new Intent(this, MaterialButtonActivity.class));
-    }
-
-    public void onMaterialCard(View view) {
-        startActivity(new Intent(this, CardViewActivity.class));
-    }
-
-    public void onConstraintLayout(View view) {
-        startActivity(new Intent(this, ConstraintLayoutActivity.class));
-    }
-
-    public void onFlexBoxLayout(View view) {
-        startActivity(new Intent(this, FlexboxLayoutActivity.class));
     }
 }

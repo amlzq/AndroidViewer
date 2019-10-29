@@ -1,5 +1,5 @@
-// 不只是材料设计语言库(material)实践，也是材料设计时期的Android开发所有的风格
-// 限定为基于Android Platform API、GoogleMaterial API、AndroidX API、Jetpack API开发
+// 不只是材料设计语言库(material lib)实践，也是材料设计时代的Android界面风格
+// 限定为依赖Android Platform API、Jetpack API(GoogleMaterial API、AndroidX API)开发
 
 // https://material.io/develop/android/components
 // https://github.com/material-components/material-components-android
@@ -61,7 +61,9 @@ dependencies {
     implementation "com.google.android.material:material:$rootProject.ext.materialVersion"
     implementation "com.google.android.gms:play-services-maps:${rootProject.ext.gmsVersion}"
     implementation "com.google.android.gms:play-services-plus:${rootProject.ext.gmsVersion}"
+
     // Android版Flexbox
     // https://github.com/google/flexbox-layout
     implementation 'com.google.android:flexbox:1.1.1'
+
 }

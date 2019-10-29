@@ -11,13 +11,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Dialog样例
+ * https://material.io/develop/android/components/dialog/
  */
-public class DialogActivity extends AppCompatActivity {
+public class AlertDialogActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dialog_material);
+        setContentView(R.layout.activity_alert_dialog_material);
     }
 
     void showToastShort(String msg) {
@@ -33,7 +34,7 @@ public class DialogActivity extends AppCompatActivity {
         androidx.appcompat.app.AlertDialog.Builder builder = new androidx.appcompat.app.AlertDialog.Builder(this);
         builder.setTitle(R.string.prompt);
         builder.setIcon(android.R.drawable.sym_def_app_icon);
-        builder.setMessage("this is android.support.v7.app.AlertDialog");
+        builder.setMessage("this is appcompat AlertDialog");
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

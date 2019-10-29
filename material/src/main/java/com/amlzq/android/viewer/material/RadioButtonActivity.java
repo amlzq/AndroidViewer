@@ -1,17 +1,17 @@
 package com.amlzq.android.viewer.material;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 /**
- * TabLayout样例
+ * MaterialRadioButton
  */
-public class TabLayoutActivity extends AppCompatActivity {
+public class RadioButtonActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tab_layout);
+        setContentView(R.layout.activity_radio_button_material);
     }
-
 }

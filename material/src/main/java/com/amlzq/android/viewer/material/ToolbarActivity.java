@@ -23,7 +23,6 @@ public class ToolbarActivity extends AppCompatActivity {
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
         // 设置标题与左边按钮之间图标
         toolbar.setLogo(android.R.drawable.sym_def_app_icon);
-
     }
 
 }

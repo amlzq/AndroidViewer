@@ -1,6 +1,7 @@
-// HOLO设计语言
+// HOLO设计语言时代的Android界面风格
 // 通过styles实现
-// Platform API
+
+// 限定为依赖Android Platform API开发
 
 apply plugin: 'com.android.library'
 

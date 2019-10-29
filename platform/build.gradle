@@ -1,6 +1,8 @@
 // 展示Android平台API的界面变迁
 // 在不同版本系统，界面的差异性
 
+// 限定为依赖Android Platform API开发
+
 apply plugin: 'com.android.library'
 
 android {

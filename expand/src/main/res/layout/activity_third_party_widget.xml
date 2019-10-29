@@ -59,6 +59,20 @@
             android:onClick="onBottomBarLayoutByChaychan"
             android:text="chaychan/BottomBarLayout"
             android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onFlowLayoutHY"
+            android:text="hongyangAndroid/FlowLayout"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onFlowLayoutNex3z"
+            android:text="nex3z / FlowLayout"
+            android:textAllCaps="false" />
     </LinearLayout>
 
 </ScrollView>

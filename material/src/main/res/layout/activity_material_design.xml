@@ -3,26 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:paddingLeft="@dimen/item_margin_horizontal"
     android:paddingTop="@dimen/item_margin_vertical"
     android:paddingRight="@dimen/item_margin_horizontal"
     android:paddingBottom="@dimen/item_margin_vertical"
     tools:context=".MaterialDesignActivity">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_message"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxLines="5"
-        android:scrollbars="vertical"
-        android:text="@string/intro_message_material_design"
-        android:textSize="@dimen/font_medium" />
-
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/margin_medium">
+        android:layout_width="120dp"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,99 +29,8 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onAlertDialog"
-                android:text="Alert Dialog"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onBadge"
-                android:text="Badge"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onBottomAppBar"
-                android:text="Bottom App Bar"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onBottomNavigation"
-                android:text="Bottom Navigation"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onBottomSheet"
-                android:text="Bottom Sheet"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onCheckbox"
-                android:text="Check Box"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onChip"
-                android:text="Chip"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onCollapsingToolbar"
-                android:text="Collapsing Toolbar"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onFloatingActionButton"
-                android:text="Floating Action Button"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onMaterialButton"
-                android:text="Material Button"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onMaterialCard"
-                android:text="Material Card"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onLayout"
-                android:text="Layout"
-                android:textAllCaps="false" />
-
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onWidget"
-                android:text="Widget"
-                android:textAllCaps="false" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onPalette"
-                android:text="androidx/Palette"
+                android:onClick="onComponents"
+                android:text="Components"
                 android:textAllCaps="false" />
 
             <Button
@@ -144,24 +43,20 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onFlexBoxLayout"
-                android:text="google/flexbox-layout"
-                android:textAllCaps="false" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onConstraintLayout"
-                android:text="androidx/ConstraintLayout"
-                android:textAllCaps="false" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:onClick="onTemplates"
-                android:text="android-studio templates"
+                android:text="templates"
                 android:textAllCaps="false" />
         </LinearLayout>
     </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_margin_horizontal"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:text="@string/intro_message_material_design"
+        android:textSize="@dimen/font_medium" />
 
 </LinearLayout>

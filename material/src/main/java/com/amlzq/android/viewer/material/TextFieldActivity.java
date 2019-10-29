@@ -1,17 +1,18 @@
 package com.amlzq.android.viewer.material;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 /**
- * TabLayout样例
+ * TextInputLayout样例
  */
-public class TabLayoutActivity extends AppCompatActivity {
+public class TextFieldActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tab_layout);
+        setContentView(R.layout.activity_text_field);
     }
 
 }

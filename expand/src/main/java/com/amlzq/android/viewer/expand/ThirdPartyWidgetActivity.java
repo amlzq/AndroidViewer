@@ -30,6 +30,10 @@ public class ThirdPartyWidgetActivity extends Activity {
         setContentView(R.layout.activity_third_party_widget);
     }
 
+    public void onLottie(View view) {
+        startActivity(new Intent(this, LottieActivity.class));
+    }
+
     public void onSmartRefreshLayout(View view) {
         startActivity(new Intent(this, SmartRefreshActivity.class));
     }
@@ -50,8 +54,9 @@ public class ThirdPartyWidgetActivity extends Activity {
 
     }
 
-    public void onLottie(View view) {
-        startActivity(new Intent(this, LottieActivity.class));
+    public void onFlowLayoutHY(View view) {
     }
 
+    public void onFlowLayoutNex3z(View view) {
+    }
 }

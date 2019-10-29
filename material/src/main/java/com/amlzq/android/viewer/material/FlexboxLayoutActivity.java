@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 
 /**
+ * 弹性盒布局
  * https://github.com/google/flexbox-layout
+ * 增强线性布局
  */
 public class FlexboxLayoutActivity extends Activity {
 

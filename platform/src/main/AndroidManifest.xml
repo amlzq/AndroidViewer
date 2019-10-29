@@ -4,20 +4,46 @@
 
     <application>
         <activity
+            android:name=".PlatformActivity"
+            android:theme="@android:style/Theme.Light" />
+        <activity
             android:name=".PopupWindowDemoActivity"
-            android:label="PopupWindow" />
-        <activity android:name=".TargetAPIStyleActivity" />
-        <activity android:name=".WebActivity" />
-        <activity android:name=".NotificationDemoActivity" />
-        <activity android:name=".MenuDemoActivity" />
-        <activity android:name=".DialogDemoActivity" />
-        <activity android:name=".LayoutDemoActivity" />
-        <activity android:name=".WidgetDemoActivity" />
-        <activity android:name=".ToastDemoActivity" />
-        <activity android:name=".ProgressBarDemoActivity" />
-        <activity android:name=".PickerDemoActivity" />
-        <activity android:name=".DimenDemoActivity" />
-        <activity android:name=".ScreenDemoActivity" />
+            android:label="PopupWindow demo"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".WebActivity"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".NotificationDemoActivity"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".MenuDemoActivity"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".DialogDemoActivity"
+            android:label="Dialog demo"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".LayoutDemoActivity"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".WidgetDemoActivity"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".ToastDemoActivity"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".ProgressBarDemoActivity"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".PickerDemoActivity"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".DimenDemoActivity"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".ScreenDemoActivity"
+            android:theme="@android:style/Theme.Light" />
     </application>
 
 </manifest>
