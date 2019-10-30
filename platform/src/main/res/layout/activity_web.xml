@@ -5,4 +5,15 @@
     android:layout_height="match_parent"
     tools:context=".WebActivity">
 
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        tools:progress="50" />
+
 </FrameLayout>

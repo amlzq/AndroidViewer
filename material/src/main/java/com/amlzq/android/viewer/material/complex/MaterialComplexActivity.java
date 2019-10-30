@@ -10,13 +10,14 @@ import com.amlzq.android.viewer.material.R;
 
 /**
  * 材料设计综合使用样例
+ * 综合使用场景秀
  */
 public class MaterialComplexActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_material_design_complex);
+        setContentView(R.layout.activity_complex_material);
     }
 
     public void onBottomNavigation(View view) {

@@ -24,12 +24,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="显示应用程序中的主要操作。这是一个圆形图标按钮，位于其他页面内容上方。浮动操作按钮具有默认尺寸和最小尺寸。
-浮动操作按钮可快速访问应用程序中的重要或常见操作。它们具有多种用途，包括：
-执行常见操作，例如在邮件应用中启动新电子邮件。
-显示其他相关动作。
-更新或转换为屏幕上的其他UI元素。
-浮动操作按钮可响应屏幕上的其他UI元素来调整其位置和可见性。" />
+                android:text="显示应用程序中的主要操作。这是一个圆形图标按钮，位于其他页面内容上方。浮动操作按钮具有默认尺寸和最小尺寸。浮动操作按钮可快速访问应用程序中的重要或常见操作。它们具有多种用途，包括：执行常见操作，例如在邮件应用中启动新电子邮件。显示其他相关动作。更新或转换为屏幕上的其他UI元素。浮动操作按钮可响应屏幕上的其他UI元素来调整其位置和可见性。" />
 
             <RadioGroup
                 android:id="@+id/radios"
@@ -83,6 +78,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
         android:tint="@color/white"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
         app:srcCompat="@drawable/ic_add_black_24dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -95,7 +91,7 @@
         app:backgroundTint="@color/colorPrimary"
         app:fabSize="mini"
         app:hideMotionSpec="@android:anim/fade_out"
-        app:layout_behavior="com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
         app:maxImageSize="16dp"
         app:rippleColor="@color/green"
         app:showMotionSpec="@android:anim/fade_in"

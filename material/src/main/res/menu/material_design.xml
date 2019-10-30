@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MaterialDesignActivity">
+    <item
+        android:id="@+id/action_official"
+        android:iconTint="@color/white"
+        android:orderInCategory="100"
+        android:title="官网"
+        app:iconTint="@color/white"
+        app:showAsAction="never" />
+</menu>

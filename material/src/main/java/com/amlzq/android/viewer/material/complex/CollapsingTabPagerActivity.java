@@ -87,7 +87,7 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
                 if (tab.getCustomView() == null) return;
                 TextView textView = tab.getCustomView().findViewById(R.id.name);
                 if (textView == null) return;
-                textView.setTextColor(getResources().getColor(R.color.subtitleColor));
+                textView.setTextColor(getResources().getColor(R.color.textColorPrimary));
                 textView.setTextSize(12.0f);
                 View view = tab.getCustomView().findViewById(R.id.indicator);
                 if (view == null) return;

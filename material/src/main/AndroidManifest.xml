@@ -68,6 +68,7 @@
         </activity> <!-- templates -->
         <activity
             android:name=".templates.TemplatesActivity"
+            android:label="Templates"
             android:theme="@style/Material.AppTheme" />
         <activity
             android:name=".templates.activities.LoginActivity"
@@ -140,8 +141,9 @@
             android:label="Snackbar Demo"
             android:theme="@style/Material.AppTheme" />
         <activity
-            android:name=".WebAppCompatActivity"
-            android:theme="@style/Material.AppTheme" />
+            android:name=".WebActivity"
+            android:label="Web"
+            android:theme="@style/Material.AppTheme.MaterialComponents.NoActionBar" />
         <activity
             android:name=".RecycleViewActivity"
             android:label="RecycleView"
@@ -173,6 +175,7 @@
             android:theme="@style/Material.AppTheme" />
         <activity
             android:name=".complex.MaterialComplexActivity"
+            android:label="Complex"
             android:theme="@style/Material.AppTheme.MaterialComponents" />
         <activity
             android:name=".complex.CollapsingRecycleViewActivity"

@@ -15,5 +15,4 @@ public class WebActivity extends Activity {
         setContentView(R.layout.activity_web);
     }
 
-
 }
