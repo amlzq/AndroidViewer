@@ -1,24 +1,25 @@
 package com.amlzq.android.viewer.material.complex;
 
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.amlzq.android.viewer.material.R;
 import com.amlzq.android.viewer.material.tabpage.DashboardFragment;
 import com.amlzq.android.viewer.material.tabpage.HomeFragment;
 import com.amlzq.android.viewer.material.tabpage.NotificationsFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.io.PrintWriter;
 
 /**
- * android.support.design.widget.BottomNavigationView
- * 实践
+ * BottomNavigationView
+ * Fragment
  */
 public class BottomNavigationFragmentActivity extends AppCompatActivity
         implements BottomNavigationView.OnNavigationItemSelectedListener {

@@ -2,19 +2,20 @@ package com.amlzq.android.viewer.material.tabpage;
 
 
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import com.google.android.material.tabs.TabLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import com.amlzq.android.viewer.material.R;
 import com.amlzq.android.viewer.material.personal.MomentListFragment;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,6 +55,8 @@ public class HomeFragment extends Fragment {
         mViewPager = getView().findViewById(R.id.view_pager);
 
         mContentAdapter = new ContentPagerAdapter(getChildFragmentManager());
+        // https://ask.csdn.net/questions/704497
+        if (mTabLayout.getTabCount() == 5) return; // 解决重复添加tab问题
         // 初始化tab
         mTabLayout.addTab(mTabLayout.newTab());
         MomentListFragment followed = MomentListFragment.newInstance("", "");

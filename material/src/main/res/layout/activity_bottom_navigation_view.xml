@@ -90,6 +90,8 @@
         android:layout_gravity="center"
         android:visibility="gone"
         app:elevation="4dp"
+        app:itemIconSize="12dp"
+        app:itemIconTint="@color/black"
         app:menu="@menu/bottom_navigation_view"
         tools:visibility="visible" />
 

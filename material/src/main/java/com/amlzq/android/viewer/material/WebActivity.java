@@ -2,19 +2,15 @@ package com.amlzq.android.viewer.material;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Message;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.DownloadListener;
 import android.webkit.JsPromptResult;
 import android.webkit.JsResult;
 import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
@@ -27,6 +23,8 @@ import java.lang.reflect.Field;
 
 /**
  * 网页
+ * 参考:
+ * https://github.com/takahirom/webview-in-coordinatorlayout
  */
 public class WebActivity extends AppCompatActivity {
 
@@ -51,38 +49,38 @@ public class WebActivity extends AppCompatActivity {
 
         setSupportActionBar(mToolbar);
 
-        WebSettings webSettings = mWebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        webSettings.setAllowFileAccess(true);
-        webSettings.setSaveFormData(true);
-        // 开启缩放功能
-        webSettings.setSupportZoom(true);
-        webSettings.setBuiltInZoomControls(true);
+//        WebSettings webSettings = mWebView.getSettings();
+//        webSettings.setJavaScriptEnabled(true);
+//        webSettings.setAllowFileAccess(true);
+//        webSettings.setSaveFormData(true);
+//        // 开启缩放功能
+//        webSettings.setSupportZoom(true);
+//        webSettings.setBuiltInZoomControls(true);
 
-        // 适应内容大小
-        webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
-        webSettings.setPluginState(WebSettings.PluginState.ON);
-        webSettings.setDomStorageEnabled(true);
-        webSettings.setUseWideViewPort(true);
-        webSettings.setLoadWithOverviewMode(true);
-        // 优先使用缓存
-        webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
-        webSettings.setTextSize(WebSettings.TextSize.NORMAL);
-        webSettings.setDefaultFontSize(16);
-        webSettings.setDefaultFixedFontSize(13);
-        // 设置为true时，必须重写onCreateWindow
-        webSettings.setSupportMultipleWindows(true);
-        webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.HONEYCOMB) {
-            webSettings.setDisplayZoomControls(false);
-        } else {
-            setZoomControlGone(mWebView); // Android 3.0(11)
-        }
-
-        webSettings.setRenderPriority(WebSettings.RenderPriority.HIGH);
-        webSettings.setSavePassword(false);
-        webSettings.setMinimumFontSize(webSettings.getMinimumFontSize() + 8);
-        mWebView.setVerticalScrollbarOverlay(true);
+//        // 适应内容大小
+//        webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
+//        webSettings.setPluginState(WebSettings.PluginState.ON);
+//        webSettings.setDomStorageEnabled(true);
+//        webSettings.setUseWideViewPort(true);
+//        webSettings.setLoadWithOverviewMode(true);
+//        // 优先使用缓存
+//        webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+//        webSettings.setTextSize(WebSettings.TextSize.NORMAL);
+//        webSettings.setDefaultFontSize(16);
+//        webSettings.setDefaultFixedFontSize(13);
+//        // 设置为true时，必须重写onCreateWindow
+//        webSettings.setSupportMultipleWindows(true);
+//        webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+//        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.HONEYCOMB) {
+//            webSettings.setDisplayZoomControls(false);
+//        } else {
+//            setZoomControlGone(mWebView); // Android 3.0(11)
+//        }
+//
+//        webSettings.setRenderPriority(WebSettings.RenderPriority.HIGH);
+//        webSettings.setSavePassword(false);
+//        webSettings.setMinimumFontSize(webSettings.getMinimumFontSize() + 8);
+//        mWebView.setVerticalScrollbarOverlay(true);
 
         // 设置背景色
 //        mWebView.setBackgroundColor(getColor(mBgColor));
@@ -96,23 +94,23 @@ public class WebActivity extends AppCompatActivity {
 //                return (event.getAction() == MotionEvent.ACTION_MOVE);
 //            }
 //        });
-        mWebView.setVerticalScrollBarEnabled(true);
-        mWebView.setHorizontalScrollBarEnabled(false);
-//        mWebView.setScrollContainer(false);
-        mWebView.requestFocus();
+//        mWebView.setVerticalScrollBarEnabled(true);
+//        mWebView.setHorizontalScrollBarEnabled(false);
+////        mWebView.setScrollContainer(false);
+//        mWebView.requestFocus();
 
-        // 文件下载
-        mWebView.setDownloadListener(new DownloadListener() {
-
-            @Override
-            public void onDownloadStart(String url, String userAgent, String contentDisposition,
-                                        String mimetype, long contentLength) {
-                // 调用系统内置浏览器下载文件
-                Uri uri = Uri.parse(url);
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
-        });
+//        // 文件下载
+//        mWebView.setDownloadListener(new DownloadListener() {
+//
+//            @Override
+//            public void onDownloadStart(String url, String userAgent, String contentDisposition,
+//                                        String mimetype, long contentLength) {
+//                // 调用系统内置浏览器下载文件
+//                Uri uri = Uri.parse(url);
+//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+//                startActivity(intent);
+//            }
+//        });
 
         mWebView.setWebViewClient(mWebViewClient);
         mWebView.setWebChromeClient(mWebChromeClient);

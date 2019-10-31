@@ -2,20 +2,21 @@ package com.amlzq.android.viewer.material.tabpage;
 
 
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import com.google.android.material.tabs.TabLayout;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
 import com.amlzq.android.viewer.material.R;
 import com.amlzq.android.viewer.material.complex.DetailFragment;
 import com.amlzq.android.viewer.material.sports.SportsFragment;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -55,6 +56,7 @@ public class DashboardFragment extends Fragment {
         mViewPager = getView().findViewById(R.id.view_pager);
 
         mContentAdapter = new ContentPagerAdapter(getChildFragmentManager());
+        if (mTabLayout.getTabCount() == 2) return; // 解决重复添加tab问题
         // 初始化2个tab
         mTabLayout.addTab(mTabLayout.newTab());
         SportsFragment sports = SportsFragment.newInstance("", "");

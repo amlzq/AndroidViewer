@@ -73,6 +73,7 @@ public class SportsFragment extends Fragment {
         mViewPager = getView().findViewById(R.id.view_pager);
 
         mContentAdapter = new ContentPagerAdapter(getChildFragmentManager());
+        if (mTabLayout.getTabCount() == 2) return; // 解决重复添加tab问题
         // 初始化2个tab
         mTabLayout.addTab(mTabLayout.newTab());
         RunFragment run = RunFragment.newInstance("", "");

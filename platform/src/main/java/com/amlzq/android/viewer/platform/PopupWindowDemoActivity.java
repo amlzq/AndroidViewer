@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.TypedValue;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -89,7 +88,7 @@ public class PopupWindowDemoActivity extends Activity {
         params.height = height;
         ContentAdapter adapter = new ContentAdapter(this, items);
         listView.setAdapter(adapter);
-        popup.showAtLocation(view, Gravity.CENTER, 0, 0);
+        popup.showAsDropDown(view);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -102,7 +101,6 @@ public class PopupWindowDemoActivity extends Activity {
         private LayoutInflater mInflater;
         private Context mContext;
         private List<String> mItems;
-
 
         public ContentAdapter(Context context, List<String> items) {
             this.mContext = context;
@@ -127,7 +125,7 @@ public class PopupWindowDemoActivity extends Activity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             if (convertView == null) {
-                mInflater = LayoutInflater.from(convertView.getContext());
+                mInflater = LayoutInflater.from(mContext);
                 convertView = mInflater.inflate(android.R.layout.activity_list_item, parent, false);
             } else {
 
@@ -144,7 +142,6 @@ public class PopupWindowDemoActivity extends Activity {
 
             }
         }
-
     }
 
 }

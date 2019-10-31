@@ -34,7 +34,9 @@ import java.util.List;
  * <p>
  * https://stackoverflow.com/questions/37479828/how-to-put-recyclerview-below-toolbar-and-above-tablayout-and-viewpager-also-han
  */
-public class CollapsingTabPagerActivity extends AppCompatActivity {
+public class CollapsingTabPagerActivity extends AppCompatActivity
+        implements TabLayout.OnTabSelectedListener,
+        ViewPager.OnPageChangeListener {
 
     private AppBarLayout mAppBar;
     private Toolbar mToolbar;
@@ -67,60 +69,17 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
         mCollapsingToolbar = findViewById(R.id.collapsing_toolbar);
 
         mTabs = findViewById(R.id.tab_layout);
-        mTabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                if (tab.getCustomView() == null) return;
-                TextView textView = tab.getCustomView().findViewById(R.id.name);
-                if (textView == null) return;
-                textView.setTextColor(getResources().getColor(R.color.colorAccent));
-                textView.setTextSize(20.0f);
-                View view = tab.getCustomView().findViewById(R.id.indicator);
-                if (view == null) return;
-                view.setVisibility(View.VISIBLE);
-                // 同步
-                mPagers.setCurrentItem(tab.getPosition());
-            }
+        mTabs.addOnTabSelectedListener(this); // 解决第一次没有回调到onTabSelected问题，在添加Tab之前添加OnTabSelectedListener监听
 
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-                if (tab.getCustomView() == null) return;
-                TextView textView = tab.getCustomView().findViewById(R.id.name);
-                if (textView == null) return;
-                textView.setTextColor(getResources().getColor(R.color.textColorPrimary));
-                textView.setTextSize(12.0f);
-                View view = tab.getCustomView().findViewById(R.id.indicator);
-                if (view == null) return;
-                view.setVisibility(View.INVISIBLE);
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-            }
-        });
         mPagers = findViewById(R.id.view_pager);
-        mPagers.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int i, float v, int i1) {
-            }
-
-            @Override
-            public void onPageSelected(int i) {
-                // 同步
-                mTabs.getTabAt(i).select();
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int i) {
-            }
-        });
+        mPagers.addOnPageChangeListener(this);
 
         mContentAdapter = new ContentPagerAdapter(getSupportFragmentManager());
         // 动态
         View tabView = getLayoutInflater().inflate(R.layout.tab_item_custom, null);
         TextView textView = tabView.findViewById(R.id.name);
         textView.setText("Moment");
-        mTabs.addTab(mTabs.newTab().setCustomView(tabView));
+        mTabs.addTab(mTabs.newTab().setCustomView(tabView), true);
         // mTabs.addTab(mTabs.newTab());
         MomentListFragment moment = MomentListFragment.newInstance("", "");
         mIndicators.add("Moment");
@@ -141,8 +100,8 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
 //        mTabs.setupWithViewPager(mPagers); // 定制TabItem会被删除
 
         // 设置默认选中
-        mPagers.setCurrentItem(0);
-        mTabs.getTabAt(0).select();
+        // mPagers.setCurrentItem(0);
+        // mTabs.getTabAt(0).select();
     }
 
     @Override
@@ -175,6 +134,53 @@ public class CollapsingTabPagerActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public void onTabSelected(TabLayout.Tab tab) {
+        if (tab.getCustomView() == null) return;
+        TextView textView = tab.getCustomView().findViewById(R.id.name);
+        if (textView == null) return;
+        textView.setTextColor(getResources().getColor(R.color.colorAccent));
+        textView.setTextSize(20.0f);
+        View view = tab.getCustomView().findViewById(R.id.indicator);
+        if (view == null) return;
+        view.setVisibility(View.VISIBLE);
+        // 同步
+        mPagers.setCurrentItem(tab.getPosition());
+    }
+
+    @Override
+    public void onTabUnselected(TabLayout.Tab tab) {
+        if (tab.getCustomView() == null) return;
+        TextView textView = tab.getCustomView().findViewById(R.id.name);
+        if (textView == null) return;
+        textView.setTextColor(getResources().getColor(R.color.textColorPrimary));
+        textView.setTextSize(12.0f);
+        View view = tab.getCustomView().findViewById(R.id.indicator);
+        if (view == null) return;
+        view.setVisibility(View.INVISIBLE);
+    }
+
+    @Override
+    public void onTabReselected(TabLayout.Tab tab) {
+
+    }
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+        // 同步
+        mTabs.getTabAt(position).select();
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+
     }
 
     /**
