@@ -12,6 +12,9 @@
     <color name="textColorSecondary">#757575</color>
     <color name="textColor">#333</color>
 
+    <!--  加载图标的背景色  -->
+    <color name="ic_launcher_background">#FFFFFF</color>
+
     <!--背景色-->
     <!--状态栏背景色-->
     <color name="statusBar">@color/colorPrimary</color>

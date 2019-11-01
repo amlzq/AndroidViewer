@@ -3,14 +3,19 @@ package com.amlzq.android.viewer.material;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.RadioGroup;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.CircularProgressDrawable;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 /**
  * SwipeRefreshLayout demo
  */
-public class SwipeRefreshActivity extends AppCompatActivity {
+public class SwipeRefreshActivity extends AppCompatActivity
+        implements SwipeRefreshLayout.OnRefreshListener {
 
     SwipeRefreshLayout mSwipeRefreshLayout;
 
@@ -21,12 +26,37 @@ public class SwipeRefreshActivity extends AppCompatActivity {
 
         mSwipeRefreshLayout = findViewById(R.id.swipe_refresh);
         mSwipeRefreshLayout.setColorSchemeColors(Color.RED, Color.BLUE, Color.BLACK, Color.GREEN);
-        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+        // mSwipeRefreshLayout.setProgressBackgroundColorSchemeColor(ContextCompat.getColor(this, R.color.colorPrimary));
+        mSwipeRefreshLayout.setOnRefreshListener(this);
+
+        // mSwipeRefreshLayout.setNestedScrollingEnabled(true);
+
+
+        // mSwipeRefreshLayout.setProgressViewEndTarget(true, 0);
+
+        // mSwipeRefreshLayout.setProgressViewOffset(false, 0, 0);
+
+        RadioGroup size = findViewById(R.id.size);
+        size.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onRefresh() {
-                new Handler().postDelayed(() -> mSwipeRefreshLayout.setRefreshing(false), 6000);
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (checkedId == R.id.large) {
+                    mSwipeRefreshLayout.setSize(CircularProgressDrawable.LARGE);
+                } else {
+                    mSwipeRefreshLayout.setSize(CircularProgressDrawable.DEFAULT);
+
+                }
             }
         });
+
+        CheckBox enable = findViewById(R.id.enable);
+        enable.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                mSwipeRefreshLayout.setEnabled(isChecked);
+            }
+        });
+
     }
 
     @Override
@@ -36,6 +66,11 @@ public class SwipeRefreshActivity extends AppCompatActivity {
         } else {
             super.onBackPressed();
         }
+    }
+
+    @Override
+    public void onRefresh() {
+        new Handler().postDelayed(() -> mSwipeRefreshLayout.setRefreshing(false), 6000);
     }
 
 }

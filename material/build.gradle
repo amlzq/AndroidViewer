@@ -1,5 +1,5 @@
-// 不只是材料设计语言库(material lib)实践，也是材料设计时代的Android界面风格
-// 限定为依赖Android Platform API、Jetpack API(GoogleMaterial API、AndroidX API)开发
+// 不只是材料设计语言库(material lib)实践，也是Android材料设计时代的界面风格
+// 限定只依赖Android Platform API、Jetpack API(GoogleMaterial API、AndroidX API)开发
 
 // https://material.io/develop/android/components
 // https://github.com/material-components/material-components-android

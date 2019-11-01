@@ -55,10 +55,10 @@ public class CollapsingToolbarActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.radio) {
                     toolbar.setTitle("");
-                    mCollapsingToolbar.setTitle("CollapsingToolbar");
+                    mCollapsingToolbar.setTitle("Title at collapsing toolbar");
                     mCollapsingToolbar.setTitleEnabled(true);
                 } else {
-                    toolbar.setTitle("Toolbar");
+                    toolbar.setTitle("Title at toolbar");
                     mCollapsingToolbar.setTitle("");
                     mCollapsingToolbar.setTitleEnabled(false);
                 }

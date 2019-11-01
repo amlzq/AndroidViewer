@@ -24,6 +24,13 @@
             android:layout_height="wrap_content"
             android:onClick="onDrawerLayout"
             android:text="DrawerLayout" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSideMenuByYalantis"
+            android:text="Side-Menu By Yalantis"
+            android:textAllCaps="false" />
     </LinearLayout>
 
 </ScrollView>

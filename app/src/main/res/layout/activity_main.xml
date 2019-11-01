@@ -17,8 +17,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onGuideIndex"
-            android:text="Index"
+            android:onClick="onGuide"
+            android:text="Guide"
             android:textAllCaps="false" />
 
         <Button

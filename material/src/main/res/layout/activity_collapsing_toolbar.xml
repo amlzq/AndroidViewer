@@ -77,16 +77,27 @@
             android:paddingRight="@dimen/item_margin_horizontal"
             android:paddingBottom="@dimen/item_margin_vertical">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CollapsingToolbarLayout is " />
+
             <RadioGroup
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="设置标题" />
+
                 <RadioButton
                     android:id="@+id/radio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:checked="true"
                     android:text="设置CollapsingToolbarLayout标题" />
 
                 <RadioButton

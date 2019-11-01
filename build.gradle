@@ -95,5 +95,5 @@ ext {
 //    espressoVersion = '3.0.2'
 
     // Component
-    multiApp = false
+    multiApp = true
 }

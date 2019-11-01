@@ -4,56 +4,12 @@
     package="com.amlzq.android.viewer.material">
 
     <application
-        android:icon="@android:drawable/sym_def_app_icon"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@android:drawable/sym_def_app_icon"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Material.AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity
-            android:name=".ComponentsActivity"
-            android:label="Components"
-            android:theme="@style/Material.AppTheme.MaterialComponents" />
-        <activity
-            android:name=".RadioButtonActivity"
-            android:label="RadioButton"
-            android:theme="@style/Material.AppTheme.MaterialComponents" />
-        <activity
-            android:name=".SwitchCompatActivity"
-            android:label="SwitchCompat"
-            android:theme="@style/Material.AppTheme.MaterialComponents" />
-        <activity
-            android:name=".MaterialEditTextActivity"
-            android:label="Material EditText"
-            android:theme="@style/Material.AppTheme.MaterialComponents" />
-        <activity
-            android:name=".ProgressBarActivity"
-            android:label="ProgressBar"
-            android:theme="@style/Material.AppTheme.MaterialComponents" />
-        <activity
-            android:name=".MaterialTextViewActivity"
-            android:label="Material TextView"
-            android:theme="@style/Material.AppTheme.MaterialComponents" />
-        <activity
-            android:name=".MotionLayoutActivity"
-            android:label="MotionLayout"
-            android:theme="@style/Theme.AppCompat.Light" />
-        <activity
-            android:name=".FlexboxLayoutActivity"
-            android:label="FlexboxLayout"
-            android:theme="@style/Theme.AppCompat.Light" />
-        <activity
-            android:name=".FlexboxRecycleViewActivity"
-            android:label="Flexbox RecycleView"
-            android:theme="@style/Theme.AppCompat.Light" />
-        <activity
-            android:name=".ConstraintLayoutActivity"
-            android:label="ConstraintLayout"
-            android:theme="@style/Theme.AppCompat.Light" />
-        <activity
-            android:name=".CardViewActivity"
-            android:label="CardView"
-            android:theme="@style/Material.AppTheme.MaterialComponents" />
         <activity
             android:name=".MaterialDesignActivity"
             android:label="@string/title_material_design"
@@ -249,6 +205,54 @@
         <activity
             android:name=".CheckBoxActivity"
             android:label="CheckBox"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".complex.NavigationDrawerFragmentActivity"
+            android:label="NavigationDrawer fragment"
+            android:theme="@style/Material.Activity.TranslucentStatusBar" />
+        <activity
+            android:name=".ComponentsActivity"
+            android:label="Components"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".RadioButtonActivity"
+            android:label="RadioButton"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".SwitchCompatActivity"
+            android:label="SwitchCompat"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".MaterialEditTextActivity"
+            android:label="Material EditText"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".ProgressBarActivity"
+            android:label="ProgressBar"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".MaterialTextViewActivity"
+            android:label="Material TextView"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
+            android:name=".MotionLayoutActivity"
+            android:label="MotionLayout"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".FlexboxLayoutActivity"
+            android:label="FlexboxLayout"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".FlexboxRecycleViewActivity"
+            android:label="Flexbox RecycleView"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".ConstraintLayoutActivity"
+            android:label="ConstraintLayout"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".CardViewActivity"
+            android:label="CardView"
             android:theme="@style/Material.AppTheme.MaterialComponents" />
     </application>
 

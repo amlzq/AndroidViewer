@@ -26,16 +26,16 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fadeScrollbars="false"
-        android:scrollbars="vertical"
+        android:fadeScrollbars="true"
+        android:scrollbars="none"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <WebView
             android:id="@+id/web_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fadeScrollbars="true"
-            android:scrollbars="none" />
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical" />
 
     </androidx.core.widget.NestedScrollView>
 

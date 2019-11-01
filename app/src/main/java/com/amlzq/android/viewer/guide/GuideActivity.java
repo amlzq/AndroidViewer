@@ -30,4 +30,8 @@ public class GuideActivity extends Activity {
         startActivity(new Intent(this, DialogOverviewActivity.class));
     }
 
+    public void onSlideInMenus(View view) {
+        startActivity(new Intent(this, SlideInMenusOverviewActivity.class));
+    }
+
 }

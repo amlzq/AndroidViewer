@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
         super.onTitleChanged(title, color);
     }
 
-    public void onGuideIndex(View view) {
+    public void onGuide(View view) {
         startActivity(new Intent(view.getContext(), GuideActivity.class));
     }
 

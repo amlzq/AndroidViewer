@@ -17,27 +17,34 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="指南索引" />
+            android:text="指南" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onBottomNavigation"
-            android:text="Bottom navigation guide"
+            android:text="Bottom navigation"
             android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onRefreshLayout"
-            android:text="Refresh layout guide"
+            android:text="Refresh layout"
             android:textAllCaps="false" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onDialog"
-            android:text="Dialog guide"
+            android:text="Dialog"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSlideInMenus"
+            android:text="Slide in menus"
             android:textAllCaps="false" />
     </LinearLayout>
 

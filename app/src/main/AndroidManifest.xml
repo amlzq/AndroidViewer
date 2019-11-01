@@ -40,18 +40,22 @@
         </activity>
         <activity
             android:name=".guide.BottomNavigationOverviewActivity"
-            android:label="Bottom Navigation Overview" />
-        <activity android:name=".guide.SlideInMenusOverviewActivity" />
+            android:label="Bottom Navigation overview" />
+        <activity
+            android:name=".guide.SlideInMenusOverviewActivity"
+            android:label="Slide in menus overview" />
         <activity
             android:name=".guide.DialogOverviewActivity"
-            android:label="Dialog Overview" />
+            android:label="Dialog overview" />
         <activity
             android:name=".guide.WidgetOverviewActivity"
-            android:label="Widget Overview" />
+            android:label="Widget overview" />
         <activity
             android:name=".guide.RefreshLayoutOverviewActivity"
             android:label="RefreshLayout Overview" />
-        <activity android:name=".guide.GuideActivity" />
+        <activity
+            android:name=".guide.GuideActivity"
+            android:label="Guide" />
         <activity android:name=".guide.TypefaceOverviewActivity" />
         <activity android:name=".guide.ViewPageOverviewActivity" />
         <activity android:name=".qmui.QMUIGuideActivity" />
