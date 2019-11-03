@@ -18,7 +18,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.amlzq.android.viewer.data.MomentInfo;
+import com.amlzq.android.viewer.common.data.MomentInfo;
 import com.amlzq.android.viewer.material.R;
 
 import java.util.ArrayList;

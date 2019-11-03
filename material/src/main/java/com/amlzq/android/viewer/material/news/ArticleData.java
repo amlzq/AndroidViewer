@@ -1,6 +1,6 @@
 package com.amlzq.android.viewer.material.news;
 
-import com.amlzq.android.viewer.data.CommonData;
+import com.amlzq.android.viewer.common.data.CommonData;
 
 import java.util.ArrayList;
 import java.util.HashMap;

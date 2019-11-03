@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.amlzq.android.viewer.common.FeedbackActivity;
 import com.amlzq.android.viewer.material.complex.MaterialComplexActivity;
 import com.amlzq.android.viewer.material.templates.TemplatesActivity;
 
@@ -39,6 +40,9 @@ public class MaterialDesignActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_official) {
             Intent intent = WebActivity.newIntent(this, "https://material.io/");
+            startActivity(intent);
+        } else if (item.getItemId() == R.id.action_feedback) {
+            Intent intent = FeedbackActivity.newIntent(this, getString(R.string.app_name) + " application feedback");
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);

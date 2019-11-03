@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.amlzq.android.viewer.material.templates.activities.NavigationDrawerActivity;
+
 /**
  * 组件/部件
  */
@@ -15,10 +17,6 @@ public class ComponentsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_components_material);
-    }
-
-    public void onLayout(View view) {
-        startActivity(new Intent(this, LayoutActivity.class));
     }
 
     public void onWidget(View view) {
@@ -83,4 +81,43 @@ public class ComponentsActivity extends AppCompatActivity {
         startActivity(new Intent(this, FlexboxLayoutActivity.class));
     }
 
+    public void onMaterialText(View view) {
+        startActivity(new Intent(this, MaterialTextViewActivity.class));
+    }
+
+    public void onMenu(View view) {
+        startActivity(new Intent(this, MenusActivity.class));
+    }
+
+    public void onNavigationViews(View view) {
+        startActivity(new Intent(this, NavigationDrawerActivity.class));
+    }
+
+    public void onRadioButton(View view) {
+        startActivity(new Intent(this, RadioButtonActivity.class));
+    }
+
+    public void onRecycleView(View view) {
+        startActivity(new Intent(this, RecycleViewActivity.class));
+    }
+
+    public void onSnackbar(View view) {
+        startActivity(new Intent(this, SnackbarActivity.class));
+    }
+
+    public void onTabLayout(View view) {
+        startActivity(new Intent(this, TabLayoutActivity.class));
+    }
+
+    public void onTextField(View view) {
+        startActivity(new Intent(this, TextFieldActivity.class));
+    }
+
+    public void onSwitches(View view) {
+        startActivity(new Intent(this, SwitchCompatActivity.class));
+    }
+
+    public void onTopAppBars(View view) {
+        startActivity(new Intent(this, TopAppBarsActivity.class));
+    }
 }

@@ -94,9 +94,66 @@
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onLayout"
-            android:text="Layout"
+            android:onClick="onMaterialText"
+            android:text="Material Text View"
             android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onMenu"
+            android:text="Material Menu"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onNavigationViews"
+            android:text="Navigation Views"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButton"
+            android:text="Radio Button"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSnackbar"
+            android:text="Snackbar"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSwitches"
+            android:text="Switches"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onTabLayout"
+            android:text="TabLayout"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onTextField"
+            android:text="TextField"
+            android:textAllCaps="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onTopAppBars"
+            android:text="Top App Bars"
+            android:textAllCaps="false"
+            tools:ignore="OnClick" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
@@ -124,6 +181,13 @@
             android:layout_height="wrap_content"
             android:onClick="onConstraintLayout"
             android:text="androidx/ConstraintLayout"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onRecycleView"
+            android:text="RecycleView"
             android:textAllCaps="false" />
     </LinearLayout>
 

@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
-import com.amlzq.android.viewer.data.EntityInfo;
+import com.amlzq.android.viewer.common.data.EntityInfo;
 
 import java.util.ArrayList;
 import java.util.List;

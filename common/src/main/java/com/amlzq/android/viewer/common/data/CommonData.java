@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.data;
+package com.amlzq.android.viewer.common.data;
 
 import com.amlzq.android.viewer.common.R;
 

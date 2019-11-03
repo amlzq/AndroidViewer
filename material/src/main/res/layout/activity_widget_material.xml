@@ -29,47 +29,6 @@
                 android:text="可单击文本，有水波纹效果" />
         </LinearLayout>
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onTextView"
-            android:text="Material TextView"
-            android:textAllCaps="false" />
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onTextView"
-            android:text="Material TextView"
-            android:textAllCaps="false" />
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onRecycleView"
-            android:text="RecycleView"
-            android:textAllCaps="false" />
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onSnackbar"
-            android:text="Snackbar"
-            android:textAllCaps="false" />
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onToolbar"
-            android:text="Toolbar"
-            android:textAllCaps="false" />
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onTabLayout"
-            android:text="TabLayout"
-            android:textAllCaps="false" />
     </LinearLayout>
 
 </ScrollView>

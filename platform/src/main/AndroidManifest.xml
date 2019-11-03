@@ -3,7 +3,12 @@
     package="com.amlzq.android.viewer.platform">
 
     <application>
-        <activity android:name=".ToggleButtonActivity"></activity>
+        <activity
+            android:name=".ColorDemoActivity"
+            android:label="color demo" />
+        <activity
+            android:name=".ToggleButtonActivity"
+            android:label="ToggleButton" />
         <activity
             android:name=".PlatformActivity"
             android:theme="@android:style/Theme.Light" />

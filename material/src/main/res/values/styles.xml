@@ -92,4 +92,8 @@
         <item name="android:gravity">center</item>
     </style>
 
+<!--    <style name="Material.Activity.Radios" parent="Material.AppTheme.MaterialComponents">-->
+<!--        <item name="radioButtonStyle">@style/Widget.MaterialComponents.CompoundButton.RadioButton</item>-->
+<!--    </style>-->
+
 </resources>

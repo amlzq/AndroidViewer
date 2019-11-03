@@ -1,4 +1,4 @@
-package com.amlzq.android.viewer.data;
+package com.amlzq.android.viewer.common.data;
 
 /**
  * 数据实体

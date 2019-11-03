@@ -17,13 +17,17 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="" />
+            android:text="Material Text View" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_small"
-            android:text="AppCompatTextView" />
+            android:lineHeight="30dp"
+            android:text="AppCompatTextView
+            AppCompatTextView
+            AppCompatTextView
+            AppCompatTextView" />
 
         <androidx.appcompat.widget.AppCompatAutoCompleteTextView
             android:layout_width="match_parent"

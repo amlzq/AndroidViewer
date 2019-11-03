@@ -9,4 +9,13 @@
         android:title="官网"
         app:iconTint="@color/white"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_feedback"
+        android:icon="@drawable/ic_feedback_black_24dp"
+        android:iconTint="@color/white"
+        android:orderInCategory="100"
+        android:title="反馈"
+        app:iconTint="@color/white"
+        app:showAsAction="never" />
 </menu>

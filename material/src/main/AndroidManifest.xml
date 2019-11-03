@@ -11,6 +11,10 @@
         android:theme="@style/Material.AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".MenusActivity"
+            android:label="Menu demo"
+            android:theme="@style/Material.AppTheme.MaterialComponents" />
+        <activity
             android:name=".MaterialDesignActivity"
             android:label="@string/title_material_design"
             android:launchMode="singleTop"
@@ -82,11 +86,8 @@
             android:label="MapsActivity"
             android:theme="@style/Material.AppTheme" />
         <activity
-            android:name=".LayoutActivity"
-            android:theme="@style/Material.AppTheme.MaterialComponents" />
-        <activity
             android:name=".WidgetActivity"
-            android:label="WidgetActivity"
+            android:label="Widgets"
             android:theme="@style/Material.AppTheme.MaterialComponents" />
         <activity
             android:name=".SwipeRefreshActivity"
@@ -110,10 +111,6 @@
         <activity
             android:name=".BottomRadioButtonFragmentActivity"
             android:theme="@style/Material.AppTheme.NoActionBar" />
-        <activity
-            android:name=".ToolbarActivity"
-            android:label="Toolbar Demo"
-            android:theme="@style/Material.AppTheme.MaterialComponents.NoActionBar" />
         <activity
             android:name=".TabLayoutActivity"
             android:label="TabLayout Demo"
@@ -167,7 +164,7 @@
             android:label="Dialog"
             android:theme="@style/Material.AppTheme.MaterialComponents" />
         <activity
-            android:name=".AppBarActivity"
+            android:name=".TopAppBarsActivity"
             android:label="AppBarActivity"
             android:theme="@style/Material.Activity.TranslucentStatusBar" />
         <activity

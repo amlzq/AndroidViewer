@@ -28,8 +28,8 @@ import androidx.palette.graphics.Palette;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.amlzq.android.viewer.data.MomentData;
-import com.amlzq.android.viewer.data.MomentInfo;
+import com.amlzq.android.viewer.common.data.MomentData;
+import com.amlzq.android.viewer.common.data.MomentInfo;
 import com.amlzq.android.viewer.material.R;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 

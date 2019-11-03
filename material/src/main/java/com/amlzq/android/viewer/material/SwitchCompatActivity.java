@@ -1,9 +1,12 @@
 package com.amlzq.android.viewer.material;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+/**
+ * SwitchMaterial demo
+ */
 public class SwitchCompatActivity extends AppCompatActivity {
 
     @Override
@@ -11,4 +14,5 @@ public class SwitchCompatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_switch_compat);
     }
+
 }
