@@ -7,10 +7,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.amlzq.android.viewer.common.FeedbackActivity;
 import com.amlzq.android.viewer.material.complex.MaterialComplexActivity;
 import com.amlzq.android.viewer.material.templates.TemplatesActivity;
 
@@ -42,8 +42,18 @@ public class MaterialDesignActivity extends AppCompatActivity {
             Intent intent = WebActivity.newIntent(this, "https://material.io/");
             startActivity(intent);
         } else if (item.getItemId() == R.id.action_feedback) {
-            Intent intent = FeedbackActivity.newIntent(this, getString(R.string.app_name) + " application feedback");
-            startActivity(intent);
+            // 发送邮件
+            Intent i = new Intent(Intent.ACTION_SEND);
+            i.setType("plain/text");
+            i.putExtra(Intent.EXTRA_EMAIL, new String[]{"lzqjiujiang@gmail.com"});
+            i.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name) + " App Feedback");
+            i.putExtra(Intent.EXTRA_TEXT, "请准确描述问题或者需求");
+            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            try {
+                startActivity(Intent.createChooser(i, "请选择任意邮箱客户端应用程序"));
+            } catch (android.content.ActivityNotFoundException ex) {
+                Toast.makeText(this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+            }
         }
         return super.onOptionsItemSelected(item);
     }
