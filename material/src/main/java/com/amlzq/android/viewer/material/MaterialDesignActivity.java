@@ -46,7 +46,7 @@ public class MaterialDesignActivity extends AppCompatActivity {
             Intent i = new Intent(Intent.ACTION_SEND);
             i.setType("plain/text");
             i.putExtra(Intent.EXTRA_EMAIL, new String[]{"lzqjiujiang@gmail.com"});
-            i.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name) + " App Feedback");
+            i.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name) + " Feedback");
             i.putExtra(Intent.EXTRA_TEXT, "请准确描述问题或者需求");
             i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             try {
