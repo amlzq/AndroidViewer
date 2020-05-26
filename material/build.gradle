@@ -55,9 +55,9 @@ dependencies {
     implementation "androidx.gridlayout:gridlayout:$rootProject.ext.gridLayoutVersion"
     implementation "androidx.palette:palette:$rootProject.ext.paletteVersion"
     implementation 'androidx.emoji:emoji:1.0.0'
-    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation "androidx.multidex:multidex:$rootProject.ext.multiDexVersion"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.ext.constraintLayoutVersion"
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation "com.google.android.material:material:$rootProject.ext.materialVersion"
     implementation "com.google.android.gms:play-services-maps:${rootProject.ext.gmsVersion}"
     implementation "com.google.android.gms:play-services-plus:${rootProject.ext.gmsVersion}"

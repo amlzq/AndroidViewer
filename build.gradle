@@ -62,14 +62,15 @@ task clean(type: Delete) {
 ext {
     // Sdk and tools
     minSdkVersion = 16
-    targetSdkVersion = 28
-    compileSdkVersion = 28
-    buildToolsVersion = '28.0.3'
+    targetSdkVersion = 29
+    compileSdkVersion = 29
+    buildToolsVersion = '29.0.3'
 
     // App dependencies
+    multiDexVersion = '2.0.1'
     appCompatVersion = '1.0.0'
-    materialVersion = '1.0.0'
-    recyclerViewVersion = '1.0.0'
+    materialVersion = '1.1.0'
+    recyclerViewVersion = '1.1.0'
     gridLayoutVersion = '1.0.0'
     cardVersion = '1.0.0'
     paletteVersion = '1.0.0'
@@ -83,7 +84,6 @@ ext {
 
     // Deprecated
 //    supportLibVersion = '28.0.0'
-//    multiDexVersion = '1.0.3'
 //    gmsVersion = '16.0.0' // 17.0.0依赖了androidx
 //    guavaVersion = '18.0'
 //    junitVersion = '4.12'
