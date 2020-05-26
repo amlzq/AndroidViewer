@@ -4,7 +4,7 @@
     <item name="TabLayout" type="style" />
 
     <!-- Base application theme. -->
-    <style name="Material.AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Material.AppTheme" parent="Theme.AppCompat.DayNight">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
