@@ -1,2 +1,2 @@
-- [简体中文](./readme.zh_cn.md)
+- [简体中文](./readme.zh_Hans.md)
 -
